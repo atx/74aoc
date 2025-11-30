@@ -1,7 +1,7 @@
-top.fasm
+*.fasm
 __pycache__
 *.pyc
 pnrtop.v
 /top_simtest
 *.vcd
-
+*.json

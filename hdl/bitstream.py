@@ -1,8 +1,9 @@
 from write_fasm import *
-from simple_config import K
 
+# TODO: This file is probably not even necessary
 # Need to tell FASM generator how to write parameters
 # (celltype, parameter) -> ParameterConfig
+K = 3
 param_map = {
 	("GENERIC_SLICE", "K"): ParameterConfig(write=False),
 	("GENERIC_SLICE", "INIT"): ParameterConfig(write=True, numeric=True, width=2**K),
@@ -13,5 +14,5 @@ param_map = {
 	("GENERIC_IOB", "ENABLE_USED"): ParameterConfig(write=True, numeric=True, width=1),
 }
 
-with open("blinky.fasm", "w") as f:
+with open("top.fasm", "w") as f:
 	write_fasm(ctx, param_map, f)
