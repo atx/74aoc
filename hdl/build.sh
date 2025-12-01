@@ -8,7 +8,8 @@ nextpnr-generic \
 	--pre-place simple_timing.py \
 	--json top.json \
 	--post-route bitstream.py \
-	--write pnrtop.json
+	--write pnrtop.json \
+	--no-tmdriv
 
 # TODO: Do we need this for anything?
 #yosys -p "read_verilog -lib ./prims.v; read_json pnrtop.json; dump -o top.il; show -format png -prefix top"

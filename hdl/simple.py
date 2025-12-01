@@ -4,7 +4,7 @@ import itertools
 X = 12
 Y = 12
 K = 3  # Number of LUT inputs
-GLOBAL_WIRE_COUNT = 16
+GLOBAL_WIRE_COUNT = 4*16
 # We reserve the leftmost column (X = 0) for the IO
 
 lut_cell_coords = [
@@ -109,7 +109,7 @@ def make_global_wire(i):
 			delay=ctx.getDelayFromNS(0.0), loc=Loc(x, y, 0))
 		# LUT output
 		ctx.addPip(name=f"GLOBAL_WIRE_{i}_FROM_LUT_X{x}Y{y}_F", type="GLOBAL_LUT",
-			srcWire=f"X{x}Y{y}_Q", dstWire=wire_name,
+			srcWire=f"X{x}Y{y}_F", dstWire=wire_name,
 			delay=ctx.getDelayFromNS(0.0), loc=Loc(x, y, 0))
 		# PIP from the global wire to the LUT cell
 		for k in range(K):
@@ -127,12 +127,12 @@ def distance_to_interconnect_count(distance):
 		# Hopefully this will never be asked...
 		return 0
 	elif distance == 1:
-		return 3
+		return 4
 	elif distance in {2, 3}:
-		return 2
+		return 3
 	elif distance in {4, 5}:
 		# This may be a bit too much I think
-		return 1
+		return 2
 	return 0
 
 
