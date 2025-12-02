@@ -4,7 +4,7 @@ module top_tb;
 
     // Parameters matching the DUT
     parameter INPUT_WIDTH = 10;
-    parameter OUTPUT_WIDTH = 12;
+    parameter OUTPUT_WIDTH = 11;
     
     parameter CLK_PERIOD = 10;
     

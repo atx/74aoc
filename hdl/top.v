@@ -2,7 +2,7 @@
 module top
 #(
 	parameter INPUT_WIDTH = 10,  // In practice the parameters are <1000 so 10 bits is enough
-	parameter OUTPUT_WIDTH = 12,  // A result observed: 1165, so 11 bits would be enough in theory
+	parameter OUTPUT_WIDTH = 11,  // A result observed: 1165, so 11 bits would be enough in theory. Every extra bit is kinda expensive, so I am going to keep it tight. This may result in this not working for some inputs
 	parameter DIAL_INIT = 50,
 	parameter DIAL_MAX = 99,  // Inclusive!
 	parameter DIAL_WIDTH = 7,  // TODO: logarithmize DIAL_MAX
@@ -12,7 +12,7 @@ module top
 	input wire valid,  // High when the dial input is valid
 	input wire step_direction,  // 1 = up, 0 = down
 	input wire [INPUT_WIDTH-1:0] step_count,
-	output reg [OUTPUT_WIDTH-1:0] zero_count
+	output reg [OUTPUT_WIDTH-1:0] zero_count = 0
 );
 
 	reg [DIAL_WIDTH-1:0] dial_value = DIAL_INIT; // Initial value specified by the puzzle
