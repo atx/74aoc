@@ -486,6 +486,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 95.25) (xy 124.46 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed415a54-2b04-4367-82ec-1803ac5c260a")
+	)
+	(wire
+		(pts
 			(xy 121.92 87.63) (xy 124.46 87.63)
 		)
 		(stroke
@@ -505,7 +515,7 @@
 		)
 		(uuid "58db4161-c1a2-4c84-8c8d-bb007eea18ed")
 	)
-	(hierarchical_label "CLK"
+	(hierarchical_label "IO_CLK"
 		(shape output)
 		(at 124.46 87.63 0)
 		(effects
@@ -515,6 +525,17 @@
 			(justify left)
 		)
 		(uuid "74e3a79d-c3ec-4fdd-b697-b8eab0429500")
+	)
+	(hierarchical_label "CLK"
+		(shape output)
+		(at 124.46 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8289b139-6cb6-45bf-a00e-0ecafc6a7ff1")
 	)
 	(hierarchical_label "SHIFT_TO_OUTPUT"
 		(shape output)

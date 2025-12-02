@@ -1296,7 +1296,7 @@
 	)
 	(rectangle
 		(start 68.58 58.42)
-		(end 86.36 104.14)
+		(end 95.25 104.14)
 		(stroke
 			(width 0)
 			(type default)
@@ -2336,6 +2336,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_0_1}"
+			(at 87.376 62.23 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c1815b06-8921-4fc6-b3b8-c7ba59362180")
 		)
@@ -2471,6 +2479,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_4_0}"
+			(at 87.376 85.09 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f225d0f4-9474-429f-aa41-f50bfa40a558")
 		)
@@ -2537,6 +2553,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_5_1}"
+			(at 87.376 87.63 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -3167,6 +3191,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_2_1}"
+			(at 87.376 72.39 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0ffe9311-ffd7-4b7d-9450-60c291265431")
 		)
@@ -3235,6 +3267,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${DFF_1}"
+			(at 185.42 114.046 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c1062358-a046-4218-8765-8caa376b66f2")
 		)
@@ -3301,6 +3341,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_1_0}"
+			(at 87.376 69.85 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -3571,6 +3619,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${DFF_0}"
+			(at 185.166 110.236 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "648536d8-2b91-47d4-9b19-80b5172541a8")
 		)
@@ -3637,6 +3693,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_7_1}"
+			(at 87.376 97.79 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -3839,6 +3903,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_4_1}"
+			(at 87.376 82.55 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -4178,6 +4250,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_3_1}"
+			(at 87.376 77.47 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7e4f4876-883d-4c17-9f91-c72a6de7823c")
 		)
@@ -4244,6 +4324,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_3_0}"
+			(at 87.376 80.01 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -4451,6 +4539,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_1_1}"
+			(at 87.376 67.31 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "21ac84f4-e980-40c9-87bc-61e9181c6e17")
 		)
@@ -4583,6 +4679,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_0_0}"
+			(at 87.376 64.77 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -5192,6 +5296,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_6_1}"
+			(at 87.376 92.71 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bc9874d2-882d-4b56-9942-3c76b53a6bbc")
 		)
@@ -5258,6 +5370,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "${MUX_2_0}" "${MUX_2_0}"
+			(at 87.376 74.93 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"
@@ -5395,6 +5515,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_7_0}"
+			(at 87.376 100.33 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8456e79d-4caf-4562-9d8c-28201f305027")
 		)
@@ -5463,6 +5591,14 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${MUX_5_0}"
+			(at 87.376 90.17 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c7c0bdbe-870c-4c60-9b1a-711a584e5325")
 		)
@@ -5473,74 +5609,6 @@
 			(project "74aoc"
 				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/7fc5f80c-ae61-41ba-be16-2c640c59fc3f"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 220.98 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dab92b1c-4bb6-4124-97f1-8418bea77c5f")
-		(property "Reference" "R40"
-			(at 222.25 98.806 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 220.98 101.6 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 220.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 220.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4f8c6be2-337a-4c3c-9cf0-a7bcb91d23a1")
-		)
-		(pin "1"
-			(uuid "1688574d-cedf-44c9-a41d-b36a561ad0fe")
-		)
-		(instances
-			(project "74aoc"
-				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/7fc5f80c-ae61-41ba-be16-2c640c59fc3f"
-					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5597,6 +5665,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "POPULATE" "${MUX_6_0}"
+			(at 87.376 95.25 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
 			)
 		)
 		(pin "2"

@@ -650,6 +650,10 @@
     [
       "61637c3f-18d3-42d4-a2b8-29ba731a7b12",
       "Interconnects"
+    ],
+    [
+      "b6205021-f96c-4b9a-9a20-9347159a3e12",
+      "Output LEDs"
     ]
   ],
   "text_variables": {}
