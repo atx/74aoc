@@ -23,13 +23,33 @@ module top_tb;
     integer count_val;
     integer line_num;
     
-    // Instantiate DUT
+    // Instantiate DUT - connect individual bit ports to bundled testbench signals
     top dut (
         .clk(clk),
+        .rst(1'b0),
         .valid(valid),
         .step_direction(step_direction),
-        .step_count(step_count),
-        .zero_count(zero_count)
+        .step_count_0(step_count[0]),
+        .step_count_1(step_count[1]),
+        .step_count_2(step_count[2]),
+        .step_count_3(step_count[3]),
+        .step_count_4(step_count[4]),
+        .step_count_5(step_count[5]),
+        .step_count_6(step_count[6]),
+        .step_count_7(step_count[7]),
+        .step_count_8(step_count[8]),
+        .step_count_9(step_count[9]),
+        .zero_count_0(zero_count[0]),
+        .zero_count_1(zero_count[1]),
+        .zero_count_2(zero_count[2]),
+        .zero_count_3(zero_count[3]),
+        .zero_count_4(zero_count[4]),
+        .zero_count_5(zero_count[5]),
+        .zero_count_6(zero_count[6]),
+        .zero_count_7(zero_count[7]),
+        .zero_count_8(zero_count[8]),
+        .zero_count_9(zero_count[9]),
+        .zero_count_10(zero_count[10])
     );
     
     // Clock generation

@@ -9,6 +9,7 @@ nextpnr-generic \
 	--json top.json \
 	--post-route bitstream.py \
 	--write pnrtop.json \
+	--top top \
 	--no-tmdriv
 
 # TODO: Do we need this for anything?
