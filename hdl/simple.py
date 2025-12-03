@@ -15,9 +15,13 @@ lut_cell_coords = [
 
 # I expect the IO to be kinda bunched up together...
 io_cell_coords = [
+	# Inputs on the left
 	(0, y) for y in range(8)
+] + [
+	# Outputs on the right
+	(X, y) for y in range(8)
 ]
-bits_per_io_cell = 4
+bits_per_io_cell = 2
 
 
 def make_global_signal(name):
