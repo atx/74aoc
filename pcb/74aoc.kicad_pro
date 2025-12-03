@@ -632,20 +632,8 @@
       "CELL X0 Y0"
     ],
     [
-      "1832fabe-c5c8-4216-9ba7-501432cb8cf8",
-      "Input Shift Register"
-    ],
-    [
-      "5032c634-0c0f-4d02-b7d2-325fd9e72931",
-      "Input Shift Register1"
-    ],
-    [
       "4bf70d76-e048-47d6-b617-0a570812d98f",
       "Power"
-    ],
-    [
-      "5d449b1d-cf4b-49a6-a1ca-91c8fee24ae9",
-      "Interface"
     ],
     [
       "61637c3f-18d3-42d4-a2b8-29ba731a7b12",
@@ -654,6 +642,10 @@
     [
       "b6205021-f96c-4b9a-9a20-9347159a3e12",
       "Output LEDs"
+    ],
+    [
+      "1738e3de-9701-413b-b05f-bd62ea7bb8c6",
+      "Inputs"
     ]
   ],
   "text_variables": {}
