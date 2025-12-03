@@ -2,7 +2,7 @@
 // LUT and DFF are combined to a GENERIC_SLICE
 
 module LUT #(
-	parameter K = 4,
+	parameter K = 3,
 	parameter [2**K-1:0] INIT = 0
 ) (
 	input [K-1:0] I,
@@ -29,7 +29,7 @@ module DFF (
 endmodule
 
 module GENERIC_SLICE #(
-	parameter K = 4,
+	parameter K = 3,
 	parameter [2**K-1:0] INIT = 0,
 	parameter FF_USED = 1'b0
 ) (

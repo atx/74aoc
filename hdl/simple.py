@@ -23,6 +23,7 @@ io_cell_coords = [
 ]
 bits_per_io_cell = 2
 
+ctx.setLutK(K)
 
 def make_global_signal(name):
 	ctx.addWire(name=f"GLOBAL_{name}", type="GLOBAL", x=X//2, y=Y//2)
