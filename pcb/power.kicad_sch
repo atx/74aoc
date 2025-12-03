@@ -911,6 +911,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 92.71) (xy 171.45 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b82818-d170-44de-bc21-55a6d3cb63bf")
+	)
+	(wire
+		(pts
 			(xy 124.46 92.71) (xy 119.38 92.71)
 		)
 		(stroke
@@ -1018,6 +1028,76 @@
 		)
 	)
 	(symbol
+		(lib_id "rflib:R")
+		(at 171.45 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4da0727f-76d9-4aed-9a92-12f5dd8b462e")
+		(property "Reference" "R2694"
+			(at 173.99 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1"
+			(at 173.99 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 173.228 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 171.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9ebcfe0-1aad-4619-aa7a-a4e6731d8f5d")
+		)
+		(pin "1"
+			(uuid "30d0fbe4-3491-46df-932f-200bb6b34e85")
+		)
+		(instances
+			(project "74aoc"
+				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/4bf70d76-e048-47d6-b617-0a570812d98f"
+					(reference "R2694")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 158.75 104.14 0)
 		(unit 1)
@@ -1082,6 +1162,85 @@
 			(project "74aoc"
 				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/4bf70d76-e048-47d6-b617-0a570812d98f"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 171.45 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "720e4044-00ec-48da-abd5-740294430a21")
+		(property "Reference" "C247"
+			(at 175.26 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u"
+			(at 175.26 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 172.4152 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 171.45 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15008"
+			(at 171.45 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a060ce2-cb5d-4fa7-895e-0d198495f329")
+		)
+		(pin "2"
+			(uuid "2f9246ce-a849-4bb0-ab6c-6d5963f86b0e")
+		)
+		(instances
+			(project "74aoc"
+				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/4bf70d76-e048-47d6-b617-0a570812d98f"
+					(reference "C247")
 					(unit 1)
 				)
 			)
@@ -1829,6 +1988,72 @@
 			(project ""
 				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/4bf70d76-e048-47d6-b617-0a570812d98f"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6cd4459-7970-47a4-9a68-cd5d42d0b9f2")
+		(property "Reference" "#PWR043"
+			(at 171.45 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84bb8885-7bd6-4143-b84b-959d888a2dc6")
+		)
+		(instances
+			(project "74aoc"
+				(path "/976aec4d-1ebe-44c6-a45c-c82e0c896ea2/4bf70d76-e048-47d6-b617-0a570812d98f"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
