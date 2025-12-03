@@ -8,7 +8,6 @@ module solution
 	parameter DIAL_WIDTH = 7  // TODO: logarithmize DIAL_MAX
 ) (
 	input wire clk,
-	input wire rst,
 	input wire valid,  // High when the dial input is valid
 	input wire step_direction,  // 1 = up, 0 = down
 	input wire [INPUT_WIDTH-1:0] step_count,
@@ -63,30 +62,28 @@ module top (
 	(* BEL="X0Y0Z0_IO" *)
 	input wire clk,
 	(* BEL="X0Y0Z1_IO" *)
-	input wire rst,
-	(* BEL="X0Y1Z0_IO" *)
 	input wire valid,
-	(* BEL="X0Y1Z1_IO" *)
+	(* BEL="X0Y1Z0_IO" *)
 	input wire step_direction,
-	(* BEL="X0Y2Z0_IO" *)
+	(* BEL="X0Y1Z1_IO" *)
 	input wire step_count_0,
-	(* BEL="X0Y2Z1_IO" *)
+	(* BEL="X0Y2Z0_IO" *)
 	input wire step_count_1,
-	(* BEL="X0Y3Z0_IO" *)
+	(* BEL="X0Y2Z1_IO" *)
 	input wire step_count_2,
-	(* BEL="X0Y3Z1_IO" *)
+	(* BEL="X0Y3Z0_IO" *)
 	input wire step_count_3,
-	(* BEL="X0Y4Z0_IO" *)
+	(* BEL="X0Y3Z1_IO" *)
 	input wire step_count_4,
-	(* BEL="X0Y4Z1_IO" *)
+	(* BEL="X0Y4Z0_IO" *)
 	input wire step_count_5,
-	(* BEL="X0Y5Z0_IO" *)
+	(* BEL="X0Y4Z1_IO" *)
 	input wire step_count_6,
-	(* BEL="X0Y5Z1_IO" *)
+	(* BEL="X0Y5Z0_IO" *)
 	input wire step_count_7,
-	(* BEL="X0Y6Z0_IO" *)
+	(* BEL="X0Y5Z1_IO" *)
 	input wire step_count_8,
-	(* BEL="X0Y6Z1_IO" *)
+	(* BEL="X0Y6Z0_IO" *)
 	input wire step_count_9,
 
 	// Outputs - starting from X12Y0Z0_IO going up Y axis
@@ -125,7 +122,6 @@ module top (
 
 	solution sol (
 		.clk(clk),
-		.rst(rst),
 		.valid(valid),
 		.step_direction(step_direction),
 		.step_count(step_count_bus),

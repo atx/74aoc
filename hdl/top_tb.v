@@ -26,7 +26,6 @@ module top_tb;
     // Instantiate DUT - connect individual bit ports to bundled testbench signals
     top dut (
         .clk(clk),
-        .rst(1'b0),
         .valid(valid),
         .step_direction(step_direction),
         .step_count_0(step_count[0]),
