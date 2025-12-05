@@ -66,15 +66,15 @@ let create (i : _ I.t) =
             *)
             counter <-- i.step_count;
             saved_direction <-- i.step_direction;
-        ] @@ elif (counter.value <>: (of_int_trunc ~width:Config.input_width 0)) [
+        ] @@ elif (counter.value <>:. 0) [
             (* We have some steps to process,
                so we do one step of the dial
              *)
             dial_value <-- next_dial_value;
             counter <-- counter.value -:. 1;
-            when_ (counter.value ==: (of_int_trunc ~width:Config.input_width 1)) [
+            when_ (counter.value ==:. 1) [
                 (* This was the last step, so we check if we are at zero now *)
-                when_ (next_dial_value ==: (of_int_trunc ~width:Config.dial_width 0)) [
+                when_ (next_dial_value ==:. 0) [
                     zero_count <-- zero_count.value +:. 1
                 ]
             ]
