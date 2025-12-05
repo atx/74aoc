@@ -1,5 +1,7 @@
 
-module solution
+// This is the _old_ solution module, kept for reference. The new solution
+// module is exported from solution.ml into solution.v
+module solution_old
 #(
 	parameter INPUT_WIDTH = 10,  // In practice the parameters are <1000 so 10 bits is enough
 	parameter OUTPUT_WIDTH = 11,  // A result observed: 1165, so 11 bits would be enough in theory. Every extra bit is kinda expensive, so I am going to keep it tight. This may result in this not working for some inputs
@@ -52,6 +54,8 @@ module solution
 	end
 
 endmodule
+
+`include "solution.v"
 
 
 // Top wrapper module with static BEL assignments for IO placement

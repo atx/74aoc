@@ -5,3 +5,6 @@ pnrtop.v
 /top_simtest
 *.vcd
 *.json
+solution.v
+build_
+_build
