@@ -1306,7 +1306,7 @@
 		)
 		(uuid 69c45e29-a46a-494f-b222-ef8e1c4fa9ea)
 	)
-	(text "Configured by init"
+	(text "Our nextpnr can only do 0 anyway"
 		(exclude_from_sim no)
 		(at 185.674 121.158 0)
 		(effects
@@ -9461,7 +9461,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3d31505d-e31a-45f2-ab07-1f0655d042e7")
 		(property "Reference" "R36"
 			(at 188.214 116.84 90)
@@ -9505,14 +9505,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "POPULATE" "${DFF_1}"
-			(at 185.42 114.046 90)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
 			)
 		)
 		(pin "2"
@@ -12257,14 +12249,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "POPULATE" "${DFF_0}"
-			(at 185.166 110.236 90)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
 			)
 		)
 		(pin "2"
