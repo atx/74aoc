@@ -1,5 +1,12 @@
-(executable
+(library
  (name solution)
+ (modules solution)
  (libraries hardcaml)
+ (preprocess (pps ppx_hardcaml)))
+
+(executables
+ (names build_solution test_solution)
+ (modules build_solution test_solution)
+ (libraries solution hardcaml)
  (preprocess (pps ppx_hardcaml))
  (flags (:standard -warn-error -a)))

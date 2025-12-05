@@ -2,7 +2,7 @@
 
 set -ex
 
-dune exec ./solution.exe > solution.v
+dune exec ./build_solution.exe > solution.v
 
 yosys -p "tcl ./synth_generic.tcl top.json" top.v
 nextpnr-generic \

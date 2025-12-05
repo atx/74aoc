@@ -84,9 +84,3 @@ let create (i : _ I.t) =
     ]);
 
     { O.zero_count = zero_count.value }
-
-
-let () =
-    let module Circuit = Circuit.With_interface(I)(O) in
-    let circuit = Circuit.create_exn ~name:"solution" create in
-    Rtl.print Verilog circuit
