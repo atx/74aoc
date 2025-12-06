@@ -1306,7 +1306,7 @@
 		)
 		(uuid 69c45e29-a46a-494f-b222-ef8e1c4fa9ea)
 	)
-	(text "Our nextpnr can only do 0 anyway"
+	(text "Nextpnr can only do 0 anyway"
 		(exclude_from_sim no)
 		(at 185.674 121.158 0)
 		(effects
@@ -4552,6 +4552,15 @@
 			)
 		)
 		(property "LCSC" "C70285"
+			(at 198.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "POPULATE" "${USE_DFF}"
 			(at 198.12 81.28 0)
 			(effects
 				(font

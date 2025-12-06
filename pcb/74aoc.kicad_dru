@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "VSSOP pad clearance override"
+        (condition "A.memberOfFootprint('Package_SO:VSSOP-8_2.3x2mm_P0.5mm') && B.memberOfFootprint('Package_SO:VSSOP-8_2.3x2mm_P0.5mm')")
+        (constraint clearance (min 0.12mm))
+)
