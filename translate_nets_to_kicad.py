@@ -304,6 +304,33 @@ def generate_schematic_content(schematic: Schematic, nets: list[NetInfo]) -> Non
         schematic.texts.append(text)
 
 
+def list_all_input_nets() -> list[str]:
+    """Generate a list of all possible input net names"""
+    return [
+        f"W_X{x - 1}_Y{y}_I{i + 1}"
+        for x in range(1, GRID_X)
+        for y in range(GRID_Y)
+        for i in range(LUT_K)
+    ]
+
+
+def collect_unused_input_nets(nets: list[NetInfo]) -> set[str]:
+    """Collect all input nets that are not used in the given nets."""
+    result = set(list_all_input_nets())
+    for net in nets:
+        for label in net.labels:
+            result.discard(label)
+
+    return result
+
+
+def make_gnd_net(unused_inputs: set[str]) -> NetInfo:
+    """Create a special GND net that connects all unused inputs to GND."""
+    gnd_labels = list(unused_inputs)
+    gnd_labels.append("W_GND")
+    return NetInfo(name="SPECIAL_GND_NET", labels=gnd_labels)
+
+
 def main():
     script_dir = Path(__file__).parent
 
@@ -337,6 +364,14 @@ def main():
     # Clear existing content
     print("Clearing existing wires, labels, and text...")
     clear_schematic(schematic)
+
+    # Garbage collect unused inputs and wire them to GND by a special net
+    print("Collecting unused input nets for GND connection...")
+    unused_inputs = collect_unused_input_nets(nets)
+    print(f"Found {len(unused_inputs)} unused input nets to connect to GND")
+    for unused in list(unused_inputs):
+        print(f"  Unused input net: {unused}")
+    nets.append(make_gnd_net(unused_inputs))
 
     # Generate new content
     print("Generating schematic content...")
