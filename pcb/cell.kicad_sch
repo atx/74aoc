@@ -2344,6 +2344,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c1815b06-8921-4fc6-b3b8-c7ba59362180")
 		)
@@ -3447,6 +3456,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f225d0f4-9474-429f-aa41-f50bfa40a558")
 		)
@@ -4001,6 +4019,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5128,6 +5155,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 196.85 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 196.85 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8968,6 +9004,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0ffe9311-ffd7-4b7d-9450-60c291265431")
 		)
@@ -9509,6 +9554,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 185.42 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 185.42 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10070,6 +10124,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12260,6 +12323,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17168"
+			(at 185.42 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "648536d8-2b91-47d4-9b19-80b5172541a8")
 		)
@@ -12816,6 +12888,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6741dee-228f-4666-b7d9-e5369f08ca97")
 		)
@@ -13357,6 +13438,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 162.56 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14464,6 +14554,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16108,6 +16207,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 196.85 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e988b4a3-22b9-4cf7-a30e-0873eb16cc82")
 		)
@@ -17211,6 +17319,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7e4f4876-883d-4c17-9f91-c72a6de7823c")
 		)
@@ -17765,6 +17882,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -18864,6 +18990,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 129.54 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0d5a043-863e-4fb8-a028-dfc9bd1a0062")
 		)
@@ -19418,6 +19553,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -20520,6 +20664,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -23260,6 +23413,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 190.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4de437b4-a5ad-489d-a088-a583c5d99cf0")
 		)
@@ -24347,6 +24509,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 222.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 222.25 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25457,6 +25628,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bc9874d2-882d-4b56-9942-3c76b53a6bbc")
 		)
@@ -26011,6 +26191,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -27116,6 +27305,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8456e79d-4caf-4562-9d8c-28201f305027")
 		)
@@ -27670,6 +27868,15 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 81.28 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -28228,6 +28435,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 81.28 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d13b054e-dd5c-42db-97fe-4ec0f618ccba")
 		)
@@ -28779,6 +28995,15 @@
 			)
 		)
 		(property "POPULATE" "${USE_MUX}"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C152523"
 			(at 139.7 91.44 0)
 			(effects
 				(font

@@ -1046,7 +1046,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "0"
 			(at 173.99 97.7899 0)
 			(effects
 				(font
@@ -1074,6 +1074,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 171.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
 			(at 171.45 96.52 0)
 			(effects
 				(font
@@ -1144,6 +1153,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 158.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 158.75 104.14 0)
 			(effects
 				(font
@@ -1299,6 +1317,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C6186"
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d8ccbc70-6365-4743-9871-8b8da43999d8")
 		)
@@ -1438,6 +1465,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 105.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f7dc14aa-7a5c-4461-a22c-89541d935177")
 		)
@@ -1500,6 +1536,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 119.38 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
 			(at 119.38 97.79 0)
 			(effects
 				(font
@@ -1776,6 +1821,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8e17915-306b-4a06-a642-83f25b5cfd5e")
 		)
@@ -1876,7 +1930,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "0"
 			(at 161.29 97.7899 0)
 			(effects
 				(font
@@ -1904,6 +1958,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 158.75 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
 			(at 158.75 96.52 0)
 			(effects
 				(font
