@@ -41,6 +41,8 @@ class CellInfo:
     pnr_y: int
     init: str
 
+    ff_used: bool = True
+
     @property
     def kicad_x(self) -> int:
         return self.pnr_x - 1
@@ -86,9 +88,9 @@ def parse_pnrtop(pnrtop_path: Path) -> list[CellInfo]:
         pnr_x = int(match.group(1))
         pnr_y = int(match.group(2))
 
-        init = cell_data.get("parameters", {}).get("INIT")
-        if init is None:
-            raise LutLoadError(f"Cell {cell_name} has no INIT parameter")
+        parameters = cell_data["parameters"]
+        init = parameters["INIT"]
+        ff_used_str = parameters["FF_USED"]
 
         if len(init) != 8 or not all(c in "01" for c in init):
             raise LutLoadError(
@@ -96,7 +98,9 @@ def parse_pnrtop(pnrtop_path: Path) -> list[CellInfo]:
                 "(expected 8 binary digits)"
             )
 
-        result.append(CellInfo(pnr_x=pnr_x, pnr_y=pnr_y, init=init))
+        ff_used = ff_used_str != "0" * 32
+
+        result.append(CellInfo(pnr_x=pnr_x, pnr_y=pnr_y, init=init, ff_used=ff_used))
 
     return result
 
@@ -112,7 +116,7 @@ def build_sheet_lookup(schematic: Schematic) -> dict[str, object]:
     return lookup
 
 
-def init_to_mux_properties(init: str, sheet_position: Position) -> list[Property]:
+def init_to_mux_properties(init: str, ff_used: bool, sheet_position: Position) -> list[Property]:
     """
     Convert an 8-bit INIT string to MUX properties.
 
@@ -146,6 +150,57 @@ def init_to_mux_properties(init: str, sheet_position: Position) -> list[Property
             )
             properties.append(prop)
 
+    properties.append(Property(
+        key="USE_DFF",
+        value="1" if ff_used else "0",
+        position=Position(X=sheet_position.X, Y=sheet_position.Y, angle=0),
+        effects=Effects(font=Font(height=1.27, width=1.27), hide=True),
+    ))
+
+    # This is always set to 1 for used slices
+    properties.append(Property(
+        key="USE_MUX",
+        value="1",
+        position=Position(X=sheet_position.X, Y=sheet_position.Y, angle=0),
+        effects=Effects(font=Font(height=1.27, width=1.27), hide=True),
+    ))
+
+    return properties
+
+
+def make_unused_cell_properties(sheet_position: Position) -> list[Property]:
+    """
+    Create properties for an unused cell.
+
+    Sets USE_DFF=0, USE_MUX=0, and all MUX_N_M=0 to ensure no components
+    are populated and all text variables are defined.
+    """
+    properties = []
+
+    # Set all MUX resistor properties to 0 (don't populate)
+    for bit_idx in range(8):
+        for suffix in ["0", "1"]:
+            properties.append(Property(
+                key=f"MUX_{bit_idx}_{suffix}",
+                value="0",
+                position=Position(X=sheet_position.X, Y=sheet_position.Y, angle=0),
+                effects=Effects(font=Font(height=1.27, width=1.27), hide=True),
+            ))
+
+    properties.append(Property(
+        key="USE_DFF",
+        value="0",
+        position=Position(X=sheet_position.X, Y=sheet_position.Y, angle=0),
+        effects=Effects(font=Font(height=1.27, width=1.27), hide=True),
+    ))
+
+    properties.append(Property(
+        key="USE_MUX",
+        value="0",
+        position=Position(X=sheet_position.X, Y=sheet_position.Y, angle=0),
+        effects=Effects(font=Font(height=1.27, width=1.27), hide=True),
+    ))
+
     return properties
 
 
@@ -153,12 +208,11 @@ def clear_existing_mux_properties(sheet) -> None:
     """
     Remove any existing MUX_*_* properties from a sheet.
     """
-    if not hasattr(sheet, "properties"):
-        return
 
     # Keep only non-MUX properties
     sheet.properties = [
-        p for p in sheet.properties if not p.key.startswith("MUX_")
+        p for p in sheet.properties
+        if (not p.key.startswith("MUX_") and not p.key.startswith("USE_"))
     ]
 
 
@@ -178,7 +232,10 @@ def main():
     print(f"Found {len(sheet_lookup)} sheets in schematic")
 
     cells_processed = 0
+    total_used_ff = sum(1 for cell in cells if cell.ff_used)
+    print(f"Cells using flip-flops: {total_used_ff} / {len(cells)}\n")
 
+    used_sheets = set()
     for cell in cells:
         sheet_name = f"CELL X{cell.kicad_x} Y{cell.kicad_y}"
 
@@ -189,22 +246,33 @@ def main():
                 f"expected sheet named {sheet_name!r}"
             )
 
+        used_sheets.add(sheet_name)
+
         sheet = sheet_lookup[sheet_name]
 
         # Clear any existing MUX properties
         clear_existing_mux_properties(sheet)
 
         # Add new MUX properties
-        mux_props = init_to_mux_properties(cell.init, sheet.position)
-
-        if not hasattr(sheet, "properties"):
-            sheet.properties = []
+        mux_props = init_to_mux_properties(cell.init, cell.ff_used, sheet.position)
 
         sheet.properties.extend(mux_props)
         cells_processed += 1
 
         # Print progress for verification
         print(f"  {sheet_name} (pnr X{cell.pnr_x}Y{cell.pnr_y}): INIT={cell.init}")
+
+    for sheet_name, sheet in sheet_lookup.items():
+        if not sheet_name.startswith("CELL ") or sheet_name in used_sheets:
+            continue
+
+        clear_existing_mux_properties(sheet)
+
+        unused_props = make_unused_cell_properties(sheet.position)
+
+        sheet.properties.extend(unused_props)
+
+        print(f"  {sheet_name}: unused cell")
 
     print(f"\nProcessed {cells_processed} cells")
     print(f"Saving schematic to: {schematic_path}")

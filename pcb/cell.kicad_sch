@@ -28778,6 +28778,15 @@
 				(hide yes)
 			)
 		)
+		(property "POPULATE" "${USE_MUX}"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
 			(uuid "cfccab0f-00d6-4eec-a10b-86fd38bb550d")
 		)
