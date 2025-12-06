@@ -63,6 +63,8 @@ endmodule
 // Outputs: X=12, starting from Y=0, Z=0 going up
 module top (
 	// Inputs - starting from X0Y0Z0_IO going up Y axis
+	// Note: the clk input is actually handled specially in the schematic,
+	// so in practice this will not be connected
 	(* BEL="X0Y0Z0_IO" *)
 	input wire clk,
 	(* BEL="X0Y0Z1_IO" *)
