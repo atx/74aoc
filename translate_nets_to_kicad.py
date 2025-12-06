@@ -139,6 +139,11 @@ def translate_net_from_verilog_to_kicad(element: str) -> str | None:
         if suffix not in VALID_LUT_SUFFIXES:
             raise TranslationError(f"Invalid LUT suffix '{suffix}': {element}")
 
+        if suffix.startswith("I"):
+            # Increment index for inputs, since the KiCad labels are 1-based
+            index = int(suffix[1]) + 1
+            suffix = f"I{index}"
+
         return f"W_X{x - 1}_Y{y}_{suffix}"
 
     # Unknown pattern - raise exception
