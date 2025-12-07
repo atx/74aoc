@@ -1,0 +1,375 @@
+
+(rules PCB 74aoc.dsn
+  (snap_angle 
+    none
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute off)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 4.4)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.4)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 4.2)
+    )
+  )
+  (rule
+    (width 150.0)
+    (clearance 150.0)
+    (clearance 75.0 (type smd_to_turn_gap))
+    (clearance 37.6 (type smd))
+    (clearance 150.0 (type "kicad_default"))
+  )
+  (padstack "Via[0-3]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_1000:500_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:300_um" "Via[0-3]_600:300_um" default
+  )
+  (via 
+    "Via[0-3]_1000:500_um" "Via[0-3]_1000:500_um" default
+  )
+  (via 
+    "Via[0-3]_600:300_um-kicad_default" "Via[0-3]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_1000:500_um-kicad_default" "Via[0-3]_1000:500_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:300_um-kicad_default"
+  )
+  (class default
+    "W_X0_Y0_F" "W_X0_Y0_Q" "W_IO_O1" "W_IO_O2" "W_IO_O3" "W_IO_O4" "W_IO_O5" "W_IO_O6"
+    "W_IO_O7" "W_IO_O0" "W_IO_O9" "W_IO_O10" "W_IO_O11" "W_IO_O8" "W_X0_Y0_I2" "W_X0_Y0_I1"
+    "W_IO_I0" "W_IO_I1" "W_IO_I2" "W_IO_I3" "W_IO_I4" "W_IO_I5" "W_IO_I6" "W_IO_I7"
+    "W_IO_I8" "W_IO_I9" "W_IO_I10" "W_IO_I11" "W_IO_I12" "W_IO_I13" "W_IO_I14" "W_IO_I15"
+    "W_X0_Y10_F" "W_X0_Y10_Q" "W_X0_Y9_Q" "W_X0_Y8_F" "W_X0_Y8_Q" "W_X0_Y7_Q" "W_X0_Y6_Q" "W_X0_Y5_F"
+    "W_X0_Y5_Q" "W_X0_Y4_F" "W_X0_Y4_Q" "W_X0_Y3_F" "W_X0_Y3_Q" "W_X0_Y2_F" "W_X0_Y2_Q" "W_X0_Y1_F"
+    "W_X1_Y10_F" "W_X1_Y10_Q" "W_X1_Y9_F" "W_X1_Y9_Q" "W_X1_Y8_F" "W_X1_Y8_Q" "W_X1_Y7_Q" "W_X1_Y6_F"
+    "W_X1_Y6_Q" "W_X1_Y5_F" "W_X1_Y5_Q" "W_X1_Y4_Q" "W_X1_Y3_F" "W_X1_Y2_Q" "W_X1_Y1_F" "W_X1_Y1_Q"
+    "W_X1_Y0_F" "W_X1_Y0_Q" "W_X2_Y10_F" "W_X2_Y10_Q" "W_X2_Y9_Q" "W_X2_Y8_F" "W_X2_Y7_Q" "W_X2_Y6_F"
+    "W_X2_Y5_Q" "W_X2_Y4_F" "W_X2_Y4_Q" "W_X2_Y3_F" "W_X2_Y3_Q" "W_X2_Y2_Q" "W_X2_Y1_F" "W_X2_Y1_Q"
+    "W_X2_Y0_Q" "W_X3_Y10_F" "W_X3_Y10_Q" "W_X3_Y9_F" "W_X3_Y9_Q" "W_X3_Y8_F" "W_X3_Y7_F" "W_X3_Y7_Q"
+    "W_X3_Y6_Q" "W_X3_Y5_Q" "W_X3_Y4_F" "W_X3_Y4_Q" "W_X3_Y3_F" "W_X3_Y3_Q" "W_X3_Y2_F" "W_X3_Y1_F"
+    "W_X3_Y1_Q" "W_X3_Y0_F" "W_X3_Y0_Q" "W_X4_Y10_F" "W_X4_Y10_Q" "W_X4_Y9_Q" "W_X4_Y8_Q" "W_X4_Y7_F"
+    "W_X4_Y7_Q" "W_X4_Y6_F" "W_X4_Y6_Q" "W_X4_Y5_F" "W_X4_Y4_F" "W_X4_Y4_Q" "W_X4_Y3_Q" "W_X4_Y2_F"
+    "W_X4_Y1_F" "W_X4_Y1_Q" "W_X4_Y0_F" "W_X4_Y0_Q" "W_X5_Y10_Q" "W_X5_Y9_Q" "W_X5_Y8_Q" "W_X5_Y7_Q"
+    "W_X5_Y6_F" "W_X5_Y6_Q" "W_X5_Y5_F" "W_X5_Y4_Q" "W_X5_Y3_Q" "W_X5_Y2_F" "W_X5_Y2_Q" "W_X5_Y1_F"
+    "W_X5_Y1_Q" "W_X5_Y0_F" "W_X6_Y10_Q" "W_X6_Y9_Q" "W_X6_Y8_Q" "W_X6_Y7_Q" "W_X6_Y6_Q" "W_X6_Y5_Q"
+    "W_X6_Y4_Q" "W_X6_Y3_Q" "W_X6_Y2_F" "W_X6_Y2_Q" "W_X6_Y1_F" "W_X6_Y1_Q" "W_X6_Y0_F" "W_X7_Y10_F"
+    "W_X7_Y10_Q" "W_X7_Y9_Q" "W_X7_Y8_F" "W_X7_Y8_Q" "W_X7_Y7_F" "W_X7_Y6_Q" "W_X7_Y5_F" "W_X7_Y4_F"
+    "W_X7_Y3_F" "W_X7_Y3_Q" "W_X7_Y2_F" "W_X7_Y1_F" "W_X7_Y0_F" "W_X7_Y0_Q" "W_X8_Y10_F" "W_X8_Y10_Q"
+    "W_X8_Y9_Q" "W_X8_Y8_F" "W_X8_Y8_Q" "W_X8_Y7_Q" "W_X8_Y6_Q" "W_X8_Y5_F" "W_X8_Y5_Q" "W_X8_Y4_F"
+    "W_X8_Y4_Q" "W_X8_Y3_F" "W_X8_Y2_F" "W_X8_Y2_Q" "W_X8_Y1_Q" "W_X8_Y0_F" "W_X9_Y10_F" "W_X9_Y10_Q"
+    "W_X9_Y9_F" "W_X9_Y9_Q" "W_X9_Y8_F" "W_X9_Y8_Q" "W_X9_Y7_F" "W_X9_Y7_Q" "W_X9_Y6_F" "W_X9_Y6_Q"
+    "W_X9_Y5_F" "W_X9_Y5_Q" "W_X9_Y4_F" "W_X9_Y3_Q" "W_X9_Y2_F" "W_X9_Y1_Q" "W_X9_Y0_Q" "W_X10_Y10_F"
+    "W_X10_Y10_Q" "W_X10_Y9_F" "W_X10_Y9_Q" "W_X10_Y8_F" "W_X10_Y8_Q" "W_X10_Y7_F" "W_X10_Y7_Q" "W_X10_Y6_F"
+    "W_X10_Y6_Q" "W_X10_Y5_F" "W_X10_Y4_F" "W_X10_Y4_Q" "W_X10_Y3_F" "W_X10_Y2_F" "W_X10_Y2_Q" "W_X10_Y1_F"
+    "W_X10_Y0_F" "W_X10_Y0_Q" "W_X0_Y9_I1" "W_X0_Y8_I3" "W_X0_Y7_I2" "W_X0_Y6_I1" "W_X0_Y5_I3" "W_X0_Y4_I3"
+    "W_X0_Y2_I3" "W_X1_Y6_I3" "W_X1_Y5_I3" "W_X1_Y3_I2" "W_X1_Y0_I1" "W_X2_Y8_I3" "W_X2_Y6_I2" "W_X2_Y5_I1"
+    "W_X2_Y3_I3" "W_X2_Y2_I1" "W_X3_Y8_I1" "W_X3_Y8_I2" "W_X3_Y7_I1" "W_X3_Y3_I2" "W_X4_Y10_I2" "W_X4_Y9_I3"
+    "W_X4_Y8_I2" "W_X4_Y8_I3" "W_X4_Y4_I2" "W_X4_Y2_I2" "W_X5_Y10_I1" "W_X5_Y8_I1" "W_X5_Y7_I3" "W_X5_Y4_I2"
+    "W_X5_Y4_I1" "W_X5_Y3_I2" "W_X5_Y3_I1" "W_X5_Y0_I1" "W_X6_Y10_I1" "W_X6_Y10_I3" "W_X6_Y10_I2" "W_X6_Y8_I3"
+    "W_X6_Y7_I1" "W_X6_Y5_I2" "W_X6_Y4_I2" "W_X6_Y4_I1" "W_X6_Y3_I2" "W_X7_Y10_I2" "W_X7_Y2_I2" "W_X8_Y6_I2"
+    "W_X8_Y0_I2" "W_X10_Y3_I1" "W_X10_Y1_I1"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class ignore
+    /Power/VIN "W_GND" VCC "Net-(C6-Pad1)" "Net-(D1-K)" "Net-(D2-A)" "Net-(D3-A)" "Net-(D4-A)"
+    "Net-(D5-A)" "Net-(D6-A)" "Net-(D7-A)" "Net-(D8-A)" "Net-(D9-A)" "Net-(D10-A)" "Net-(D11-A)" "Net-(D12-A)"
+    "Net-(D13-A)" "Net-(D14-A)" "Net-(D15-A)" "Net-(D16-A)" "Net-(D17-K)" "Net-(D18-A)" "Net-(D19-A)" "Net-(D20-A)"
+    "Net-(D21-A)" "Net-(D22-A)" NRST "Net-(U1-I0)" "Net-(U1-I1)" "Net-(U1-I2)" "Net-(U1-I3)" "Net-(U1-I4)"
+    "Net-(U1-I5)" "Net-(U1-I6)" "Net-(U1-I7)" "/CELL X0 Y0/~{CLR}" "Net-(D23-A)" "Net-(D24-A)" "Net-(D25-A)" "Net-(D26-A)"
+    "/CELL X0 Y0/~{PRE}" "unconnected-(U1-~{Z}-Pad6)" CLK "unconnected-(U2-~{Q}-Pad3)" "Net-(D27-A)" "Net-(D28-A)" "Net-(D29-A)" "Net-(D30-A)"
+    "Net-(D31-A)" "Net-(D32-A)" "unconnected-(J3-Pin_17-Pad17)" "Net-(D33-K)" "Net-(D34-K)" "Net-(D35-K)" "Net-(D36-K)" "Net-(D37-K)"
+    "Net-(D38-K)" "Net-(D39-K)" "Net-(D40-K)" "Net-(D41-K)" "Net-(D42-K)" "Net-(D43-K)" "Net-(D44-K)" "Net-(D45-K)"
+    "Net-(D46-K)" "Net-(D47-K)" "Net-(D48-K)" "Net-(D49-K)" "Net-(D50-K)" "Net-(D51-K)" "Net-(D52-K)" "Net-(D53-K)"
+    "Net-(D54-K)" "Net-(D55-K)" "Net-(D56-K)" "Net-(D57-K)" "Net-(D58-K)" "Net-(D59-K)" "Net-(D60-K)" "Net-(D61-K)"
+    "Net-(D62-K)" "Net-(D63-K)" "Net-(D64-K)" "Net-(D65-K)" "Net-(D66-K)" "Net-(D67-K)" "Net-(D68-K)" "Net-(D69-K)"
+    "Net-(D70-K)" "Net-(D71-K)" "Net-(D72-K)" "Net-(D73-K)" "Net-(D74-K)" "Net-(D75-K)" "Net-(D76-K)" "Net-(D77-K)"
+    "Net-(D78-K)" "Net-(D79-K)" "Net-(D80-K)" "Net-(D81-K)" "Net-(D82-K)" "Net-(D83-K)" "Net-(D84-K)" "Net-(D85-K)"
+    "Net-(D86-K)" "Net-(D87-K)" "Net-(D88-K)" "Net-(D89-K)" "Net-(D90-K)" "Net-(D91-K)" "Net-(D92-K)" "Net-(D93-K)"
+    "Net-(D94-K)" "Net-(D95-K)" "Net-(D96-K)" "Net-(D97-K)" "Net-(D98-K)" "Net-(D99-K)" "Net-(D100-K)" "Net-(D101-K)"
+    "Net-(D102-K)" "Net-(D103-K)" "Net-(D104-K)" "Net-(D105-K)" "Net-(D106-K)" "Net-(D107-K)" "Net-(D108-K)" "Net-(D109-K)"
+    "Net-(D110-K)" "Net-(D111-K)" "Net-(D112-K)" "Net-(D113-K)" "Net-(D114-K)" "Net-(D115-K)" "Net-(D116-K)" "Net-(D117-K)"
+    "Net-(D118-K)" "Net-(D119-K)" "Net-(D120-K)" "Net-(D121-K)" "Net-(D122-K)" "Net-(D123-K)" "Net-(D124-K)" "Net-(D125-K)"
+    "Net-(D126-K)" "Net-(D127-K)" "Net-(D128-K)" "Net-(D129-K)" "Net-(D130-K)" "Net-(D131-K)" "Net-(D132-K)" "Net-(D133-K)"
+    "Net-(D134-K)" "Net-(D135-K)" "Net-(D136-K)" "Net-(D137-K)" "Net-(D138-K)" "Net-(D139-K)" "Net-(D140-K)" "Net-(D141-K)"
+    "Net-(D142-K)" "Net-(D143-K)" "Net-(D144-K)" "Net-(D145-K)" "Net-(D146-K)" "Net-(D147-K)" "Net-(D148-K)" "Net-(D149-K)"
+    "Net-(D150-K)" "Net-(D151-K)" "Net-(D152-K)" "Net-(D153-K)" "Net-(D154-K)" "Net-(D155-K)" "Net-(D156-K)" "Net-(D157-K)"
+    "Net-(D158-K)" "Net-(D159-K)" "Net-(D160-K)" "Net-(D161-K)" "Net-(D162-K)" "Net-(D163-K)" "Net-(D164-K)" "Net-(D165-K)"
+    "Net-(D166-K)" "Net-(D167-K)" "Net-(D168-K)" "Net-(D169-K)" "Net-(D170-K)" "Net-(D171-K)" "Net-(D172-K)" "Net-(D173-K)"
+    "Net-(D174-K)" "Net-(D175-K)" "Net-(D176-K)" "Net-(D177-K)" "Net-(D178-K)" "Net-(D179-K)" "Net-(D180-K)" "Net-(D181-K)"
+    "Net-(D182-K)" "Net-(D183-K)" "Net-(D184-K)" "Net-(D185-K)" "Net-(D186-K)" "Net-(D187-K)" "Net-(D188-K)" "Net-(D189-K)"
+    "Net-(D190-K)" "Net-(D191-K)" "Net-(D192-K)" "Net-(D193-K)" "Net-(D194-K)" "Net-(D195-K)" "Net-(D196-K)" "Net-(D197-K)"
+    "Net-(D198-K)" "Net-(D199-K)" "Net-(D200-K)" "Net-(D201-K)" "Net-(D202-K)" "Net-(D203-K)" "Net-(D204-K)" "Net-(D205-K)"
+    "Net-(D206-K)" "Net-(D207-K)" "Net-(D208-K)" "Net-(D209-K)" "Net-(D210-K)" "Net-(D211-K)" "Net-(D212-K)" "Net-(D213-K)"
+    "Net-(D214-K)" "Net-(D215-K)" "Net-(D216-K)" "Net-(D217-K)" "Net-(D218-K)" "Net-(D219-K)" "Net-(D220-K)" "Net-(D221-K)"
+    "Net-(D222-K)" "Net-(D223-K)" "Net-(D224-K)" "Net-(D225-K)" "Net-(D226-K)" "Net-(D227-K)" "Net-(D228-K)" "Net-(D229-K)"
+    "Net-(D230-K)" "Net-(D231-K)" "Net-(D232-K)" "Net-(D233-K)" "Net-(D234-K)" "Net-(D235-K)" "Net-(D236-K)" "Net-(D237-K)"
+    "Net-(D238-K)" "Net-(D239-K)" "Net-(D240-K)" "Net-(D241-K)" "Net-(D242-K)" "Net-(D243-K)" "Net-(D244-K)" "Net-(D245-K)"
+    "Net-(D246-K)" "Net-(D247-K)" "Net-(D248-K)" "Net-(D249-K)" "Net-(D250-K)" "Net-(D251-K)" "Net-(D252-K)" "Net-(D253-K)"
+    "Net-(D254-K)" "Net-(D255-K)" "Net-(D256-K)" "Net-(D257-K)" "Net-(D258-K)" "Net-(D259-K)" "Net-(D260-K)" "Net-(D261-K)"
+    "Net-(D262-K)" "Net-(D263-K)" "Net-(D264-K)" "Net-(D265-K)" "Net-(D266-K)" "Net-(D267-K)" "Net-(D268-K)" "Net-(D269-K)"
+    "Net-(D270-K)" "Net-(D271-K)" "Net-(D272-K)" "Net-(U4-I0)" "Net-(U4-I1)" "Net-(U4-I2)" "Net-(U4-I3)" "Net-(U4-I4)"
+    "Net-(U4-I5)" "Net-(U4-I6)" "Net-(U4-I7)" "/CELL X0 Y10/~{CLR}" "/CELL X0 Y10/~{PRE}" "Net-(U6-I0)" "Net-(U6-I1)" "Net-(U6-I2)"
+    "Net-(U6-I3)" "Net-(U6-I4)" "Net-(U6-I5)" "Net-(U6-I6)" "Net-(U6-I7)" "/CELL X0 Y9/~{CLR}" "/CELL X0 Y9/~{PRE}" "Net-(U8-I0)"
+    "Net-(U8-I1)" "Net-(U8-I2)" "Net-(U8-I3)" "Net-(U8-I4)" "Net-(U8-I5)" "Net-(U8-I6)" "Net-(U8-I7)" "/CELL X0 Y8/~{CLR}"
+    "/CELL X0 Y8/~{PRE}" "Net-(U10-I0)" "Net-(U10-I1)" "Net-(U10-I2)" "Net-(U10-I3)" "Net-(U10-I4)" "Net-(U10-I5)" "Net-(U10-I6)"
+    "Net-(U10-I7)" "/CELL X0 Y7/~{CLR}" "/CELL X0 Y7/~{PRE}" "Net-(U12-I0)" "Net-(U12-I1)" "Net-(U12-I2)" "Net-(U12-I3)" "Net-(U12-I4)"
+    "Net-(U12-I5)" "Net-(U12-I6)" "Net-(U12-I7)" "/CELL X0 Y6/~{CLR}" "/CELL X0 Y6/~{PRE}" "Net-(U14-I0)" "Net-(U14-I1)" "Net-(U14-I2)"
+    "Net-(U14-I3)" "Net-(U14-I4)" "Net-(U14-I5)" "Net-(U14-I6)" "Net-(U14-I7)" "/CELL X0 Y5/~{CLR}" "/CELL X0 Y5/~{PRE}" "Net-(U16-I0)"
+    "Net-(U16-I1)" "Net-(U16-I2)" "Net-(U16-I3)" "Net-(U16-I4)" "Net-(U16-I5)" "Net-(U16-I6)" "Net-(U16-I7)" "/CELL X0 Y4/~{CLR}"
+    "/CELL X0 Y4/~{PRE}" "Net-(U18-I0)" "Net-(U18-I1)" "Net-(U18-I2)" "Net-(U18-I3)" "Net-(U18-I4)" "Net-(U18-I5)" "Net-(U18-I6)"
+    "Net-(U18-I7)" "/CELL X0 Y3/~{CLR}" "/CELL X0 Y3/~{PRE}" "Net-(U20-I0)" "Net-(U20-I1)" "Net-(U20-I2)" "Net-(U20-I3)" "Net-(U20-I4)"
+    "Net-(U20-I5)" "Net-(U20-I6)" "Net-(U20-I7)" "/CELL X0 Y2/~{CLR}" "/CELL X0 Y2/~{PRE}" "Net-(U22-I0)" "Net-(U22-I1)" "Net-(U22-I2)"
+    "Net-(U22-I3)" "Net-(U22-I4)" "Net-(U22-I5)" "Net-(U22-I6)" "Net-(U22-I7)" "/CELL X0 Y1/~{CLR}" "/CELL X0 Y1/~{PRE}" "Net-(U24-I0)"
+    "Net-(U24-I1)" "Net-(U24-I2)" "Net-(U24-I3)" "Net-(U24-I4)" "Net-(U24-I5)" "Net-(U24-I6)" "Net-(U24-I7)" "/CELL X1 Y10/~{CLR}"
+    "/CELL X1 Y10/~{PRE}" "Net-(U26-I0)" "Net-(U26-I1)" "Net-(U26-I2)" "Net-(U26-I3)" "Net-(U26-I4)" "Net-(U26-I5)" "Net-(U26-I6)"
+    "Net-(U26-I7)" "/CELL X1 Y9/~{CLR}" "/CELL X1 Y9/~{PRE}" "Net-(U28-I0)" "Net-(U28-I1)" "Net-(U28-I2)" "Net-(U28-I3)" "Net-(U28-I4)"
+    "Net-(U28-I5)" "Net-(U28-I6)" "Net-(U28-I7)" "/CELL X1 Y8/~{CLR}" "/CELL X1 Y8/~{PRE}" "Net-(U30-I0)" "Net-(U30-I1)" "Net-(U30-I2)"
+    "Net-(U30-I3)" "Net-(U30-I4)" "Net-(U30-I5)" "Net-(U30-I6)" "Net-(U30-I7)" "/CELL X1 Y7/~{CLR}" "/CELL X1 Y7/~{PRE}" "Net-(U32-I0)"
+    "Net-(U32-I1)" "Net-(U32-I2)" "Net-(U32-I3)" "Net-(U32-I4)" "Net-(U32-I5)" "Net-(U32-I6)" "Net-(U32-I7)" "/CELL X1 Y6/~{CLR}"
+    "/CELL X1 Y6/~{PRE}" "Net-(U34-I0)" "Net-(U34-I1)" "Net-(U34-I2)" "Net-(U34-I3)" "Net-(U34-I4)" "Net-(U34-I5)" "Net-(U34-I6)"
+    "Net-(U34-I7)" "/CELL X1 Y5/~{CLR}" "/CELL X1 Y5/~{PRE}" "Net-(U36-I0)" "Net-(U36-I1)" "Net-(U36-I2)" "Net-(U36-I3)" "Net-(U36-I4)"
+    "Net-(U36-I5)" "Net-(U36-I6)" "Net-(U36-I7)" "/CELL X1 Y4/~{CLR}" "/CELL X1 Y4/~{PRE}" "Net-(U38-I0)" "Net-(U38-I1)" "Net-(U38-I2)"
+    "Net-(U38-I3)" "Net-(U38-I4)" "Net-(U38-I5)" "Net-(U38-I6)" "Net-(U38-I7)" "/CELL X1 Y3/~{CLR}" "/CELL X1 Y3/~{PRE}" "Net-(U40-I0)"
+    "Net-(U40-I1)" "Net-(U40-I2)" "Net-(U40-I3)" "Net-(U40-I4)" "Net-(U40-I5)" "Net-(U40-I6)" "Net-(U40-I7)" "/CELL X1 Y2/~{CLR}"
+    "/CELL X1 Y2/~{PRE}" "Net-(U42-I0)" "Net-(U42-I1)" "Net-(U42-I2)" "Net-(U42-I3)" "Net-(U42-I4)" "Net-(U42-I5)" "Net-(U42-I6)"
+    "Net-(U42-I7)" "/CELL X1 Y1/~{CLR}" "/CELL X1 Y1/~{PRE}" "Net-(U44-I0)" "Net-(U44-I1)" "Net-(U44-I2)" "Net-(U44-I3)" "Net-(U44-I4)"
+    "Net-(U44-I5)" "Net-(U44-I6)" "Net-(U44-I7)" "/CELL X1 Y0/~{CLR}" "/CELL X1 Y0/~{PRE}" "Net-(U46-I0)" "Net-(U46-I1)" "Net-(U46-I2)"
+    "Net-(U46-I3)" "Net-(U46-I4)" "Net-(U46-I5)" "Net-(U46-I6)" "Net-(U46-I7)" "/CELL X2 Y10/~{CLR}" "/CELL X2 Y10/~{PRE}" "Net-(U48-I0)"
+    "Net-(U48-I1)" "Net-(U48-I2)" "Net-(U48-I3)" "Net-(U48-I4)" "Net-(U48-I5)" "Net-(U48-I6)" "Net-(U48-I7)" "/CELL X2 Y9/~{CLR}"
+    "/CELL X2 Y9/~{PRE}" "Net-(U50-I0)" "Net-(U50-I1)" "Net-(U50-I2)" "Net-(U50-I3)" "Net-(U50-I4)" "Net-(U50-I5)" "Net-(U50-I6)"
+    "Net-(U50-I7)" "/CELL X2 Y8/~{CLR}" "/CELL X2 Y8/~{PRE}" "Net-(U52-I0)" "Net-(U52-I1)" "Net-(U52-I2)" "Net-(U52-I3)" "Net-(U52-I4)"
+    "Net-(U52-I5)" "Net-(U52-I6)" "Net-(U52-I7)" "/CELL X2 Y7/~{CLR}" "/CELL X2 Y7/~{PRE}" "Net-(U54-I0)" "Net-(U54-I1)" "Net-(U54-I2)"
+    "Net-(U54-I3)" "Net-(U54-I4)" "Net-(U54-I5)" "Net-(U54-I6)" "Net-(U54-I7)" "/CELL X2 Y6/~{CLR}" "/CELL X2 Y6/~{PRE}" "Net-(U56-I0)"
+    "Net-(U56-I1)" "Net-(U56-I2)" "Net-(U56-I3)" "Net-(U56-I4)" "Net-(U56-I5)" "Net-(U56-I6)" "Net-(U56-I7)" "/CELL X2 Y5/~{CLR}"
+    "/CELL X2 Y5/~{PRE}" "Net-(U58-I0)" "Net-(U58-I1)" "Net-(U58-I2)" "Net-(U58-I3)" "Net-(U58-I4)" "Net-(U58-I5)" "Net-(U58-I6)"
+    "Net-(U58-I7)" "/CELL X2 Y4/~{CLR}" "/CELL X2 Y4/~{PRE}" "Net-(U60-I0)" "Net-(U60-I1)" "Net-(U60-I2)" "Net-(U60-I3)" "Net-(U60-I4)"
+    "Net-(U60-I5)" "Net-(U60-I6)" "Net-(U60-I7)" "/CELL X2 Y3/~{CLR}" "/CELL X2 Y3/~{PRE}" "Net-(U62-I0)" "Net-(U62-I1)" "Net-(U62-I2)"
+    "Net-(U62-I3)" "Net-(U62-I4)" "Net-(U62-I5)" "Net-(U62-I6)" "Net-(U62-I7)" "/CELL X2 Y2/~{CLR}" "/CELL X2 Y2/~{PRE}" "Net-(U64-I0)"
+    "Net-(U64-I1)" "Net-(U64-I2)" "Net-(U64-I3)" "Net-(U64-I4)" "Net-(U64-I5)" "Net-(U64-I6)" "Net-(U64-I7)" "/CELL X2 Y1/~{CLR}"
+    "/CELL X2 Y1/~{PRE}" "Net-(U66-I0)" "Net-(U66-I1)" "Net-(U66-I2)" "Net-(U66-I3)" "Net-(U66-I4)" "Net-(U66-I5)" "Net-(U66-I6)"
+    "Net-(U66-I7)" "/CELL X2 Y0/~{CLR}" "/CELL X2 Y0/~{PRE}" "Net-(U68-I0)" "Net-(U68-I1)" "Net-(U68-I2)" "Net-(U68-I3)" "Net-(U68-I4)"
+    "Net-(U68-I5)" "Net-(U68-I6)" "Net-(U68-I7)" "/CELL X3 Y10/~{CLR}" "/CELL X3 Y10/~{PRE}" "Net-(U70-I0)" "Net-(U70-I1)" "Net-(U70-I2)"
+    "Net-(U70-I3)" "Net-(U70-I4)" "Net-(U70-I5)" "Net-(U70-I6)" "Net-(U70-I7)" "/CELL X3 Y9/~{CLR}" "/CELL X3 Y9/~{PRE}" "Net-(U72-I0)"
+    "Net-(U72-I1)" "Net-(U72-I2)" "Net-(U72-I3)" "Net-(U72-I4)" "Net-(U72-I5)" "Net-(U72-I6)" "Net-(U72-I7)" "/CELL X3 Y8/~{CLR}"
+    "/CELL X3 Y8/~{PRE}" "Net-(U74-I0)" "Net-(U74-I1)" "Net-(U74-I2)" "Net-(U74-I3)" "Net-(U74-I4)" "Net-(U74-I5)" "Net-(U74-I6)"
+    "Net-(U74-I7)" "/CELL X3 Y7/~{CLR}" "/CELL X3 Y7/~{PRE}" "Net-(U76-I0)" "Net-(U76-I1)" "Net-(U76-I2)" "Net-(U76-I3)" "Net-(U76-I4)"
+    "Net-(U76-I5)" "Net-(U76-I6)" "Net-(U76-I7)" "/CELL X3 Y6/~{CLR}" "/CELL X3 Y6/~{PRE}" "Net-(U78-I0)" "Net-(U78-I1)" "Net-(U78-I2)"
+    "Net-(U78-I3)" "Net-(U78-I4)" "Net-(U78-I5)" "Net-(U78-I6)" "Net-(U78-I7)" "/CELL X3 Y5/~{CLR}" "/CELL X3 Y5/~{PRE}" "Net-(U80-I0)"
+    "Net-(U80-I1)" "Net-(U80-I2)" "Net-(U80-I3)" "Net-(U80-I4)" "Net-(U80-I5)" "Net-(U80-I6)" "Net-(U80-I7)" "/CELL X3 Y4/~{CLR}"
+    "/CELL X3 Y4/~{PRE}" "Net-(U82-I0)" "Net-(U82-I1)" "Net-(U82-I2)" "Net-(U82-I3)" "Net-(U82-I4)" "Net-(U82-I5)" "Net-(U82-I6)"
+    "Net-(U82-I7)" "/CELL X3 Y3/~{CLR}" "/CELL X3 Y3/~{PRE}" "Net-(U84-I0)" "Net-(U84-I1)" "Net-(U84-I2)" "Net-(U84-I3)" "Net-(U84-I4)"
+    "Net-(U84-I5)" "Net-(U84-I6)" "Net-(U84-I7)" "/CELL X3 Y2/~{CLR}" "/CELL X3 Y2/~{PRE}" "Net-(U86-I0)" "Net-(U86-I1)" "Net-(U86-I2)"
+    "Net-(U86-I3)" "Net-(U86-I4)" "Net-(U86-I5)" "Net-(U86-I6)" "Net-(U86-I7)" "/CELL X3 Y1/~{CLR}" "/CELL X3 Y1/~{PRE}" "Net-(U88-I0)"
+    "Net-(U88-I1)" "Net-(U88-I2)" "Net-(U88-I3)" "Net-(U88-I4)" "Net-(U88-I5)" "Net-(U88-I6)" "Net-(U88-I7)" "/CELL X3 Y0/~{CLR}"
+    "/CELL X3 Y0/~{PRE}" "Net-(U90-I0)" "Net-(U90-I1)" "Net-(U90-I2)" "Net-(U90-I3)" "Net-(U90-I4)" "Net-(U90-I5)" "Net-(U90-I6)"
+    "Net-(U90-I7)" "/CELL X4 Y10/~{CLR}" "/CELL X4 Y10/~{PRE}" "Net-(U92-I0)" "Net-(U92-I1)" "Net-(U92-I2)" "Net-(U92-I3)" "Net-(U92-I4)"
+    "Net-(U92-I5)" "Net-(U92-I6)" "Net-(U92-I7)" "/CELL X4 Y9/~{CLR}" "/CELL X4 Y9/~{PRE}" "Net-(U94-I0)" "Net-(U94-I1)" "Net-(U94-I2)"
+    "Net-(U94-I3)" "Net-(U94-I4)" "Net-(U94-I5)" "Net-(U94-I6)" "Net-(U94-I7)" "/CELL X4 Y8/~{CLR}" "/CELL X4 Y8/~{PRE}" "Net-(U96-I0)"
+    "Net-(U96-I1)" "Net-(U96-I2)" "Net-(U96-I3)" "Net-(U96-I4)" "Net-(U96-I5)" "Net-(U96-I6)" "Net-(U96-I7)" "/CELL X4 Y7/~{CLR}"
+    "/CELL X4 Y7/~{PRE}" "Net-(U98-I0)" "Net-(U98-I1)" "Net-(U98-I2)" "Net-(U98-I3)" "Net-(U98-I4)" "Net-(U98-I5)" "Net-(U98-I6)"
+    "Net-(U98-I7)" "/CELL X4 Y6/~{CLR}" "/CELL X4 Y6/~{PRE}" "Net-(U100-I0)" "Net-(U100-I1)" "Net-(U100-I2)" "Net-(U100-I3)" "Net-(U100-I4)"
+    "Net-(U100-I5)" "Net-(U100-I6)" "Net-(U100-I7)" "/CELL X4 Y5/~{CLR}" "/CELL X4 Y5/~{PRE}" "Net-(U102-I0)" "Net-(U102-I1)" "Net-(U102-I2)"
+    "Net-(U102-I3)" "Net-(U102-I4)" "Net-(U102-I5)" "Net-(U102-I6)" "Net-(U102-I7)" "/CELL X4 Y4/~{CLR}" "/CELL X4 Y4/~{PRE}" "Net-(U104-I0)"
+    "Net-(U104-I1)" "Net-(U104-I2)" "Net-(U104-I3)" "Net-(U104-I4)" "Net-(U104-I5)" "Net-(U104-I6)" "Net-(U104-I7)" "/CELL X4 Y3/~{CLR}"
+    "/CELL X4 Y3/~{PRE}" "Net-(U106-I0)" "Net-(U106-I1)" "Net-(U106-I2)" "Net-(U106-I3)" "Net-(U106-I4)" "Net-(U106-I5)" "Net-(U106-I6)"
+    "Net-(U106-I7)" "/CELL X4 Y2/~{CLR}" "/CELL X4 Y2/~{PRE}" "Net-(U108-I0)" "Net-(U108-I1)" "Net-(U108-I2)" "Net-(U108-I3)" "Net-(U108-I4)"
+    "Net-(U108-I5)" "Net-(U108-I6)" "Net-(U108-I7)" "/CELL X4 Y1/~{CLR}" "/CELL X4 Y1/~{PRE}" "Net-(U110-I0)" "Net-(U110-I1)" "Net-(U110-I2)"
+    "Net-(U110-I3)" "Net-(U110-I4)" "Net-(U110-I5)" "Net-(U110-I6)" "Net-(U110-I7)" "/CELL X4 Y0/~{CLR}" "/CELL X4 Y0/~{PRE}" "Net-(U112-I0)"
+    "Net-(U112-I1)" "Net-(U112-I2)" "Net-(U112-I3)" "Net-(U112-I4)" "Net-(U112-I5)" "Net-(U112-I6)" "Net-(U112-I7)" "/CELL X5 Y10/~{CLR}"
+    "/CELL X5 Y10/~{PRE}" "Net-(U114-I0)" "Net-(U114-I1)" "Net-(U114-I2)" "Net-(U114-I3)" "Net-(U114-I4)" "Net-(U114-I5)" "Net-(U114-I6)"
+    "Net-(U114-I7)" "/CELL X5 Y9/~{CLR}" "/CELL X5 Y9/~{PRE}" "Net-(U116-I0)" "Net-(U116-I1)" "Net-(U116-I2)" "Net-(U116-I3)" "Net-(U116-I4)"
+    "Net-(U116-I5)" "Net-(U116-I6)" "Net-(U116-I7)" "/CELL X5 Y8/~{CLR}" "/CELL X5 Y8/~{PRE}" "Net-(U118-I0)" "Net-(U118-I1)" "Net-(U118-I2)"
+    "Net-(U118-I3)" "Net-(U118-I4)" "Net-(U118-I5)" "Net-(U118-I6)" "Net-(U118-I7)" "/CELL X5 Y7/~{CLR}" "/CELL X5 Y7/~{PRE}" "Net-(U120-I0)"
+    "Net-(U120-I1)" "Net-(U120-I2)" "Net-(U120-I3)" "Net-(U120-I4)" "Net-(U120-I5)" "Net-(U120-I6)" "Net-(U120-I7)" "/CELL X5 Y6/~{CLR}"
+    "/CELL X5 Y6/~{PRE}" "Net-(U122-I0)" "Net-(U122-I1)" "Net-(U122-I2)" "Net-(U122-I3)" "Net-(U122-I4)" "Net-(U122-I5)" "Net-(U122-I6)"
+    "Net-(U122-I7)" "/CELL X5 Y5/~{CLR}" "/CELL X5 Y5/~{PRE}" "Net-(U124-I0)" "Net-(U124-I1)" "Net-(U124-I2)" "Net-(U124-I3)" "Net-(U124-I4)"
+    "Net-(U124-I5)" "Net-(U124-I6)" "Net-(U124-I7)" "/CELL X5 Y4/~{CLR}" "/CELL X5 Y4/~{PRE}" "Net-(U126-I0)" "Net-(U126-I1)" "Net-(U126-I2)"
+    "Net-(U126-I3)" "Net-(U126-I4)" "Net-(U126-I5)" "Net-(U126-I6)" "Net-(U126-I7)" "/CELL X5 Y3/~{CLR}" "/CELL X5 Y3/~{PRE}" "Net-(U128-I0)"
+    "Net-(U128-I1)" "Net-(U128-I2)" "Net-(U128-I3)" "Net-(U128-I4)" "Net-(U128-I5)" "Net-(U128-I6)" "Net-(U128-I7)" "/CELL X5 Y2/~{CLR}"
+    "/CELL X5 Y2/~{PRE}" "Net-(U130-I0)" "Net-(U130-I1)" "Net-(U130-I2)" "Net-(U130-I3)" "Net-(U130-I4)" "Net-(U130-I5)" "Net-(U130-I6)"
+    "Net-(U130-I7)" "/CELL X5 Y1/~{CLR}" "/CELL X5 Y1/~{PRE}" "Net-(U132-I0)" "Net-(U132-I1)" "Net-(U132-I2)" "Net-(U132-I3)" "Net-(U132-I4)"
+    "Net-(U132-I5)" "Net-(U132-I6)" "Net-(U132-I7)" "/CELL X5 Y0/~{CLR}" "/CELL X5 Y0/~{PRE}" "Net-(U134-I0)" "Net-(U134-I1)" "Net-(U134-I2)"
+    "Net-(U134-I3)" "Net-(U134-I4)" "Net-(U134-I5)" "Net-(U134-I6)" "Net-(U134-I7)" "/CELL X6 Y10/~{CLR}" "/CELL X6 Y10/~{PRE}" "Net-(U136-I0)"
+    "Net-(U136-I1)" "Net-(U136-I2)" "Net-(U136-I3)" "Net-(U136-I4)" "Net-(U136-I5)" "Net-(U136-I6)" "Net-(U136-I7)" "/CELL X6 Y9/~{CLR}"
+    "/CELL X6 Y9/~{PRE}" "Net-(U138-I0)" "Net-(U138-I1)" "Net-(U138-I2)" "Net-(U138-I3)" "Net-(U138-I4)" "Net-(U138-I5)" "Net-(U138-I6)"
+    "Net-(U138-I7)" "/CELL X6 Y8/~{CLR}" "/CELL X6 Y8/~{PRE}" "Net-(U140-I0)" "Net-(U140-I1)" "Net-(U140-I2)" "Net-(U140-I3)" "Net-(U140-I4)"
+    "Net-(U140-I5)" "Net-(U140-I6)" "Net-(U140-I7)" "/CELL X6 Y7/~{CLR}" "/CELL X6 Y7/~{PRE}" "Net-(U142-I0)" "Net-(U142-I1)" "Net-(U142-I2)"
+    "Net-(U142-I3)" "Net-(U142-I4)" "Net-(U142-I5)" "Net-(U142-I6)" "Net-(U142-I7)" "/CELL X6 Y6/~{CLR}" "/CELL X6 Y6/~{PRE}" "Net-(U144-I0)"
+    "Net-(U144-I1)" "Net-(U144-I2)" "Net-(U144-I3)" "Net-(U144-I4)" "Net-(U144-I5)" "Net-(U144-I6)" "Net-(U144-I7)" "/CELL X6 Y5/~{CLR}"
+    "/CELL X6 Y5/~{PRE}" "Net-(U146-I0)" "Net-(U146-I1)" "Net-(U146-I2)" "Net-(U146-I3)" "Net-(U146-I4)" "Net-(U146-I5)" "Net-(U146-I6)"
+    "Net-(U146-I7)" "/CELL X6 Y4/~{CLR}" "/CELL X6 Y4/~{PRE}" "Net-(U148-I0)" "Net-(U148-I1)" "Net-(U148-I2)" "Net-(U148-I3)" "Net-(U148-I4)"
+    "Net-(U148-I5)" "Net-(U148-I6)" "Net-(U148-I7)" "/CELL X6 Y3/~{CLR}" "/CELL X6 Y3/~{PRE}" "Net-(U150-I0)" "Net-(U150-I1)" "Net-(U150-I2)"
+    "Net-(U150-I3)" "Net-(U150-I4)" "Net-(U150-I5)" "Net-(U150-I6)" "Net-(U150-I7)" "/CELL X6 Y2/~{CLR}" "/CELL X6 Y2/~{PRE}" "Net-(U152-I0)"
+    "Net-(U152-I1)" "Net-(U152-I2)" "Net-(U152-I3)" "Net-(U152-I4)" "Net-(U152-I5)" "Net-(U152-I6)" "Net-(U152-I7)" "/CELL X6 Y1/~{CLR}"
+    "/CELL X6 Y1/~{PRE}" "Net-(U154-I0)" "Net-(U154-I1)" "Net-(U154-I2)" "Net-(U154-I3)" "Net-(U154-I4)" "Net-(U154-I5)" "Net-(U154-I6)"
+    "Net-(U154-I7)" "/CELL X6 Y0/~{CLR}" "/CELL X6 Y0/~{PRE}" "Net-(U156-I0)" "Net-(U156-I1)" "Net-(U156-I2)" "Net-(U156-I3)" "Net-(U156-I4)"
+    "Net-(U156-I5)" "Net-(U156-I6)" "Net-(U156-I7)" "/CELL X7 Y10/~{CLR}" "/CELL X7 Y10/~{PRE}" "Net-(U158-I0)" "Net-(U158-I1)" "Net-(U158-I2)"
+    "Net-(U158-I3)" "Net-(U158-I4)" "Net-(U158-I5)" "Net-(U158-I6)" "Net-(U158-I7)" "/CELL X7 Y9/~{CLR}" "/CELL X7 Y9/~{PRE}" "Net-(U160-I0)"
+    "Net-(U160-I1)" "Net-(U160-I2)" "Net-(U160-I3)" "Net-(U160-I4)" "Net-(U160-I5)" "Net-(U160-I6)" "Net-(U160-I7)" "/CELL X7 Y8/~{CLR}"
+    "/CELL X7 Y8/~{PRE}" "Net-(U162-I0)" "Net-(U162-I1)" "Net-(U162-I2)" "Net-(U162-I3)" "Net-(U162-I4)" "Net-(U162-I5)" "Net-(U162-I6)"
+    "Net-(U162-I7)" "/CELL X7 Y7/~{CLR}" "/CELL X7 Y7/~{PRE}" "Net-(U164-I0)" "Net-(U164-I1)" "Net-(U164-I2)" "Net-(U164-I3)" "Net-(U164-I4)"
+    "Net-(U164-I5)" "Net-(U164-I6)" "Net-(U164-I7)" "/CELL X7 Y6/~{CLR}" "/CELL X7 Y6/~{PRE}" "Net-(U166-I0)" "Net-(U166-I1)" "Net-(U166-I2)"
+    "Net-(U166-I3)" "Net-(U166-I4)" "Net-(U166-I5)" "Net-(U166-I6)" "Net-(U166-I7)" "/CELL X7 Y5/~{CLR}" "/CELL X7 Y5/~{PRE}" "Net-(U168-I0)"
+    "Net-(U168-I1)" "Net-(U168-I2)" "Net-(U168-I3)" "Net-(U168-I4)" "Net-(U168-I5)" "Net-(U168-I6)" "Net-(U168-I7)" "/CELL X7 Y4/~{CLR}"
+    "/CELL X7 Y4/~{PRE}" "Net-(U170-I0)" "Net-(U170-I1)" "Net-(U170-I2)" "Net-(U170-I3)" "Net-(U170-I4)" "Net-(U170-I5)" "Net-(U170-I6)"
+    "Net-(U170-I7)" "/CELL X7 Y3/~{CLR}" "/CELL X7 Y3/~{PRE}" "Net-(U172-I0)" "Net-(U172-I1)" "Net-(U172-I2)" "Net-(U172-I3)" "Net-(U172-I4)"
+    "Net-(U172-I5)" "Net-(U172-I6)" "Net-(U172-I7)" "/CELL X7 Y2/~{CLR}" "/CELL X7 Y2/~{PRE}" "Net-(U174-I0)" "Net-(U174-I1)" "Net-(U174-I2)"
+    "Net-(U174-I3)" "Net-(U174-I4)" "Net-(U174-I5)" "Net-(U174-I6)" "Net-(U174-I7)" "/CELL X7 Y1/~{CLR}" "/CELL X7 Y1/~{PRE}" "Net-(U176-I0)"
+    "Net-(U176-I1)" "Net-(U176-I2)" "Net-(U176-I3)" "Net-(U176-I4)" "Net-(U176-I5)" "Net-(U176-I6)" "Net-(U176-I7)" "/CELL X7 Y0/~{CLR}"
+    "/CELL X7 Y0/~{PRE}" "Net-(U178-I0)" "Net-(U178-I1)" "Net-(U178-I2)" "Net-(U178-I3)" "Net-(U178-I4)" "Net-(U178-I5)" "Net-(U178-I6)"
+    "Net-(U178-I7)" "/CELL X8 Y10/~{CLR}" "/CELL X8 Y10/~{PRE}" "Net-(U180-I0)" "Net-(U180-I1)" "Net-(U180-I2)" "Net-(U180-I3)" "Net-(U180-I4)"
+    "Net-(U180-I5)" "Net-(U180-I6)" "Net-(U180-I7)" "/CELL X8 Y9/~{CLR}" "/CELL X8 Y9/~{PRE}" "Net-(U182-I0)" "Net-(U182-I1)" "Net-(U182-I2)"
+    "Net-(U182-I3)" "Net-(U182-I4)" "Net-(U182-I5)" "Net-(U182-I6)" "Net-(U182-I7)" "/CELL X8 Y8/~{CLR}" "/CELL X8 Y8/~{PRE}" "Net-(U184-I0)"
+    "Net-(U184-I1)" "Net-(U184-I2)" "Net-(U184-I3)" "Net-(U184-I4)" "Net-(U184-I5)" "Net-(U184-I6)" "Net-(U184-I7)" "/CELL X8 Y7/~{CLR}"
+    "/CELL X8 Y7/~{PRE}" "Net-(U186-I0)" "Net-(U186-I1)" "Net-(U186-I2)" "Net-(U186-I3)" "Net-(U186-I4)" "Net-(U186-I5)" "Net-(U186-I6)"
+    "Net-(U186-I7)" "/CELL X8 Y6/~{CLR}" "/CELL X8 Y6/~{PRE}" "Net-(U188-I0)" "Net-(U188-I1)" "Net-(U188-I2)" "Net-(U188-I3)" "Net-(U188-I4)"
+    "Net-(U188-I5)" "Net-(U188-I6)" "Net-(U188-I7)" "/CELL X8 Y5/~{CLR}" "/CELL X8 Y5/~{PRE}" "Net-(U190-I0)" "Net-(U190-I1)" "Net-(U190-I2)"
+    "Net-(U190-I3)" "Net-(U190-I4)" "Net-(U190-I5)" "Net-(U190-I6)" "Net-(U190-I7)" "/CELL X8 Y4/~{CLR}" "/CELL X8 Y4/~{PRE}" "Net-(U192-I0)"
+    "Net-(U192-I1)" "Net-(U192-I2)" "Net-(U192-I3)" "Net-(U192-I4)" "Net-(U192-I5)" "Net-(U192-I6)" "Net-(U192-I7)" "/CELL X8 Y3/~{CLR}"
+    "/CELL X8 Y3/~{PRE}" "Net-(U194-I0)" "Net-(U194-I1)" "Net-(U194-I2)" "Net-(U194-I3)" "Net-(U194-I4)" "Net-(U194-I5)" "Net-(U194-I6)"
+    "Net-(U194-I7)" "/CELL X8 Y2/~{CLR}" "/CELL X8 Y2/~{PRE}" "Net-(U196-I0)" "Net-(U196-I1)" "Net-(U196-I2)" "Net-(U196-I3)" "Net-(U196-I4)"
+    "Net-(U196-I5)" "Net-(U196-I6)" "Net-(U196-I7)" "/CELL X8 Y1/~{CLR}" "/CELL X8 Y1/~{PRE}" "Net-(U198-I0)" "Net-(U198-I1)" "Net-(U198-I2)"
+    "Net-(U198-I3)" "Net-(U198-I4)" "Net-(U198-I5)" "Net-(U198-I6)" "Net-(U198-I7)" "/CELL X8 Y0/~{CLR}" "/CELL X8 Y0/~{PRE}" "Net-(U200-I0)"
+    "Net-(U200-I1)" "Net-(U200-I2)" "Net-(U200-I3)" "Net-(U200-I4)" "Net-(U200-I5)" "Net-(U200-I6)" "Net-(U200-I7)" "/CELL X9 Y10/~{CLR}"
+    "/CELL X9 Y10/~{PRE}" "Net-(U202-I0)" "Net-(U202-I1)" "Net-(U202-I2)" "Net-(U202-I3)" "Net-(U202-I4)" "Net-(U202-I5)" "Net-(U202-I6)"
+    "Net-(U202-I7)" "/CELL X9 Y9/~{CLR}" "/CELL X9 Y9/~{PRE}" "Net-(U204-I0)" "Net-(U204-I1)" "Net-(U204-I2)" "Net-(U204-I3)" "Net-(U204-I4)"
+    "Net-(U204-I5)" "Net-(U204-I6)" "Net-(U204-I7)" "/CELL X9 Y8/~{CLR}" "/CELL X9 Y8/~{PRE}" "Net-(U206-I0)" "Net-(U206-I1)" "Net-(U206-I2)"
+    "Net-(U206-I3)" "Net-(U206-I4)" "Net-(U206-I5)" "Net-(U206-I6)" "Net-(U206-I7)" "/CELL X9 Y7/~{CLR}" "/CELL X9 Y7/~{PRE}" "Net-(U208-I0)"
+    "Net-(U208-I1)" "Net-(U208-I2)" "Net-(U208-I3)" "Net-(U208-I4)" "Net-(U208-I5)" "Net-(U208-I6)" "Net-(U208-I7)" "/CELL X9 Y6/~{CLR}"
+    "/CELL X9 Y6/~{PRE}" "Net-(U210-I0)" "Net-(U210-I1)" "Net-(U210-I2)" "Net-(U210-I3)" "Net-(U210-I4)" "Net-(U210-I5)" "Net-(U210-I6)"
+    "Net-(U210-I7)" "/CELL X9 Y5/~{CLR}" "/CELL X9 Y5/~{PRE}" "Net-(U212-I0)" "Net-(U212-I1)" "Net-(U212-I2)" "Net-(U212-I3)" "Net-(U212-I4)"
+    "Net-(U212-I5)" "Net-(U212-I6)" "Net-(U212-I7)" "/CELL X9 Y4/~{CLR}" "/CELL X9 Y4/~{PRE}" "Net-(U214-I0)" "Net-(U214-I1)" "Net-(U214-I2)"
+    "Net-(U214-I3)" "Net-(U214-I4)" "Net-(U214-I5)" "Net-(U214-I6)" "Net-(U214-I7)" "/CELL X9 Y3/~{CLR}" "/CELL X9 Y3/~{PRE}" "Net-(U216-I0)"
+    "Net-(U216-I1)" "Net-(U216-I2)" "Net-(U216-I3)" "Net-(U216-I4)" "Net-(U216-I5)" "Net-(U216-I6)" "Net-(U216-I7)" "/CELL X9 Y2/~{CLR}"
+    "/CELL X9 Y2/~{PRE}" "Net-(U218-I0)" "Net-(U218-I1)" "Net-(U218-I2)" "Net-(U218-I3)" "Net-(U218-I4)" "Net-(U218-I5)" "Net-(U218-I6)"
+    "Net-(U218-I7)" "/CELL X9 Y1/~{CLR}" "/CELL X9 Y1/~{PRE}" "Net-(U220-I0)" "Net-(U220-I1)" "Net-(U220-I2)" "Net-(U220-I3)" "Net-(U220-I4)"
+    "Net-(U220-I5)" "Net-(U220-I6)" "Net-(U220-I7)" "/CELL X9 Y0/~{CLR}" "/CELL X9 Y0/~{PRE}" "Net-(U222-I0)" "Net-(U222-I1)" "Net-(U222-I2)"
+    "Net-(U222-I3)" "Net-(U222-I4)" "Net-(U222-I5)" "Net-(U222-I6)" "Net-(U222-I7)" "/CELL X10 Y10/~{CLR}" "/CELL X10 Y10/~{PRE}" "Net-(U224-I0)"
+    "Net-(U224-I1)" "Net-(U224-I2)" "Net-(U224-I3)" "Net-(U224-I4)" "Net-(U224-I5)" "Net-(U224-I6)" "Net-(U224-I7)" "/CELL X10 Y9/~{CLR}"
+    "/CELL X10 Y9/~{PRE}" "Net-(U226-I0)" "Net-(U226-I1)" "Net-(U226-I2)" "Net-(U226-I3)" "Net-(U226-I4)" "Net-(U226-I5)" "Net-(U226-I6)"
+    "Net-(U226-I7)" "/CELL X10 Y8/~{CLR}" "/CELL X10 Y8/~{PRE}" "Net-(U228-I0)" "Net-(U228-I1)" "Net-(U228-I2)" "Net-(U228-I3)" "Net-(U228-I4)"
+    "Net-(U228-I5)" "Net-(U228-I6)" "Net-(U228-I7)" "/CELL X10 Y7/~{CLR}" "/CELL X10 Y7/~{PRE}" "Net-(U230-I0)" "Net-(U230-I1)" "Net-(U230-I2)"
+    "Net-(U230-I3)" "Net-(U230-I4)" "Net-(U230-I5)" "Net-(U230-I6)" "Net-(U230-I7)" "/CELL X10 Y6/~{CLR}" "/CELL X10 Y6/~{PRE}" "Net-(U232-I0)"
+    "Net-(U232-I1)" "Net-(U232-I2)" "Net-(U232-I3)" "Net-(U232-I4)" "Net-(U232-I5)" "Net-(U232-I6)" "Net-(U232-I7)" "/CELL X10 Y5/~{CLR}"
+    "/CELL X10 Y5/~{PRE}" "Net-(U234-I0)" "Net-(U234-I1)" "Net-(U234-I2)" "Net-(U234-I3)" "Net-(U234-I4)" "Net-(U234-I5)" "Net-(U234-I6)"
+    "Net-(U234-I7)" "/CELL X10 Y4/~{CLR}" "/CELL X10 Y4/~{PRE}" "Net-(U236-I0)" "Net-(U236-I1)" "Net-(U236-I2)" "Net-(U236-I3)" "Net-(U236-I4)"
+    "Net-(U236-I5)" "Net-(U236-I6)" "Net-(U236-I7)" "/CELL X10 Y3/~{CLR}" "/CELL X10 Y3/~{PRE}" "Net-(U238-I0)" "Net-(U238-I1)" "Net-(U238-I2)"
+    "Net-(U238-I3)" "Net-(U238-I4)" "Net-(U238-I5)" "Net-(U238-I6)" "Net-(U238-I7)" "/CELL X10 Y2/~{CLR}" "/CELL X10 Y2/~{PRE}" "Net-(U240-I0)"
+    "Net-(U240-I1)" "Net-(U240-I2)" "Net-(U240-I3)" "Net-(U240-I4)" "Net-(U240-I5)" "Net-(U240-I6)" "Net-(U240-I7)" "/CELL X10 Y1/~{CLR}"
+    "/CELL X10 Y1/~{PRE}" "Net-(U242-I0)" "Net-(U242-I1)" "Net-(U242-I2)" "Net-(U242-I3)" "Net-(U242-I4)" "Net-(U242-I5)" "Net-(U242-I6)"
+    "Net-(U242-I7)" "/CELL X10 Y0/~{CLR}" "/CELL X10 Y0/~{PRE}" "unconnected-(U4-~{Z}-Pad6)" "unconnected-(U5-~{Q}-Pad3)" "unconnected-(U6-~{Z}-Pad6)" "unconnected-(U7-~{Q}-Pad3)" "unconnected-(U8-~{Z}-Pad6)"
+    "unconnected-(U9-~{Q}-Pad3)" "unconnected-(U10-~{Z}-Pad6)" "unconnected-(U11-~{Q}-Pad3)" "unconnected-(U12-~{Z}-Pad6)" "unconnected-(U13-~{Q}-Pad3)" "unconnected-(U14-~{Z}-Pad6)" "unconnected-(U15-~{Q}-Pad3)" "unconnected-(U16-~{Z}-Pad6)"
+    "unconnected-(U17-~{Q}-Pad3)" "unconnected-(U18-~{Z}-Pad6)" "unconnected-(U19-~{Q}-Pad3)" "unconnected-(U20-~{Z}-Pad6)" "unconnected-(U21-~{Q}-Pad3)" "unconnected-(U22-~{Z}-Pad6)" "unconnected-(U23-~{Q}-Pad3)" "unconnected-(U24-~{Z}-Pad6)"
+    "unconnected-(U25-~{Q}-Pad3)" "unconnected-(U26-~{Z}-Pad6)" "unconnected-(U27-~{Q}-Pad3)" "unconnected-(U28-~{Z}-Pad6)" "unconnected-(U29-~{Q}-Pad3)" "unconnected-(U30-~{Z}-Pad6)" "unconnected-(U31-~{Q}-Pad3)" "unconnected-(U32-~{Z}-Pad6)"
+    "unconnected-(U33-~{Q}-Pad3)" "unconnected-(U34-~{Z}-Pad6)" "unconnected-(U35-~{Q}-Pad3)" "unconnected-(U36-~{Z}-Pad6)" "unconnected-(U37-~{Q}-Pad3)" "unconnected-(U38-~{Z}-Pad6)" "unconnected-(U39-~{Q}-Pad3)" "unconnected-(U40-~{Z}-Pad6)"
+    "unconnected-(U41-~{Q}-Pad3)" "unconnected-(U42-~{Z}-Pad6)" "unconnected-(U43-~{Q}-Pad3)" "unconnected-(U44-~{Z}-Pad6)" "unconnected-(U45-~{Q}-Pad3)" "unconnected-(U46-~{Z}-Pad6)" "unconnected-(U47-~{Q}-Pad3)" "unconnected-(U48-~{Z}-Pad6)"
+    "unconnected-(U49-~{Q}-Pad3)" "unconnected-(U50-~{Z}-Pad6)" "unconnected-(U51-~{Q}-Pad3)" "unconnected-(U52-~{Z}-Pad6)" "unconnected-(U53-~{Q}-Pad3)" "unconnected-(U54-~{Z}-Pad6)" "unconnected-(U55-~{Q}-Pad3)" "unconnected-(U56-~{Z}-Pad6)"
+    "unconnected-(U57-~{Q}-Pad3)" "unconnected-(U58-~{Z}-Pad6)" "unconnected-(U59-~{Q}-Pad3)" "unconnected-(U60-~{Z}-Pad6)" "unconnected-(U61-~{Q}-Pad3)" "unconnected-(U62-~{Z}-Pad6)" "unconnected-(U63-~{Q}-Pad3)" "unconnected-(U64-~{Z}-Pad6)"
+    "unconnected-(U65-~{Q}-Pad3)" "unconnected-(U66-~{Z}-Pad6)" "unconnected-(U67-~{Q}-Pad3)" "unconnected-(U68-~{Z}-Pad6)" "unconnected-(U69-~{Q}-Pad3)" "unconnected-(U70-~{Z}-Pad6)" "unconnected-(U71-~{Q}-Pad3)" "unconnected-(U72-~{Z}-Pad6)"
+    "unconnected-(U73-~{Q}-Pad3)" "unconnected-(U74-~{Z}-Pad6)" "unconnected-(U75-~{Q}-Pad3)" "unconnected-(U76-~{Z}-Pad6)" "unconnected-(U77-~{Q}-Pad3)" "unconnected-(U78-~{Z}-Pad6)" "unconnected-(U79-~{Q}-Pad3)" "unconnected-(U80-~{Z}-Pad6)"
+    "unconnected-(U81-~{Q}-Pad3)" "unconnected-(U82-~{Z}-Pad6)" "unconnected-(U83-~{Q}-Pad3)" "unconnected-(U84-~{Z}-Pad6)" "unconnected-(U85-~{Q}-Pad3)" "unconnected-(U86-~{Z}-Pad6)" "unconnected-(U87-~{Q}-Pad3)" "unconnected-(U88-~{Z}-Pad6)"
+    "unconnected-(U89-~{Q}-Pad3)" "unconnected-(U90-~{Z}-Pad6)" "unconnected-(U91-~{Q}-Pad3)" "unconnected-(U92-~{Z}-Pad6)" "unconnected-(U93-~{Q}-Pad3)" "unconnected-(U94-~{Z}-Pad6)" "unconnected-(U95-~{Q}-Pad3)" "unconnected-(U96-~{Z}-Pad6)"
+    "unconnected-(U97-~{Q}-Pad3)" "unconnected-(U98-~{Z}-Pad6)" "unconnected-(U99-~{Q}-Pad3)" "unconnected-(U100-~{Z}-Pad6)" "unconnected-(U101-~{Q}-Pad3)" "unconnected-(U102-~{Z}-Pad6)" "unconnected-(U103-~{Q}-Pad3)" "unconnected-(U104-~{Z}-Pad6)"
+    "unconnected-(U105-~{Q}-Pad3)" "unconnected-(U106-~{Z}-Pad6)" "unconnected-(U107-~{Q}-Pad3)" "unconnected-(U108-~{Z}-Pad6)" "unconnected-(U109-~{Q}-Pad3)" "unconnected-(U110-~{Z}-Pad6)" "unconnected-(U111-~{Q}-Pad3)" "unconnected-(U112-~{Z}-Pad6)"
+    "unconnected-(U113-~{Q}-Pad3)" "unconnected-(U114-~{Z}-Pad6)" "unconnected-(U115-~{Q}-Pad3)" "unconnected-(U116-~{Z}-Pad6)" "unconnected-(U117-~{Q}-Pad3)" "unconnected-(U118-~{Z}-Pad6)" "unconnected-(U119-~{Q}-Pad3)" "unconnected-(U120-~{Z}-Pad6)"
+    "unconnected-(U121-~{Q}-Pad3)" "unconnected-(U122-~{Z}-Pad6)" "unconnected-(U123-~{Q}-Pad3)" "unconnected-(U124-~{Z}-Pad6)" "unconnected-(U125-~{Q}-Pad3)" "unconnected-(U126-~{Z}-Pad6)" "unconnected-(U127-~{Q}-Pad3)" "unconnected-(U128-~{Z}-Pad6)"
+    "unconnected-(U129-~{Q}-Pad3)" "unconnected-(U130-~{Z}-Pad6)" "unconnected-(U131-~{Q}-Pad3)" "unconnected-(U132-~{Z}-Pad6)" "unconnected-(U133-~{Q}-Pad3)" "unconnected-(U134-~{Z}-Pad6)" "unconnected-(U135-~{Q}-Pad3)" "unconnected-(U136-~{Z}-Pad6)"
+    "unconnected-(U137-~{Q}-Pad3)" "unconnected-(U138-~{Z}-Pad6)" "unconnected-(U139-~{Q}-Pad3)" "unconnected-(U140-~{Z}-Pad6)" "unconnected-(U141-~{Q}-Pad3)" "unconnected-(U142-~{Z}-Pad6)" "unconnected-(U143-~{Q}-Pad3)" "unconnected-(U144-~{Z}-Pad6)"
+    "unconnected-(U145-~{Q}-Pad3)" "unconnected-(U146-~{Z}-Pad6)" "unconnected-(U147-~{Q}-Pad3)" "unconnected-(U148-~{Z}-Pad6)" "unconnected-(U149-~{Q}-Pad3)" "unconnected-(U150-~{Z}-Pad6)" "unconnected-(U151-~{Q}-Pad3)" "unconnected-(U152-~{Z}-Pad6)"
+    "unconnected-(U153-~{Q}-Pad3)" "unconnected-(U154-~{Z}-Pad6)" "unconnected-(U155-~{Q}-Pad3)" "unconnected-(U156-~{Z}-Pad6)" "unconnected-(U157-~{Q}-Pad3)" "unconnected-(U158-~{Z}-Pad6)" "unconnected-(U159-~{Q}-Pad3)" "unconnected-(U160-~{Z}-Pad6)"
+    "unconnected-(U161-~{Q}-Pad3)" "unconnected-(U162-~{Z}-Pad6)" "unconnected-(U163-~{Q}-Pad3)" "unconnected-(U164-~{Z}-Pad6)" "unconnected-(U165-~{Q}-Pad3)" "unconnected-(U166-~{Z}-Pad6)" "unconnected-(U167-~{Q}-Pad3)" "unconnected-(U168-~{Z}-Pad6)"
+    "unconnected-(U169-~{Q}-Pad3)" "unconnected-(U170-~{Z}-Pad6)" "unconnected-(U171-~{Q}-Pad3)" "unconnected-(U172-~{Z}-Pad6)" "unconnected-(U173-~{Q}-Pad3)" "unconnected-(U174-~{Z}-Pad6)" "unconnected-(U175-~{Q}-Pad3)" "unconnected-(U176-~{Z}-Pad6)"
+    "unconnected-(U177-~{Q}-Pad3)" "unconnected-(U178-~{Z}-Pad6)" "unconnected-(U179-~{Q}-Pad3)" "unconnected-(U180-~{Z}-Pad6)" "unconnected-(U181-~{Q}-Pad3)" "unconnected-(U182-~{Z}-Pad6)" "unconnected-(U183-~{Q}-Pad3)" "unconnected-(U184-~{Z}-Pad6)"
+    "unconnected-(U185-~{Q}-Pad3)" "unconnected-(U186-~{Z}-Pad6)" "unconnected-(U187-~{Q}-Pad3)" "unconnected-(U188-~{Z}-Pad6)" "unconnected-(U189-~{Q}-Pad3)" "unconnected-(U190-~{Z}-Pad6)" "unconnected-(U191-~{Q}-Pad3)" "unconnected-(U192-~{Z}-Pad6)"
+    "unconnected-(U193-~{Q}-Pad3)" "unconnected-(U194-~{Z}-Pad6)" "unconnected-(U195-~{Q}-Pad3)" "unconnected-(U196-~{Z}-Pad6)" "unconnected-(U197-~{Q}-Pad3)" "unconnected-(U198-~{Z}-Pad6)" "unconnected-(U199-~{Q}-Pad3)" "unconnected-(U200-~{Z}-Pad6)"
+    "unconnected-(U201-~{Q}-Pad3)" "unconnected-(U202-~{Z}-Pad6)" "unconnected-(U203-~{Q}-Pad3)" "unconnected-(U204-~{Z}-Pad6)" "unconnected-(U205-~{Q}-Pad3)" "unconnected-(U206-~{Z}-Pad6)" "unconnected-(U207-~{Q}-Pad3)" "unconnected-(U208-~{Z}-Pad6)"
+    "unconnected-(U209-~{Q}-Pad3)" "unconnected-(U210-~{Z}-Pad6)" "unconnected-(U211-~{Q}-Pad3)" "unconnected-(U212-~{Z}-Pad6)" "unconnected-(U213-~{Q}-Pad3)" "unconnected-(U214-~{Z}-Pad6)" "unconnected-(U215-~{Q}-Pad3)" "unconnected-(U216-~{Z}-Pad6)"
+    "unconnected-(U217-~{Q}-Pad3)" "unconnected-(U218-~{Z}-Pad6)" "unconnected-(U219-~{Q}-Pad3)" "unconnected-(U220-~{Z}-Pad6)" "unconnected-(U221-~{Q}-Pad3)" "unconnected-(U222-~{Z}-Pad6)" "unconnected-(U223-~{Q}-Pad3)" "unconnected-(U224-~{Z}-Pad6)"
+    "unconnected-(U225-~{Q}-Pad3)" "unconnected-(U226-~{Z}-Pad6)" "unconnected-(U227-~{Q}-Pad3)" "unconnected-(U228-~{Z}-Pad6)" "unconnected-(U229-~{Q}-Pad3)" "unconnected-(U230-~{Z}-Pad6)" "unconnected-(U231-~{Q}-Pad3)" "unconnected-(U232-~{Z}-Pad6)"
+    "unconnected-(U233-~{Q}-Pad3)" "unconnected-(U234-~{Z}-Pad6)" "unconnected-(U235-~{Q}-Pad3)" "unconnected-(U236-~{Z}-Pad6)" "unconnected-(U237-~{Q}-Pad3)" "unconnected-(U238-~{Z}-Pad6)" "unconnected-(U239-~{Q}-Pad3)" "unconnected-(U240-~{Z}-Pad6)"
+    "unconnected-(U241-~{Q}-Pad3)" "unconnected-(U242-~{Z}-Pad6)" "unconnected-(U243-~{Q}-Pad3)" "Net-(C247-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)

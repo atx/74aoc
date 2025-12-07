@@ -1,0 +1,4292 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.9-42-gcfa5f77d)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "frontend/top": "top",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": "none",
+        "arch.name": "generic",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "target_freq": "12000000.000000",
+        "timing_driven": "00000000000000000000000000000000"
+      },
+      "attributes": {
+        "src": "top.v:64.1-137.10",
+        "hdlname": "top"
+      },
+      "ports": {
+        "zero_count_9": {
+          "direction": "output",
+          "bits": [ 48 ]
+        },
+        "zero_count_8": {
+          "direction": "output",
+          "bits": [ 47 ]
+        },
+        "zero_count_7": {
+          "direction": "output",
+          "bits": [ 46 ]
+        },
+        "zero_count_6": {
+          "direction": "output",
+          "bits": [ 45 ]
+        },
+        "zero_count_5": {
+          "direction": "output",
+          "bits": [ 44 ]
+        },
+        "zero_count_4": {
+          "direction": "output",
+          "bits": [ 43 ]
+        },
+        "zero_count_3": {
+          "direction": "output",
+          "bits": [ 42 ]
+        },
+        "zero_count_2": {
+          "direction": "output",
+          "bits": [ 41 ]
+        },
+        "zero_count_10": {
+          "direction": "output",
+          "bits": [ 40 ]
+        },
+        "zero_count_1": {
+          "direction": "output",
+          "bits": [ 39 ]
+        },
+        "zero_count_0": {
+          "direction": "output",
+          "bits": [ 38 ]
+        },
+        "valid": {
+          "direction": "input",
+          "bits": [ 37 ]
+        },
+        "step_direction": {
+          "direction": "input",
+          "bits": [ 36 ]
+        },
+        "step_count_9": {
+          "direction": "input",
+          "bits": [ 35 ]
+        },
+        "step_count_8": {
+          "direction": "input",
+          "bits": [ 34 ]
+        },
+        "step_count_7": {
+          "direction": "input",
+          "bits": [ 33 ]
+        },
+        "step_count_6": {
+          "direction": "input",
+          "bits": [ 32 ]
+        },
+        "step_count_5": {
+          "direction": "input",
+          "bits": [ 31 ]
+        },
+        "step_count_4": {
+          "direction": "input",
+          "bits": [ 30 ]
+        },
+        "step_count_3": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "step_count_2": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "step_count_1": {
+          "direction": "input",
+          "bits": [ 27 ]
+        },
+        "step_count_0": {
+          "direction": "input",
+          "bits": [ 26 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 25 ]
+        }
+      },
+      "cells": {
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2583_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 38 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 55, 38, 126694 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2584_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 73 ],
+            "CLK": [  ],
+            "I": [ 70, 71, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2585_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 70 ],
+            "CLK": [  ],
+            "I": [ 75, 76, 77 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2586_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 75 ],
+            "CLK": [  ],
+            "I": [ 79, 80, 81 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2587_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 81 ],
+            "CLK": [  ],
+            "I": [ 83, 84, 85 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2588_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 85 ],
+            "CLK": [  ],
+            "I": [ 87, 88, 89 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2589_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10110100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 76 ],
+            "CLK": [  ],
+            "I": [ 83, 85, 84 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2590_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 72 ],
+            "CLK": [  ],
+            "I": [ 92, 93, 37 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2591_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 93 ],
+            "CLK": [  ],
+            "I": [ 97, 98, 99 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2592_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 99 ],
+            "CLK": [  ],
+            "I": [ 101, 102, 126695 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2593_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 102 ],
+            "CLK": [  ],
+            "I": [ 106, 107, 108 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2594_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 98 ],
+            "CLK": [  ],
+            "I": [ 110, 111, 126696 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2595_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 111 ],
+            "CLK": [  ],
+            "I": [ 115, 116, 117 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2596_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10001000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 71 ],
+            "CLK": [  ],
+            "I": [ 119, 77, 126697 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2597_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000111",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 119 ],
+            "CLK": [  ],
+            "I": [ 123, 83, 84 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2598_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10001000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 123 ],
+            "CLK": [  ],
+            "I": [ 125, 88, 126698 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2599_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 125 ],
+            "CLK": [  ],
+            "I": [ 89, 87, 126699 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2600_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 135 ],
+            "CLK": [  ],
+            "I": [ 132, 133, 134 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2601_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 133 ],
+            "CLK": [  ],
+            "I": [ 75, 77, 126700 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2602_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 134 ],
+            "CLK": [  ],
+            "I": [ 123, 83, 77 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2603_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10011001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 132 ],
+            "CLK": [  ],
+            "I": [ 85, 83, 126701 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2604_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 146 ],
+            "CLK": [  ],
+            "I": [ 144, 133, 145 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2605_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 145 ],
+            "CLK": [  ],
+            "I": [ 125, 88, 148 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2606_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01110000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y10_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 148 ],
+            "CLK": [  ],
+            "I": [ 150, 151, 77 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2607_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y10_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 151 ],
+            "CLK": [  ],
+            "I": [ 88, 83, 125 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2608_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y10_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 150 ],
+            "CLK": [  ],
+            "I": [ 80, 84, 79 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2609_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 144 ],
+            "CLK": [  ],
+            "I": [ 87, 89, 88 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2610_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00001110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 158 ],
+            "CLK": [  ],
+            "I": [ 77, 156, 157 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2611_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y10_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 157 ],
+            "CLK": [  ],
+            "I": [ 160, 80, 148 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2612_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 160 ],
+            "CLK": [  ],
+            "I": [ 84, 123, 83 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2613_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 156 ],
+            "CLK": [  ],
+            "I": [ 81, 80, 126702 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2614_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 168 ],
+            "CLK": [  ],
+            "I": [ 108, 101, 126703 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2615_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10010110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 170 ],
+            "CLK": [  ],
+            "I": [ 89, 77, 87 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2616_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00001101",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 174 ],
+            "CLK": [  ],
+            "I": [ 148, 172, 173 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2617_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 173 ],
+            "CLK": [  ],
+            "I": [ 176, 77, 126704 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2618_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000111",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 176 ],
+            "CLK": [  ],
+            "I": [ 81, 80, 79 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2619_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y10_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 172 ],
+            "CLK": [  ],
+            "I": [ 80, 160, 79 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2620_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 39 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 55, 38, 39 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2621_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 41 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 187, 41, 126705 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2622_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 187 ],
+            "CLK": [  ],
+            "I": [ 55, 38, 39 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2623_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 42 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 55, 196, 42 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2624_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X10Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 196 ],
+            "CLK": [  ],
+            "I": [ 38, 39, 41 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2625_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X11Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 43 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 203, 43, 126706 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2626_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X10Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 203 ],
+            "CLK": [  ],
+            "I": [ 55, 196, 42 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2627_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 44 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 55, 212, 44 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2628_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 212 ],
+            "CLK": [  ],
+            "I": [ 196, 42, 43 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2629_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 45 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 219, 45, 126707 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2630_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 219 ],
+            "CLK": [  ],
+            "I": [ 55, 212, 44 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2631_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X10Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 46 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 55, 228, 46 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2632_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 55 ],
+            "CLK": [  ],
+            "I": [ 234, 235, 236 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2633_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 234 ],
+            "CLK": [  ],
+            "I": [ 170, 73, 126708 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2634_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10001000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 235 ],
+            "CLK": [  ],
+            "I": [ 135, 174, 126709 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2635_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 236 ],
+            "CLK": [  ],
+            "I": [ 146, 158, 244 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2636_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 244 ],
+            "CLK": [  ],
+            "I": [ 98, 246, 247 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2637_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10001000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 246 ],
+            "CLK": [  ],
+            "I": [ 168, 87, 126710 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2638_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000001",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 247 ],
+            "CLK": [  ],
+            "I": [ 107, 97, 92 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2639_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X9Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 228 ],
+            "CLK": [  ],
+            "I": [ 212, 44, 45 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2640_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X10Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 47 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 254, 47, 126711 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2641_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X10Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 254 ],
+            "CLK": [  ],
+            "I": [ 55, 228, 46 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2642_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X11Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 48 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 254, 47, 48 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2643_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X11Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 40 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 268, 40, 126712 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2644_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X11Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 268 ],
+            "CLK": [  ],
+            "I": [ 254, 47, 48 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2645_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 106 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 26, 280 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2646_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 280 ],
+            "CLK": [  ],
+            "I": [ 106, 72, 126713 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2647_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 107 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 27, 289 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2648_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 289 ],
+            "CLK": [  ],
+            "I": [ 106, 107, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2649_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 108 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 28, 296 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2650_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 296 ],
+            "CLK": [  ],
+            "I": [ 299, 72, 126714 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2651_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00011110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y0_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 299 ],
+            "CLK": [  ],
+            "I": [ 106, 107, 108 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2652_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 101 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 29, 307 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2653_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y1_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 307 ],
+            "CLK": [  ],
+            "I": [ 102, 101, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2654_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 115 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 30, 314 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2655_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 314 ],
+            "CLK": [  ],
+            "I": [ 99, 115, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2656_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 116 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 31, 321 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2657_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 321 ],
+            "CLK": [  ],
+            "I": [ 324, 72, 126715 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2658_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 324 ],
+            "CLK": [  ],
+            "I": [ 115, 99, 116 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2659_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 110 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 32, 332 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2660_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 332 ],
+            "CLK": [  ],
+            "I": [ 335, 110, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2661_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00010000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 335 ],
+            "CLK": [  ],
+            "I": [ 115, 116, 99 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2662_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 117 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 33, 341 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2663_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 341 ],
+            "CLK": [  ],
+            "I": [ 344, 72, 126716 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2664_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01001011",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y9_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 344 ],
+            "CLK": [  ],
+            "I": [ 110, 335, 117 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2665_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11111000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 97 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 37, 34, 352 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2666_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01100000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 352 ],
+            "CLK": [  ],
+            "I": [ 355, 97, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2667_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10001000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 355 ],
+            "CLK": [  ],
+            "I": [ 99, 98, 126717 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2668_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "10101100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 92 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 35, 363, 37 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2669_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01000100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y6_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 363 ],
+            "CLK": [  ],
+            "I": [ 93, 92, 126718 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2670_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "10101100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y3_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 77 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 36, 77, 37 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2671_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01100110",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 87 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 72, 87, 126719 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2672_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "00111010",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y2_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 89 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 89, 170, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2673_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "00111010",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y8_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 88 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 88, 146, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2674_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "00111010",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X6Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 83 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 83, 135, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2675_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11110100",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y4_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 84 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 72, 84, 73 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2676_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "11001010",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y5_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 80 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 80, 158, 72 ]
+          }
+        },
+        "$abc$2582$auto$blifparse.cc:536:parse_blif$2677_LC": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "00111010",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X8Y7_SLICE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/atx/74aoc/74aoc/hdl/cells_map.v:10.34-10.66"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [ 79 ],
+            "F": [  ],
+            "CLK": [ 25 ],
+            "I": [ 79, 174, 72 ]
+          }
+        },
+        "zero_count_5$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y2Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 44 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_4$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y2Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 43 ],
+            "PAD": [  ]
+          }
+        },
+        "clk$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y0Z0_IO",
+            "src": "solution.v:10.11-10.14",
+            "hdlname": "sol clk"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 25 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_3$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y1Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 42 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_7$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y3Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 46 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_2$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y1Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 41 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_10$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y5Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 40 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_9$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y4Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 48 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_1$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y0Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 39 ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_0$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y0Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 38 ],
+            "PAD": [  ]
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "type": "GENERIC_SLICE",
+          "parameters": {
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000",
+            "K": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y1_SLICE"
+          },
+          "port_directions": {
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "I": "input"
+          },
+          "connections": {
+            "Q": [  ],
+            "F": [ 125536 ],
+            "CLK": [  ],
+            "I": [ 126720, 126721, 126722 ]
+          }
+        },
+        "valid$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y0Z1_IO",
+            "src": "top.v:71.13-71.18",
+            "hdlname": "sol valid"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 37 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_direction$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y1Z0_IO",
+            "src": "top.v:73.13-73.27",
+            "hdlname": "sol step_direction"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 36 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_6$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y3Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 45 ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_9$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y6Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 35 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_8$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y5Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 34 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_7$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y5Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 33 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_6$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y4Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 32 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_5$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y4Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 31 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_4$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y3Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 30 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_3$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y3Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 29 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_2$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y2Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 28 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_1$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y2Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 27 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "zero_count_8$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X12Y4Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "EN": [  ],
+            "I": [ 47 ],
+            "PAD": [  ]
+          }
+        },
+        "step_count_0$iob": {
+          "hide_name": 0,
+          "type": "GENERIC_IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y1Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          },
+          "port_directions": {
+            "O": "output",
+            "EN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 26 ],
+            "EN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        }
+      },
+      "netnames": {
+        "zero_count_10": {
+          "hide_name": 0,
+          "bits": [ 40 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X11Y5_X11Y6_3;LOCAL_X11Y5_X11Y6_3_FROM_X11Y5_Q;1;X11Y5_I1;LOCAL_X11Y5_X11Y6_3_TO_X11Y5_I1;1;X11Y5_Q;;1;GLOBAL_WIRE_26;GLOBAL_WIRE_26_FROM_LUT_X11Y5_Q;1;IO_X12Y5Z0_I;GLOBAL_WIRE_26_TO_IO_X12Y5Z0;1",
+            "BEL": "X12Y5Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$new_n139": {
+          "hide_name": 1,
+          "bits": [ 268 ] ,
+          "attributes": {
+            "ROUTING": "X11Y4_F;;1;LOCAL_X11Y4_X11Y5_2;LOCAL_X11Y4_X11Y5_2_FROM_X11Y4_F;1;X11Y5_I0;LOCAL_X11Y4_X11Y5_2_TO_X11Y5_I0;1"
+          }
+        },
+        "step_count_2": {
+          "hide_name": 0,
+          "bits": [ 28 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y2Z1_O;;1;GLOBAL_WIRE_38;GLOBAL_WIRE_38_FROM_IO_X0Y2Z1;1;X2Y1_I1;GLOBAL_WIRE_38_TO_LUT_X2Y1_I1;1",
+            "BEL": "X0Y2Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "zero_count_9": {
+          "hide_name": 0,
+          "bits": [ 48 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_6;GLOBAL_WIRE_6_FROM_LUT_X11Y3_Q;1;IO_X12Y4Z1_I;GLOBAL_WIRE_6_TO_IO_X12Y4Z1;1;X11Y3_I2;LOCAL_X11Y3_X11Y4_3_TO_X11Y3_I2;1;X11Y3_Q;;1;LOCAL_X11Y3_X11Y4_3;LOCAL_X11Y3_X11Y4_3_FROM_X11Y3_Q;1;X11Y4_I2;LOCAL_X11Y3_X11Y4_3_TO_X11Y4_I2;1",
+            "BEL": "X12Y4Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$sol._39[2]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 299 ] ,
+          "attributes": {
+            "ROUTING": "X3Y0_F;;1;LOCAL_X2Y0_X3Y0_1;LOCAL_X2Y0_X3Y0_1_FROM_X3Y0_F;1;X2Y0_I0;LOCAL_X2Y0_X3Y0_1_TO_X2Y0_I0;1",
+            "src": "solution.v:44.16-44.19"
+          }
+        },
+        "step_count_3": {
+          "hide_name": 0,
+          "bits": [ 29 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y3Z0_O;;1;GLOBAL_WIRE_36;GLOBAL_WIRE_36_FROM_IO_X0Y3Z0;1;X4Y2_I1;GLOBAL_WIRE_36_TO_LUT_X4Y2_I1;1",
+            "BEL": "X0Y3Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "zero_count_8": {
+          "hide_name": 0,
+          "bits": [ 47 ] ,
+          "attributes": {
+            "ROUTING": "X10Y4_I1;LOCAL_X10Y4_X11Y4_2_TO_X10Y4_I1;1;GLOBAL_WIRE_47;GLOBAL_WIRE_47_FROM_LUT_X10Y4_Q;1;IO_X12Y4Z0_I;GLOBAL_WIRE_47_TO_IO_X12Y4Z0;1;LOCAL_X10Y4_X11Y4_2;LOCAL_X10Y4_X11Y4_2_FROM_X10Y4_Q;1;X11Y4_I1;LOCAL_X10Y4_X11Y4_2_TO_X11Y4_I1;1;X10Y4_Q;;1;LOCAL_X10Y4_X11Y3_2;LOCAL_X10Y4_X11Y3_2_FROM_X10Y4_Q;1;X11Y3_I1;LOCAL_X10Y4_X11Y3_2_TO_X11Y3_I1;1",
+            "BEL": "X12Y4Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$new_n136": {
+          "hide_name": 1,
+          "bits": [ 254 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X10Y3_X11Y3_2;LOCAL_X10Y3_X11Y3_2_FROM_X10Y3_F;1;X11Y3_I0;LOCAL_X10Y3_X11Y3_2_TO_X11Y3_I0;1;LOCAL_X10Y3_X10Y4_1;LOCAL_X10Y3_X10Y4_1_FROM_X10Y3_F;1;X10Y4_I0;LOCAL_X10Y3_X10Y4_1_TO_X10Y4_I0;1;X10Y3_F;;1;LOCAL_X10Y3_X11Y4_1;LOCAL_X10Y3_X11Y4_1_FROM_X10Y3_F;1;X11Y4_I0;LOCAL_X10Y3_X11Y4_1_TO_X11Y4_I0;1"
+          }
+        },
+        "$PACKER_GND_NET": {
+          "hide_name": 1,
+          "bits": [ 125536 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$abc$2582$new_n133": {
+          "hide_name": 1,
+          "bits": [ 247 ] ,
+          "attributes": {
+            "ROUTING": "X3Y3_F;;1;LOCAL_X3Y3_X4Y4_1;LOCAL_X3Y3_X4Y4_1_FROM_X3Y3_F;1;X4Y4_I2;LOCAL_X3Y3_X4Y4_1_TO_X4Y4_I2;1"
+          }
+        },
+        "$abc$2582$new_n132": {
+          "hide_name": 1,
+          "bits": [ 246 ] ,
+          "attributes": {
+            "ROUTING": "X4Y3_F;;1;LOCAL_X4Y3_X4Y4_2;LOCAL_X4Y3_X4Y4_2_FROM_X4Y3_F;1;X4Y4_I1;LOCAL_X4Y3_X4Y4_2_TO_X4Y4_I1;1"
+          }
+        },
+        "$abc$2582$new_n131": {
+          "hide_name": 1,
+          "bits": [ 244 ] ,
+          "attributes": {
+            "ROUTING": "X4Y4_F;;1;LOCAL_X4Y4_X5Y4_3;LOCAL_X4Y4_X5Y4_3_FROM_X4Y4_F;1;X5Y4_I2;LOCAL_X4Y4_X5Y4_3_TO_X5Y4_I2;1"
+          }
+        },
+        "$abc$2582$new_n152": {
+          "hide_name": 1,
+          "bits": [ 321 ] ,
+          "attributes": {
+            "ROUTING": "X1Y6_F;;1;LOCAL_X1Y5_X1Y6_3;LOCAL_X1Y5_X1Y6_3_FROM_X1Y6_F;1;X1Y5_I2;LOCAL_X1Y5_X1Y6_3_TO_X1Y5_I2;1"
+          }
+        },
+        "step_direction": {
+          "hide_name": 0,
+          "bits": [ 36 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y1Z0_O;;1;GLOBAL_WIRE_4;GLOBAL_WIRE_4_FROM_IO_X0Y1Z0;1;X2Y3_I0;GLOBAL_WIRE_4_TO_LUT_X2Y3_I0;1",
+            "BEL": "X0Y1Z0_IO",
+            "src": "top.v:73.13-73.27",
+            "hdlname": "sol step_direction"
+          }
+        },
+        "$abc$2582$new_n130": {
+          "hide_name": 1,
+          "bits": [ 236 ] ,
+          "attributes": {
+            "ROUTING": "X5Y4_F;;1;LOCAL_X5Y4_X6Y3_1;LOCAL_X5Y4_X6Y3_1_FROM_X5Y4_F;1;X6Y3_I2;LOCAL_X5Y4_X6Y3_1_TO_X6Y3_I2;1"
+          }
+        },
+        "$abc$2582$new_n129": {
+          "hide_name": 1,
+          "bits": [ 235 ] ,
+          "attributes": {
+            "ROUTING": "X6Y4_F;;1;LOCAL_X6Y3_X6Y4_3;LOCAL_X6Y3_X6Y4_3_FROM_X6Y4_F;1;X6Y3_I1;LOCAL_X6Y3_X6Y4_3_TO_X6Y3_I1;1"
+          }
+        },
+        "$abc$2582$new_n128": {
+          "hide_name": 1,
+          "bits": [ 234 ] ,
+          "attributes": {
+            "ROUTING": "X7Y3_F;;1;LOCAL_X6Y3_X7Y3_2;LOCAL_X6Y3_X7Y3_2_FROM_X7Y3_F;1;X6Y3_I0;LOCAL_X6Y3_X7Y3_2_TO_X6Y3_I0;1"
+          }
+        },
+        "$abc$2582$new_n143": {
+          "hide_name": 1,
+          "bits": [ 289 ] ,
+          "attributes": {
+            "ROUTING": "X2Y2_F;;1;LOCAL_X1Y2_X2Y2_2;LOCAL_X1Y2_X2Y2_2_FROM_X2Y2_F;1;X1Y2_I2;LOCAL_X1Y2_X2Y2_2_TO_X1Y2_I2;1"
+          }
+        },
+        "zero_count_7": {
+          "hide_name": 0,
+          "bits": [ 46 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_11;GLOBAL_WIRE_11_FROM_LUT_X10Y2_Q;1;IO_X12Y3Z1_I;GLOBAL_WIRE_11_TO_IO_X12Y3Z1;1;X10Y2_I2;LOCAL_X10Y2_X10Y3_3_TO_X10Y2_I2;1;X10Y2_Q;;1;LOCAL_X10Y2_X10Y3_3;LOCAL_X10Y2_X10Y3_3_FROM_X10Y2_Q;1;X10Y3_I2;LOCAL_X10Y2_X10Y3_3_TO_X10Y3_I2;1",
+            "BEL": "X12Y3Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$174.CO[6]_new": {
+          "hide_name": 1,
+          "bits": [ 228 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X9Y2_X10Y2_2;LOCAL_X9Y2_X10Y2_2_FROM_X9Y2_F;1;X10Y2_I1;LOCAL_X9Y2_X10Y2_2_TO_X10Y2_I1;1;X9Y2_F;;1;LOCAL_X9Y2_X10Y3_1;LOCAL_X9Y2_X10Y3_1_FROM_X9Y2_F;1;X10Y3_I1;LOCAL_X9Y2_X10Y3_1_TO_X10Y3_I1;1",
+            "src": "solution.v:57.18-57.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "step_count_1": {
+          "hide_name": 0,
+          "bits": [ 27 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y2Z0_O;;1;GLOBAL_WIRE_30;GLOBAL_WIRE_30_FROM_IO_X0Y2Z0;1;X1Y2_I1;GLOBAL_WIRE_30_TO_LUT_X1Y2_I1;1",
+            "BEL": "X0Y2Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 25 ] ,
+          "attributes": {
+            "ROUTING": "X9Y3_CLK;GLOBAL_CLK_TO_X9Y3_CLK;1;X1Y5_CLK;GLOBAL_CLK_TO_X1Y5_CLK;1;X6Y0_CLK;GLOBAL_CLK_TO_X6Y0_CLK;1;X5Y2_CLK;GLOBAL_CLK_TO_X5Y2_CLK;1;X1Y2_CLK;GLOBAL_CLK_TO_X1Y2_CLK;1;X4Y2_CLK;GLOBAL_CLK_TO_X4Y2_CLK;1;X6Y5_CLK;GLOBAL_CLK_TO_X6Y5_CLK;1;X11Y3_CLK;GLOBAL_CLK_TO_X11Y3_CLK;1;X3Y6_CLK;GLOBAL_CLK_TO_X3Y6_CLK;1;X2Y3_CLK;GLOBAL_CLK_TO_X2Y3_CLK;1;X11Y1_CLK;GLOBAL_CLK_TO_X11Y1_CLK;1;X2Y5_CLK;GLOBAL_CLK_TO_X2Y5_CLK;1;X2Y1_CLK;GLOBAL_CLK_TO_X2Y1_CLK;1;X7Y0_CLK;GLOBAL_CLK_TO_X7Y0_CLK;1;X1Y8_CLK;GLOBAL_CLK_TO_X1Y8_CLK;1;X3Y8_CLK;GLOBAL_CLK_TO_X3Y8_CLK;1;X8Y7_CLK;GLOBAL_CLK_TO_X8Y7_CLK;1;X1Y4_CLK;GLOBAL_CLK_TO_X1Y4_CLK;1;X11Y5_CLK;GLOBAL_CLK_TO_X11Y5_CLK;1;X5Y5_CLK;GLOBAL_CLK_TO_X5Y5_CLK;1;X8Y1_CLK;GLOBAL_CLK_TO_X8Y1_CLK;1;X10Y2_CLK;GLOBAL_CLK_TO_X10Y2_CLK;1;X8Y2_CLK;GLOBAL_CLK_TO_X8Y2_CLK;1;X9Y0_CLK;GLOBAL_CLK_TO_X9Y0_CLK;1;X4Y8_CLK;GLOBAL_CLK_TO_X4Y8_CLK;1;X1Y1_CLK;GLOBAL_CLK_TO_X1Y1_CLK;1;X8Y4_CLK;GLOBAL_CLK_TO_X8Y4_CLK;1;X10Y4_CLK;GLOBAL_CLK_TO_X10Y4_CLK;1;IO_X0Y0Z0_O;;1;GLOBAL_CLK;IO_X0Y0Z0_TO_GLOBAL_CLK;1;X8Y5_CLK;GLOBAL_CLK_TO_X8Y5_CLK;1",
+            "hdlname": "sol clk",
+            "src": "solution.v:10.11-10.14",
+            "BEL": "X0Y0Z0_IO"
+          }
+        },
+        "zero_count_6": {
+          "hide_name": 0,
+          "bits": [ 45 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_49;GLOBAL_WIRE_49_FROM_LUT_X9Y3_Q;1;IO_X12Y3Z0_I;GLOBAL_WIRE_49_TO_IO_X12Y3Z0;1;LOCAL_X9Y3_X10Y5_2;LOCAL_X9Y3_X10Y5_2_FROM_X9Y3_Q;1;X9Y3_I1;LOCAL_X9Y3_X10Y5_2_TO_X9Y3_I1;1;X9Y3_Q;;1;LOCAL_X9Y2_X9Y3_3;LOCAL_X9Y2_X9Y3_3_FROM_X9Y3_Q;1;X9Y2_I2;LOCAL_X9Y2_X9Y3_3_TO_X9Y2_I2;1",
+            "BEL": "X12Y3Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$new_n125": {
+          "hide_name": 1,
+          "bits": [ 219 ] ,
+          "attributes": {
+            "ROUTING": "X8Y3_F;;1;LOCAL_X8Y3_X9Y3_3;LOCAL_X8Y3_X9Y3_3_FROM_X8Y3_F;1;X9Y3_I0;LOCAL_X8Y3_X9Y3_3_TO_X9Y3_I0;1"
+          }
+        },
+        "$abc$2582$new_n155": {
+          "hide_name": 1,
+          "bits": [ 332 ] ,
+          "attributes": {
+            "ROUTING": "X1Y9_F;;1;LOCAL_X1Y8_X1Y9_3;LOCAL_X1Y8_X1Y9_3_FROM_X1Y9_F;1;X1Y8_I2;LOCAL_X1Y8_X1Y9_3_TO_X1Y8_I2;1"
+          }
+        },
+        "zero_count_5": {
+          "hide_name": 0,
+          "bits": [ 44 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_63;GLOBAL_WIRE_63_FROM_LUT_X8Y2_Q;1;IO_X12Y2Z1_I;GLOBAL_WIRE_63_TO_IO_X12Y2Z1;1;X8Y2_I2;LOCAL_X8Y2_X9Y2_3_TO_X8Y2_I2;1;LOCAL_X8Y2_X8Y3_1;LOCAL_X8Y2_X8Y3_1_FROM_X8Y2_Q;1;X8Y3_I2;LOCAL_X8Y2_X8Y3_1_TO_X8Y3_I2;1;X8Y2_Q;;1;LOCAL_X8Y2_X9Y2_3;LOCAL_X8Y2_X9Y2_3_FROM_X8Y2_Q;1;X9Y2_I1;LOCAL_X8Y2_X9Y2_3_TO_X9Y2_I1;1",
+            "BEL": "X12Y2Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$174.CO[4]_new": {
+          "hide_name": 1,
+          "bits": [ 212 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X9Y1_X9Y2_3;LOCAL_X9Y1_X9Y2_3_FROM_X9Y1_F;1;X9Y2_I0;LOCAL_X9Y1_X9Y2_3_TO_X9Y2_I0;1;LOCAL_X8Y2_X9Y1_1;LOCAL_X8Y2_X9Y1_1_FROM_X9Y1_F;1;X8Y2_I1;LOCAL_X8Y2_X9Y1_1_TO_X8Y2_I1;1;X9Y1_F;;1;LOCAL_X8Y3_X9Y1_1;LOCAL_X8Y3_X9Y1_1_FROM_X9Y1_F;1;X8Y3_I1;LOCAL_X8Y3_X9Y1_1_TO_X8Y3_I1;1",
+            "src": "solution.v:57.18-57.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "step_count_6": {
+          "hide_name": 0,
+          "bits": [ 32 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y4Z1_O;;1;GLOBAL_WIRE_10;GLOBAL_WIRE_10_FROM_IO_X0Y4Z1;1;X1Y8_I1;GLOBAL_WIRE_10_TO_LUT_X1Y8_I1;1",
+            "BEL": "X0Y4Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "step_count_5": {
+          "hide_name": 0,
+          "bits": [ 31 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y4Z0_O;;1;GLOBAL_WIRE_60;GLOBAL_WIRE_60_FROM_IO_X0Y4Z0;1;X1Y5_I1;GLOBAL_WIRE_60_TO_LUT_X1Y5_I1;1",
+            "BEL": "X0Y4Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "zero_count_4": {
+          "hide_name": 0,
+          "bits": [ 43 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X11Y1_X11Y4_1;LOCAL_X11Y1_X11Y4_1_FROM_X11Y1_Q;1;X11Y1_I1;LOCAL_X11Y1_X11Y4_1_TO_X11Y1_I1;1;GLOBAL_WIRE_32;GLOBAL_WIRE_32_FROM_LUT_X11Y1_Q;1;IO_X12Y2Z0_I;GLOBAL_WIRE_32_TO_IO_X12Y2Z0;1;X11Y1_Q;;1;LOCAL_X9Y1_X11Y1_0;LOCAL_X9Y1_X11Y1_0_FROM_X11Y1_Q;1;X9Y1_I2;LOCAL_X9Y1_X11Y1_0_TO_X9Y1_I2;1",
+            "BEL": "X12Y2Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$new_n121": {
+          "hide_name": 1,
+          "bits": [ 203 ] ,
+          "attributes": {
+            "ROUTING": "X10Y1_F;;1;LOCAL_X10Y1_X11Y1_0;LOCAL_X10Y1_X11Y1_0_FROM_X10Y1_F;1;X11Y1_I0;LOCAL_X10Y1_X11Y1_0_TO_X11Y1_I0;1"
+          }
+        },
+        "$abc$2582$new_n141": {
+          "hide_name": 1,
+          "bits": [ 280 ] ,
+          "attributes": {
+            "ROUTING": "X1Y0_F;;1;LOCAL_X1Y0_X1Y1_2;LOCAL_X1Y0_X1Y1_2_FROM_X1Y0_F;1;X1Y1_I2;LOCAL_X1Y0_X1Y1_2_TO_X1Y1_I2;1"
+          }
+        },
+        "zero_count_3": {
+          "hide_name": 0,
+          "bits": [ 42 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_8;GLOBAL_WIRE_8_FROM_LUT_X9Y0_Q;1;IO_X12Y1Z1_I;GLOBAL_WIRE_8_TO_IO_X12Y1Z1;1;X9Y0_I2;LOCAL_X9Y0_X10Y1_1_TO_X9Y0_I2;1;LOCAL_X9Y0_X10Y1_1;LOCAL_X9Y0_X10Y1_1_FROM_X9Y0_Q;1;X10Y1_I2;LOCAL_X9Y0_X10Y1_1_TO_X10Y1_I2;1;X9Y0_Q;;1;LOCAL_X9Y0_X9Y1_3;LOCAL_X9Y0_X9Y1_3_FROM_X9Y0_Q;1;X9Y1_I1;LOCAL_X9Y0_X9Y1_3_TO_X9Y1_I1;1",
+            "BEL": "X12Y1Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$174.CO[2]_new": {
+          "hide_name": 1,
+          "bits": [ 196 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X9Y0_X10Y0_3;LOCAL_X9Y0_X10Y0_3_FROM_X10Y0_F;1;X9Y0_I1;LOCAL_X9Y0_X10Y0_3_TO_X9Y0_I1;1;LOCAL_X10Y0_X10Y1_3;LOCAL_X10Y0_X10Y1_3_FROM_X10Y0_F;1;X10Y1_I1;LOCAL_X10Y0_X10Y1_3_TO_X10Y1_I1;1;X10Y0_F;;1;LOCAL_X9Y1_X10Y0_2;LOCAL_X9Y1_X10Y0_2_FROM_X10Y0_F;1;X9Y1_I0;LOCAL_X9Y1_X10Y0_2_TO_X9Y1_I0;1",
+            "src": "solution.v:57.18-57.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "step_count_0": {
+          "hide_name": 0,
+          "bits": [ 26 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y1Z1_O;;1;GLOBAL_WIRE_40;GLOBAL_WIRE_40_FROM_IO_X0Y1Z1;1;X1Y1_I1;GLOBAL_WIRE_40_TO_LUT_X1Y1_I1;1",
+            "BEL": "X0Y1Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "$abc$2582$new_n164": {
+          "hide_name": 1,
+          "bits": [ 363 ] ,
+          "attributes": {
+            "ROUTING": "X4Y6_F;;1;LOCAL_X3Y6_X4Y6_1;LOCAL_X3Y6_X4Y6_1_FROM_X4Y6_F;1;X3Y6_I1;LOCAL_X3Y6_X4Y6_1_TO_X3Y6_I1;1"
+          }
+        },
+        "zero_count_2": {
+          "hide_name": 0,
+          "bits": [ 41 ] ,
+          "attributes": {
+            "ROUTING": "X8Y1_I1;LOCAL_X8Y1_X10Y0_1_TO_X8Y1_I1;1;GLOBAL_WIRE_15;GLOBAL_WIRE_15_FROM_LUT_X8Y1_Q;1;IO_X12Y1Z0_I;GLOBAL_WIRE_15_TO_IO_X12Y1Z0;1;X8Y1_Q;;1;LOCAL_X8Y1_X10Y0_1;LOCAL_X8Y1_X10Y0_1_FROM_X8Y1_Q;1;X10Y0_I2;LOCAL_X8Y1_X10Y0_1_TO_X10Y0_I2;1",
+            "BEL": "X12Y1Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$new_n117": {
+          "hide_name": 1,
+          "bits": [ 187 ] ,
+          "attributes": {
+            "ROUTING": "X8Y0_F;;1;LOCAL_X8Y0_X8Y1_1;LOCAL_X8Y0_X8Y1_1_FROM_X8Y0_F;1;X8Y1_I0;LOCAL_X8Y0_X8Y1_1_TO_X8Y1_I0;1"
+          }
+        },
+        "$abc$2582$new_n145": {
+          "hide_name": 1,
+          "bits": [ 296 ] ,
+          "attributes": {
+            "ROUTING": "X2Y0_F;;1;LOCAL_X2Y0_X2Y1_0;LOCAL_X2Y0_X2Y1_0_FROM_X2Y0_F;1;X2Y1_I2;LOCAL_X2Y0_X2Y1_0_TO_X2Y1_I2;1"
+          }
+        },
+        "zero_count_1": {
+          "hide_name": 0,
+          "bits": [ 39 ] ,
+          "attributes": {
+            "ROUTING": "X7Y0_I2;LOCAL_X7Y0_X10Y0_1_TO_X7Y0_I2;1;GLOBAL_WIRE_39;GLOBAL_WIRE_39_FROM_LUT_X7Y0_Q;1;IO_X12Y0Z1_I;GLOBAL_WIRE_39_TO_IO_X12Y0Z1;1;LOCAL_X7Y0_X8Y0_3;LOCAL_X7Y0_X8Y0_3_FROM_X7Y0_Q;1;X8Y0_I2;LOCAL_X7Y0_X8Y0_3_TO_X8Y0_I2;1;X7Y0_Q;;1;LOCAL_X7Y0_X10Y0_1;LOCAL_X7Y0_X10Y0_1_FROM_X7Y0_Q;1;X10Y0_I1;LOCAL_X7Y0_X10Y0_1_TO_X10Y0_I1;1",
+            "BEL": "X12Y0Z1_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "step_count_9": {
+          "hide_name": 0,
+          "bits": [ 35 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y6Z0_O;;1;GLOBAL_WIRE_34;GLOBAL_WIRE_34_FROM_IO_X0Y6Z0;1;X3Y6_I0;GLOBAL_WIRE_34_TO_LUT_X3Y6_I0;1",
+            "BEL": "X0Y6Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "$abc$2582$sol._27[6]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 176 ] ,
+          "attributes": {
+            "ROUTING": "X8Y8_F;;1;LOCAL_X8Y8_X9Y8_1;LOCAL_X8Y8_X9Y8_1_FROM_X8Y8_F;1;X9Y8_I0;LOCAL_X8Y8_X9Y8_1_TO_X9Y8_I0;1",
+            "src": "solution.v:30.16-30.19"
+          }
+        },
+        "$abc$2582$sol._34[6]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 174 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X8Y7_X9Y9_0;LOCAL_X8Y7_X9Y9_0_FROM_X9Y9_F;1;X8Y7_I1;LOCAL_X8Y7_X9Y9_0_TO_X8Y7_I1;1;X9Y9_F;;1;GLOBAL_WIRE_58;GLOBAL_WIRE_58_FROM_LUT_X9Y9_F;1;X6Y4_I1;GLOBAL_WIRE_58_TO_LUT_X6Y4_I1;1",
+            "src": "solution.v:35.16-35.19"
+          }
+        },
+        "$abc$2582$new_n112": {
+          "hide_name": 1,
+          "bits": [ 173 ] ,
+          "attributes": {
+            "ROUTING": "X9Y8_F;;1;LOCAL_X9Y8_X9Y9_2;LOCAL_X9Y8_X9Y9_2_FROM_X9Y8_F;1;X9Y9_I2;LOCAL_X9Y8_X9Y9_2_TO_X9Y9_I2;1"
+          }
+        },
+        "$abc$2582$sol._31[6]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 172 ] ,
+          "attributes": {
+            "ROUTING": "X8Y10_F;;1;LOCAL_X8Y10_X9Y9_0;LOCAL_X8Y10_X9Y9_0_FROM_X8Y10_F;1;X9Y9_I1;LOCAL_X8Y10_X9Y9_0_TO_X9Y9_I1;1",
+            "src": "solution.v:19.16-19.19"
+          }
+        },
+        "$abc$2582$auto$rtlil.cc:3584:NotGate$2363_new_inv": {
+          "hide_name": 1,
+          "bits": [ 170 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X5Y2_X5Y3_1;LOCAL_X5Y2_X5Y3_1_FROM_X5Y3_F;1;X5Y2_I1;LOCAL_X5Y2_X5Y3_1_TO_X5Y2_I1;1;X5Y3_F;;1;LOCAL_X5Y3_X7Y3_1;LOCAL_X5Y3_X7Y3_1_FROM_X5Y3_F;1;X7Y3_I0;LOCAL_X5Y3_X7Y3_1_TO_X7Y3_I0;1"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:189:logic_reduce$333[1]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 168 ] ,
+          "attributes": {
+            "ROUTING": "X4Y0_F;;1;LOCAL_X4Y0_X4Y3_0;LOCAL_X4Y0_X4Y3_0_FROM_X4Y0_F;1;X4Y3_I0;LOCAL_X4Y0_X4Y3_0_TO_X4Y3_I0;1"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$183.CO[5]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 335 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y7_X2Y9_0;LOCAL_X2Y7_X2Y9_0_FROM_X2Y7_F;1;X2Y9_I1;LOCAL_X2Y7_X2Y9_0_TO_X2Y9_I1;1;X2Y7_F;;1;LOCAL_X1Y9_X2Y7_0;LOCAL_X1Y9_X2Y7_0_FROM_X2Y7_F;1;X1Y9_I0;LOCAL_X1Y9_X2Y7_0_TO_X1Y9_I0;1",
+            "src": "solution.v:89.18-89.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:189:logic_reduce$342_new_inv": {
+          "hide_name": 1,
+          "bits": [ 355 ] ,
+          "attributes": {
+            "ROUTING": "X3Y7_F;;1;LOCAL_X3Y5_X3Y7_2;LOCAL_X3Y5_X3Y7_2_FROM_X3Y7_F;1;X3Y5_I0;LOCAL_X3Y5_X3Y7_2_TO_X3Y5_I0;1"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$177.CO[4]_new": {
+          "hide_name": 1,
+          "bits": [ 160 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X8Y9_X8Y10_2;LOCAL_X8Y9_X8Y10_2_FROM_X8Y9_F;1;X8Y10_I1;LOCAL_X8Y9_X8Y10_2_TO_X8Y10_I1;1;X8Y9_F;;1;LOCAL_X8Y9_X9Y10_2;LOCAL_X8Y9_X9Y10_2_FROM_X8Y9_F;1;X9Y10_I0;LOCAL_X8Y9_X9Y10_2_TO_X9Y10_I0;1",
+            "src": "solution.v:60.18-60.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "$abc$2582$auto$rtlil.cc:3584:NotGate$2379_new": {
+          "hide_name": 1,
+          "bits": [ 158 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X8Y5_X9Y6_0;LOCAL_X8Y5_X9Y6_0_FROM_X9Y6_F;1;X8Y5_I1;LOCAL_X8Y5_X9Y6_0_TO_X8Y5_I1;1;X9Y6_F;;1;GLOBAL_WIRE_42;GLOBAL_WIRE_42_FROM_LUT_X9Y6_F;1;X5Y4_I1;GLOBAL_WIRE_42_TO_LUT_X5Y4_I1;1"
+          }
+        },
+        "$abc$2582$new_n103": {
+          "hide_name": 1,
+          "bits": [ 157 ] ,
+          "attributes": {
+            "ROUTING": "X9Y10_F;;1;LOCAL_X9Y6_X9Y10_1;LOCAL_X9Y6_X9Y10_1_FROM_X9Y10_F;1;X9Y6_I2;LOCAL_X9Y6_X9Y10_1_TO_X9Y6_I2;1"
+          }
+        },
+        "$abc$2582$sol._27[5]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 156 ] ,
+          "attributes": {
+            "ROUTING": "X9Y7_F;;1;LOCAL_X9Y6_X9Y7_2;LOCAL_X9Y6_X9Y7_2_FROM_X9Y7_F;1;X9Y6_I1;LOCAL_X9Y6_X9Y7_2_TO_X9Y6_I1;1",
+            "src": "solution.v:30.16-30.19"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:148:simplemap_reduce$413[0]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 151 ] ,
+          "attributes": {
+            "ROUTING": "X5Y10_F;;1;LOCAL_X5Y10_X6Y10_1;LOCAL_X5Y10_X6Y10_1_FROM_X5Y10_F;1;X6Y10_I1;LOCAL_X5Y10_X6Y10_1_TO_X6Y10_I1;1"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:148:simplemap_reduce$413[1]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 150 ] ,
+          "attributes": {
+            "ROUTING": "X7Y10_F;;1;LOCAL_X6Y10_X7Y10_2;LOCAL_X6Y10_X7Y10_2_FROM_X7Y10_F;1;X6Y10_I0;LOCAL_X6Y10_X7Y10_2_TO_X6Y10_I0;1"
+          }
+        },
+        "$abc$2582$new_n97": {
+          "hide_name": 1,
+          "bits": [ 148 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X5Y9_X6Y10_2;LOCAL_X5Y9_X6Y10_2_FROM_X6Y10_F;1;X5Y9_I2;LOCAL_X5Y9_X6Y10_2_TO_X5Y9_I2;1;LOCAL_X6Y10_X9Y10_2;LOCAL_X6Y10_X9Y10_2_FROM_X6Y10_F;1;X9Y10_I2;LOCAL_X6Y10_X9Y10_2_TO_X9Y10_I2;1;X6Y10_F;;1;LOCAL_X6Y10_X9Y9_1;LOCAL_X6Y10_X9Y9_1_FROM_X6Y10_F;1;X9Y9_I0;LOCAL_X6Y10_X9Y9_1_TO_X9Y9_I0;1"
+          }
+        },
+        "$abc$2582$sol._34[2]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 146 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X4Y8_X5Y8_1;LOCAL_X4Y8_X5Y8_1_FROM_X5Y8_F;1;X4Y8_I1;LOCAL_X4Y8_X5Y8_1_TO_X4Y8_I1;1;X5Y8_F;;1;LOCAL_X5Y4_X5Y8_1;LOCAL_X5Y4_X5Y8_1_FROM_X5Y8_F;1;X5Y4_I0;LOCAL_X5Y4_X5Y8_1_TO_X5Y4_I0;1",
+            "src": "solution.v:35.16-35.19"
+          }
+        },
+        "$abc$2582$new_n96": {
+          "hide_name": 1,
+          "bits": [ 145 ] ,
+          "attributes": {
+            "ROUTING": "X5Y9_F;;1;LOCAL_X5Y8_X5Y9_2;LOCAL_X5Y8_X5Y9_2_FROM_X5Y9_F;1;X5Y8_I2;LOCAL_X5Y8_X5Y9_2_TO_X5Y8_I2;1"
+          }
+        },
+        "$abc$2582$sol._25[2]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 144 ] ,
+          "attributes": {
+            "ROUTING": "X5Y7_F;;1;LOCAL_X5Y7_X5Y8_1;LOCAL_X5Y7_X5Y8_1_FROM_X5Y7_F;1;X5Y8_I0;LOCAL_X5Y7_X5Y8_1_TO_X5Y8_I0;1",
+            "src": "solution.v:23.16-23.19"
+          }
+        },
+        "$abc$2582$new_n148": {
+          "hide_name": 1,
+          "bits": [ 307 ] ,
+          "attributes": {
+            "ROUTING": "X4Y1_F;;1;LOCAL_X4Y1_X4Y2_1;LOCAL_X4Y1_X4Y2_1_FROM_X4Y1_F;1;X4Y2_I2;LOCAL_X4Y1_X4Y2_1_TO_X4Y2_I2;1"
+          }
+        },
+        "$abc$2582$new_n161": {
+          "hide_name": 1,
+          "bits": [ 352 ] ,
+          "attributes": {
+            "ROUTING": "X3Y5_F;;1;LOCAL_X2Y5_X3Y5_0;LOCAL_X2Y5_X3Y5_0_FROM_X3Y5_F;1;X2Y5_I2;LOCAL_X2Y5_X3Y5_0_TO_X2Y5_I2;1"
+          }
+        },
+        "$abc$2582$sol._34[3]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 135 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X6Y5_X6Y7_0;LOCAL_X6Y5_X6Y7_0_FROM_X6Y7_F;1;X6Y5_I1;LOCAL_X6Y5_X6Y7_0_TO_X6Y5_I1;1;X6Y7_F;;1;LOCAL_X6Y4_X6Y7_1;LOCAL_X6Y4_X6Y7_1_FROM_X6Y7_F;1;X6Y4_I0;LOCAL_X6Y4_X6Y7_1_TO_X6Y4_I0;1",
+            "src": "solution.v:35.16-35.19"
+          }
+        },
+        "$abc$2582$new_n93": {
+          "hide_name": 1,
+          "bits": [ 134 ] ,
+          "attributes": {
+            "ROUTING": "X6Y9_F;;1;LOCAL_X6Y7_X6Y9_0;LOCAL_X6Y7_X6Y9_0_FROM_X6Y9_F;1;X6Y7_I2;LOCAL_X6Y7_X6Y9_0_TO_X6Y7_I2;1"
+          }
+        },
+        "$abc$2582$new_n92": {
+          "hide_name": 1,
+          "bits": [ 133 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X6Y7_X6Y8_1;LOCAL_X6Y7_X6Y8_1_FROM_X6Y8_F;1;X6Y7_I1;LOCAL_X6Y7_X6Y8_1_TO_X6Y7_I1;1;X6Y8_F;;1;LOCAL_X5Y8_X6Y8_0;LOCAL_X5Y8_X6Y8_0_FROM_X6Y8_F;1;X5Y8_I1;LOCAL_X5Y8_X6Y8_0_TO_X5Y8_I1;1"
+          }
+        },
+        "$abc$2582$sol._25[3]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 132 ] ,
+          "attributes": {
+            "ROUTING": "X6Y6_F;;1;GLOBAL_WIRE_50;GLOBAL_WIRE_50_FROM_LUT_X6Y6_F;1;X6Y7_I0;GLOBAL_WIRE_50_TO_LUT_X6Y7_I0;1",
+            "src": "solution.v:23.16-23.19"
+          }
+        },
+        "step_count_8": {
+          "hide_name": 0,
+          "bits": [ 34 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y5Z1_O;;1;GLOBAL_WIRE_14;GLOBAL_WIRE_14_FROM_IO_X0Y5Z1;1;X2Y5_I1;GLOBAL_WIRE_14_TO_LUT_X2Y5_I1;1",
+            "BEL": "X0Y5Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "step_count_4": {
+          "hide_name": 0,
+          "bits": [ 30 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y3Z1_O;;1;GLOBAL_WIRE_18;GLOBAL_WIRE_18_FROM_IO_X0Y3Z1;1;X1Y4_I1;GLOBAL_WIRE_18_TO_LUT_X1Y4_I1;1",
+            "BEL": "X0Y3Z1_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:148:simplemap_reduce$409[0]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 125 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X4Y7_X4Y9_2;LOCAL_X4Y7_X4Y9_2_FROM_X4Y7_F;1;X4Y9_I0;LOCAL_X4Y7_X4Y9_2_TO_X4Y9_I0;1;LOCAL_X4Y7_X5Y9_0;LOCAL_X4Y7_X5Y9_0_FROM_X4Y7_F;1;X5Y9_I0;LOCAL_X4Y7_X5Y9_0_TO_X5Y9_I0;1;X4Y7_F;;1;LOCAL_X4Y7_X5Y10_0;LOCAL_X4Y7_X5Y10_0_FROM_X4Y7_F;1;X5Y10_I2;LOCAL_X4Y7_X5Y10_0_TO_X5Y10_I2;1"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$177.CO[2]_new": {
+          "hide_name": 1,
+          "bits": [ 123 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X4Y9_X6Y9_0;LOCAL_X4Y9_X6Y9_0_FROM_X4Y9_F;1;X6Y9_I0;LOCAL_X4Y9_X6Y9_0_TO_X6Y9_I0;1;LOCAL_X4Y9_X7Y9_2;LOCAL_X4Y9_X7Y9_2_FROM_X4Y9_F;1;X7Y9_I0;LOCAL_X4Y9_X7Y9_2_TO_X7Y9_I0;1;X4Y9_F;;1;LOCAL_X4Y9_X8Y9_1;LOCAL_X4Y9_X8Y9_1_FROM_X4Y9_F;1;X8Y9_I1;LOCAL_X4Y9_X8Y9_1_TO_X8Y9_I1;1",
+            "src": "solution.v:60.18-60.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "$abc$2582$sol._39[7]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 344 ] ,
+          "attributes": {
+            "ROUTING": "X2Y9_F;;1;LOCAL_X2Y9_X3Y9_0;LOCAL_X2Y9_X3Y9_0_FROM_X2Y9_F;1;X3Y9_I0;LOCAL_X2Y9_X3Y9_0_TO_X3Y9_I0;1",
+            "src": "solution.v:44.16-44.19"
+          }
+        },
+        "$abc$2582$sol._33[4]_new": {
+          "hide_name": 1,
+          "bits": [ 119 ] ,
+          "attributes": {
+            "ROUTING": "X7Y9_F;;1;LOCAL_X7Y7_X7Y9_2;LOCAL_X7Y7_X7Y9_2_FROM_X7Y9_F;1;X7Y7_I0;LOCAL_X7Y7_X7Y9_2_TO_X7Y7_I0;1",
+            "src": "solution.v:22.16-22.19"
+          }
+        },
+        "sol._15[7]": {
+          "hide_name": 0,
+          "bits": [ 117 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y9_X3Y8_0;LOCAL_X2Y9_X3Y8_0_FROM_X3Y8_Q;1;X2Y9_I2;LOCAL_X2Y9_X3Y8_0_TO_X2Y9_I2;1;X3Y8_Q;;1;LOCAL_X2Y6_X3Y8_0;LOCAL_X2Y6_X3Y8_0_FROM_X3Y8_Q;1;X2Y6_I2;LOCAL_X2Y6_X3Y8_0_TO_X2Y6_I2;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "sol._15[5]": {
+          "hide_name": 0,
+          "bits": [ 116 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X1Y5_X1Y7_2;LOCAL_X1Y5_X1Y7_2_FROM_X1Y5_Q;1;X1Y7_I2;LOCAL_X1Y5_X1Y7_2_TO_X1Y7_I2;1;LOCAL_X1Y5_X2Y7_2;LOCAL_X1Y5_X2Y7_2_FROM_X1Y5_Q;1;X2Y7_I1;LOCAL_X1Y5_X2Y7_2_TO_X2Y7_I1;1;X1Y5_Q;;1;LOCAL_X1Y5_X2Y6_0;LOCAL_X1Y5_X2Y6_0_FROM_X1Y5_Q;1;X2Y6_I1;LOCAL_X1Y5_X2Y6_0_TO_X2Y6_I1;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "sol._15[4]": {
+          "hide_name": 0,
+          "bits": [ 115 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X1Y4_X2Y4_0;LOCAL_X1Y4_X2Y4_0_FROM_X1Y4_Q;1;X2Y4_I1;LOCAL_X1Y4_X2Y4_0_TO_X2Y4_I1;1;LOCAL_X1Y4_X1Y7_1;LOCAL_X1Y4_X1Y7_1_FROM_X1Y4_Q;1;X1Y7_I0;LOCAL_X1Y4_X1Y7_1_TO_X1Y7_I0;1;LOCAL_X1Y4_X2Y7_1;LOCAL_X1Y4_X2Y7_1_FROM_X1Y4_Q;1;X2Y7_I0;LOCAL_X1Y4_X2Y7_1_TO_X2Y7_I0;1;X1Y4_Q;;1;LOCAL_X1Y4_X2Y6_2;LOCAL_X1Y4_X2Y6_2_FROM_X1Y4_Q;1;X2Y6_I0;LOCAL_X1Y4_X2Y6_2_TO_X2Y6_I0;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "$abc$2582$new_n150": {
+          "hide_name": 1,
+          "bits": [ 314 ] ,
+          "attributes": {
+            "ROUTING": "X2Y4_F;;1;LOCAL_X1Y4_X2Y4_2;LOCAL_X1Y4_X2Y4_2_FROM_X2Y4_F;1;X1Y4_I2;LOCAL_X1Y4_X2Y4_2_TO_X1Y4_I2;1"
+          }
+        },
+        "$abc$2582$new_n86": {
+          "hide_name": 1,
+          "bits": [ 111 ] ,
+          "attributes": {
+            "ROUTING": "X2Y6_F;;1;LOCAL_X2Y6_X2Y8_1;LOCAL_X2Y6_X2Y8_1_FROM_X2Y6_F;1;X2Y8_I1;LOCAL_X2Y6_X2Y8_1_TO_X2Y8_I1;1"
+          }
+        },
+        "sol._15[6]": {
+          "hide_name": 0,
+          "bits": [ 110 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X1Y8_X1Y9_1;LOCAL_X1Y8_X1Y9_1_FROM_X1Y8_Q;1;X1Y9_I1;LOCAL_X1Y8_X1Y9_1_TO_X1Y9_I1;1;LOCAL_X1Y8_X2Y9_0;LOCAL_X1Y8_X2Y9_0_FROM_X1Y8_Q;1;X2Y9_I0;LOCAL_X1Y8_X2Y9_0_TO_X2Y9_I0;1;X1Y8_Q;;1;LOCAL_X1Y8_X2Y8_2;LOCAL_X1Y8_X2Y8_2_FROM_X1Y8_Q;1;X2Y8_I0;LOCAL_X1Y8_X2Y8_2_TO_X2Y8_I0;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "sol._15[2]": {
+          "hide_name": 0,
+          "bits": [ 108 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y1_X3Y0_2;LOCAL_X2Y1_X3Y0_2_FROM_X2Y1_Q;1;X3Y0_I2;LOCAL_X2Y1_X3Y0_2_TO_X3Y0_I2;1;LOCAL_X2Y1_X3Y1_0;LOCAL_X2Y1_X3Y1_0_FROM_X2Y1_Q;1;X3Y1_I2;LOCAL_X2Y1_X3Y1_0_TO_X3Y1_I2;1;X2Y1_Q;;1;LOCAL_X2Y1_X4Y0_1;LOCAL_X2Y1_X4Y0_1_FROM_X2Y1_Q;1;X4Y0_I0;LOCAL_X2Y1_X4Y0_1_TO_X4Y0_I0;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "sol._15[1]": {
+          "hide_name": 0,
+          "bits": [ 107 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X1Y2_X2Y2_0;LOCAL_X1Y2_X2Y2_0_FROM_X1Y2_Q;1;X2Y2_I1;LOCAL_X1Y2_X2Y2_0_TO_X2Y2_I1;1;LOCAL_X1Y2_X3Y0_0;LOCAL_X1Y2_X3Y0_0_FROM_X1Y2_Q;1;X3Y0_I1;LOCAL_X1Y2_X3Y0_0_TO_X3Y0_I1;1;LOCAL_X1Y2_X3Y3_1;LOCAL_X1Y2_X3Y3_1_FROM_X1Y2_Q;1;X3Y3_I0;LOCAL_X1Y2_X3Y3_1_TO_X3Y3_I0;1;X1Y2_Q;;1;LOCAL_X1Y2_X3Y1_1;LOCAL_X1Y2_X3Y1_1_FROM_X1Y2_Q;1;X3Y1_I1;LOCAL_X1Y2_X3Y1_1_TO_X3Y1_I1;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "sol._15[0]": {
+          "hide_name": 0,
+          "bits": [ 106 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X1Y0_X1Y1_0;LOCAL_X1Y0_X1Y1_0_FROM_X1Y1_Q;1;X1Y0_I0;LOCAL_X1Y0_X1Y1_0_TO_X1Y0_I0;1;LOCAL_X1Y1_X2Y2_2;LOCAL_X1Y1_X2Y2_2_FROM_X1Y1_Q;1;X2Y2_I0;LOCAL_X1Y1_X2Y2_2_TO_X2Y2_I0;1;LOCAL_X1Y1_X3Y0_0;LOCAL_X1Y1_X3Y0_0_FROM_X1Y1_Q;1;X3Y0_I0;LOCAL_X1Y1_X3Y0_0_TO_X3Y0_I0;1;X1Y1_Q;;1;LOCAL_X1Y1_X3Y1_0;LOCAL_X1Y1_X3Y1_0_FROM_X1Y1_Q;1;X3Y1_I0;LOCAL_X1Y1_X3Y1_0_TO_X3Y1_I0;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "$abc$2582$new_n158": {
+          "hide_name": 1,
+          "bits": [ 341 ] ,
+          "attributes": {
+            "ROUTING": "X3Y9_F;;1;LOCAL_X3Y8_X3Y9_1;LOCAL_X3Y8_X3Y9_1_FROM_X3Y9_F;1;X3Y8_I2;LOCAL_X3Y8_X3Y9_1_TO_X3Y8_I2;1"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$183.CO[2]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 102 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X3Y1_X4Y1_2;LOCAL_X3Y1_X4Y1_2_FROM_X3Y1_F;1;X4Y1_I0;LOCAL_X3Y1_X4Y1_2_TO_X4Y1_I0;1;X3Y1_F;;1;LOCAL_X3Y1_X3Y2_3;LOCAL_X3Y1_X3Y2_3_FROM_X3Y1_F;1;X3Y2_I1;LOCAL_X3Y1_X3Y2_3_TO_X3Y2_I1;1",
+            "src": "solution.v:89.18-89.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "sol._15[3]": {
+          "hide_name": 0,
+          "bits": [ 101 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X4Y1_X4Y2_2;LOCAL_X4Y1_X4Y2_2_FROM_X4Y2_Q;1;X4Y1_I1;LOCAL_X4Y1_X4Y2_2_TO_X4Y1_I1;1;LOCAL_X3Y2_X4Y2_0;LOCAL_X3Y2_X4Y2_0_FROM_X4Y2_Q;1;X3Y2_I0;LOCAL_X3Y2_X4Y2_0_TO_X3Y2_I0;1;X4Y2_Q;;1;LOCAL_X4Y0_X4Y2_1;LOCAL_X4Y0_X4Y2_1_FROM_X4Y2_Q;1;X4Y0_I1;LOCAL_X4Y0_X4Y2_1_TO_X4Y0_I1;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:189:logic_reduce$339[0]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 99 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y4_X3Y2_0;LOCAL_X2Y4_X3Y2_0_FROM_X3Y2_F;1;X2Y4_I0;LOCAL_X2Y4_X3Y2_0_TO_X2Y4_I0;1;LOCAL_X3Y2_X3Y4_2;LOCAL_X3Y2_X3Y4_2_FROM_X3Y2_F;1;X3Y4_I2;LOCAL_X3Y2_X3Y4_2_TO_X3Y4_I2;1;X3Y7_I0;GLOBAL_WIRE_7_TO_LUT_X3Y7_I0;1;X2Y7_I2;GLOBAL_WIRE_7_TO_LUT_X2Y7_I2;1;X3Y2_F;;1;GLOBAL_WIRE_7;GLOBAL_WIRE_7_FROM_LUT_X3Y2_F;1;X1Y7_I1;GLOBAL_WIRE_7_TO_LUT_X1Y7_I1;1"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:189:logic_reduce$339[1]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 98 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y8_X3Y7_2;LOCAL_X2Y8_X3Y7_2_FROM_X2Y8_F;1;X3Y7_I1;LOCAL_X2Y8_X3Y7_2_TO_X3Y7_I1;1;X4Y4_I0;GLOBAL_WIRE_62_TO_LUT_X4Y4_I0;1;X2Y8_F;;1;GLOBAL_WIRE_62;GLOBAL_WIRE_62_FROM_LUT_X2Y8_F;1;X3Y4_I1;GLOBAL_WIRE_62_TO_LUT_X3Y4_I1;1"
+          }
+        },
+        "sol._15[8]": {
+          "hide_name": 0,
+          "bits": [ 97 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X2Y5_X3Y5_2;LOCAL_X2Y5_X3Y5_2_FROM_X2Y5_Q;1;X3Y5_I1;LOCAL_X2Y5_X3Y5_2_TO_X3Y5_I1;1;LOCAL_X2Y5_X3Y4_2;LOCAL_X2Y5_X3Y4_2_FROM_X2Y5_Q;1;X3Y4_I0;LOCAL_X2Y5_X3Y4_2_TO_X3Y4_I0;1;X2Y5_Q;;1;LOCAL_X2Y5_X3Y3_2;LOCAL_X2Y5_X3Y3_2_FROM_X2Y5_Q;1;X3Y3_I1;LOCAL_X2Y5_X3Y3_2_TO_X3Y3_I1;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "valid": {
+          "hide_name": 0,
+          "bits": [ 37 ] ,
+          "attributes": {
+            "ROUTING": "X3Y6_I2;GLOBAL_WIRE_45_TO_LUT_X3Y6_I2;1;X2Y3_I2;GLOBAL_WIRE_45_TO_LUT_X2Y3_I2;1;X1Y4_I0;GLOBAL_WIRE_45_TO_LUT_X1Y4_I0;1;X1Y5_I0;GLOBAL_WIRE_45_TO_LUT_X1Y5_I0;1;X1Y2_I0;GLOBAL_WIRE_45_TO_LUT_X1Y2_I0;1;X3Y8_I0;GLOBAL_WIRE_45_TO_LUT_X3Y8_I0;1;X4Y5_I2;GLOBAL_WIRE_45_TO_LUT_X4Y5_I2;1;X1Y1_I0;GLOBAL_WIRE_45_TO_LUT_X1Y1_I0;1;X1Y8_I0;GLOBAL_WIRE_45_TO_LUT_X1Y8_I0;1;X2Y1_I0;GLOBAL_WIRE_45_TO_LUT_X2Y1_I0;1;X4Y2_I0;GLOBAL_WIRE_45_TO_LUT_X4Y2_I0;1;IO_X0Y0Z1_O;;1;GLOBAL_WIRE_45;GLOBAL_WIRE_45_FROM_IO_X0Y0Z1;1;X2Y5_I0;GLOBAL_WIRE_45_TO_LUT_X2Y5_I0;1",
+            "BEL": "X0Y0Z1_IO",
+            "src": "top.v:71.13-71.18",
+            "hdlname": "sol valid"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$183.CO[8]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 93 ] ,
+          "attributes": {
+            "ROUTING": "GLOBAL_WIRE_22;GLOBAL_WIRE_22_FROM_LUT_X3Y4_F;1;X4Y6_I0;GLOBAL_WIRE_22_TO_LUT_X4Y6_I0;1;X3Y4_F;;1;LOCAL_X3Y4_X4Y5_0;LOCAL_X3Y4_X4Y5_0_FROM_X3Y4_F;1;X4Y5_I1;LOCAL_X3Y4_X4Y5_0_TO_X4Y5_I1;1",
+            "src": "solution.v:89.18-89.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "sol._15[9]": {
+          "hide_name": 0,
+          "bits": [ 92 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X3Y6_X4Y6_3;LOCAL_X3Y6_X4Y6_3_FROM_X3Y6_Q;1;X4Y6_I1;LOCAL_X3Y6_X4Y6_3_TO_X4Y6_I1;1;LOCAL_X3Y6_X4Y5_2;LOCAL_X3Y6_X4Y5_2_FROM_X3Y6_Q;1;X4Y5_I0;LOCAL_X3Y6_X4Y5_2_TO_X4Y5_I0;1;X3Y6_Q;;1;LOCAL_X3Y3_X3Y6_2;LOCAL_X3Y3_X3Y6_2_FROM_X3Y6_Q;1;X3Y3_I2;LOCAL_X3Y3_X3Y6_2_TO_X3Y3_I2;1",
+            "src": "solution.v:48.15-48.18",
+            "init": "0000000000",
+            "hdlname": "sol _15"
+          }
+        },
+        "$auto$ff.cc:792:flip_bits$2361": {
+          "hide_name": 1,
+          "bits": [ 89 ] ,
+          "attributes": {
+            "ROUTING": "X5Y2_I0;LOCAL_X5Y2_X5Y3_2_TO_X5Y2_I0;1;LOCAL_X5Y2_X5Y3_2;LOCAL_X5Y2_X5Y3_2_FROM_X5Y2_Q;1;X5Y3_I0;LOCAL_X5Y2_X5Y3_2_TO_X5Y3_I0;1;X5Y7_I1;GLOBAL_WIRE_43_TO_LUT_X5Y7_I1;1;X5Y6_I2;GLOBAL_WIRE_43_TO_LUT_X5Y6_I2;1;X5Y2_Q;;1;GLOBAL_WIRE_43;GLOBAL_WIRE_43_FROM_LUT_X5Y2_Q;1;X4Y7_I0;GLOBAL_WIRE_43_TO_LUT_X4Y7_I0;1",
+            "init": "0"
+          }
+        },
+        "sol._20[2]": {
+          "hide_name": 0,
+          "bits": [ 88 ] ,
+          "attributes": {
+            "ROUTING": "X4Y8_I0;LOCAL_X4Y8_X5Y10_1_TO_X4Y8_I0;1;LOCAL_X4Y8_X4Y9_0;LOCAL_X4Y8_X4Y9_0_FROM_X4Y8_Q;1;X4Y9_I1;LOCAL_X4Y8_X4Y9_0_TO_X4Y9_I1;1;LOCAL_X4Y8_X5Y9_1;LOCAL_X4Y8_X5Y9_1_FROM_X4Y8_Q;1;X5Y9_I1;LOCAL_X4Y8_X5Y9_1_TO_X5Y9_I1;1;X5Y7_I2;GLOBAL_WIRE_53_TO_LUT_X5Y7_I2;1;LOCAL_X4Y8_X5Y10_1;LOCAL_X4Y8_X5Y10_1_FROM_X4Y8_Q;1;X5Y10_I0;LOCAL_X4Y8_X5Y10_1_TO_X5Y10_I0;1;X4Y8_Q;;1;GLOBAL_WIRE_53;GLOBAL_WIRE_53_FROM_LUT_X4Y8_Q;1;X5Y6_I1;GLOBAL_WIRE_53_TO_LUT_X5Y6_I1;1",
+            "unused_bits": "1 4 5",
+            "src": "solution.v:28.15-28.18",
+            "init": "0xx00x0",
+            "hdlname": "sol _20"
+          }
+        },
+        "sol._20[0]": {
+          "hide_name": 0,
+          "bits": [ 87 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X5Y5_X7Y2_1;LOCAL_X5Y5_X7Y2_1_FROM_X5Y5_Q;1;X5Y5_I1;LOCAL_X5Y5_X7Y2_1_TO_X5Y5_I1;1;X5Y6_I0;GLOBAL_WIRE_44_TO_LUT_X5Y6_I0;1;LOCAL_X5Y3_X5Y5_0;LOCAL_X5Y3_X5Y5_0_FROM_X5Y5_Q;1;X5Y3_I2;LOCAL_X5Y3_X5Y5_0_TO_X5Y3_I2;1;GLOBAL_WIRE_44;GLOBAL_WIRE_44_FROM_LUT_X5Y5_Q;1;X5Y7_I0;GLOBAL_WIRE_44_TO_LUT_X5Y7_I0;1;LOCAL_X4Y3_X5Y5_2;LOCAL_X4Y3_X5Y5_2_FROM_X5Y5_Q;1;X4Y3_I1;LOCAL_X4Y3_X5Y5_2_TO_X4Y3_I1;1;X5Y5_Q;;1;LOCAL_X4Y7_X5Y5_1;LOCAL_X4Y7_X5Y5_1_FROM_X5Y5_Q;1;X4Y7_I1;LOCAL_X4Y7_X5Y5_1_TO_X4Y7_I1;1",
+            "unused_bits": "1 4 5",
+            "src": "solution.v:28.15-28.18",
+            "init": "0xx00x0",
+            "hdlname": "sol _20"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$180.CO[2]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 85 ] ,
+          "attributes": {
+            "ROUTING": "X6Y6_I0;GLOBAL_WIRE_17_TO_LUT_X6Y6_I0;1;X7Y6_I1;GLOBAL_WIRE_17_TO_LUT_X7Y6_I1;1;X5Y6_F;;1;GLOBAL_WIRE_17;GLOBAL_WIRE_17_FROM_LUT_X5Y6_F;1;X8Y6_I2;GLOBAL_WIRE_17_TO_LUT_X8Y6_I2;1",
+            "src": "solution.v:64.18-64.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "$auto$ff.cc:792:flip_bits$2371": {
+          "hide_name": 1,
+          "bits": [ 84 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X8Y4_X8Y7_0;LOCAL_X8Y4_X8Y7_0_FROM_X8Y4_Q;1;X8Y4_I1;LOCAL_X8Y4_X8Y7_0_TO_X8Y4_I1;1;X8Y6_I1;GLOBAL_WIRE_52_TO_LUT_X8Y6_I1;1;LOCAL_X7Y6_X8Y4_2;LOCAL_X7Y6_X8Y4_2_FROM_X8Y4_Q;1;X7Y6_I2;LOCAL_X7Y6_X8Y4_2_TO_X7Y6_I2;1;X8Y9_I0;GLOBAL_WIRE_52_TO_LUT_X8Y9_I0;1;X7Y9_I2;GLOBAL_WIRE_52_TO_LUT_X7Y9_I2;1;X8Y4_Q;;1;GLOBAL_WIRE_52;GLOBAL_WIRE_52_FROM_LUT_X8Y4_Q;1;X7Y10_I1;GLOBAL_WIRE_52_TO_LUT_X7Y10_I1;1",
+            "init": "0"
+          }
+        },
+        "sol._20[3]": {
+          "hide_name": 0,
+          "bits": [ 83 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X6Y5_X9Y6_0;LOCAL_X6Y5_X9Y6_0_FROM_X6Y5_Q;1;X6Y5_I0;LOCAL_X6Y5_X9Y6_0_TO_X6Y5_I0;1;X6Y6_I1;GLOBAL_WIRE_25_TO_LUT_X6Y6_I1;1;X7Y6_I0;GLOBAL_WIRE_25_TO_LUT_X7Y6_I0;1;X8Y6_I0;GLOBAL_WIRE_25_TO_LUT_X8Y6_I0;1;X6Y9_I1;GLOBAL_WIRE_25_TO_LUT_X6Y9_I1;1;X7Y9_I1;GLOBAL_WIRE_25_TO_LUT_X7Y9_I1;1;X8Y9_I2;GLOBAL_WIRE_25_TO_LUT_X8Y9_I2;1;X6Y5_Q;;1;GLOBAL_WIRE_25;GLOBAL_WIRE_25_FROM_LUT_X6Y5_Q;1;X5Y10_I1;GLOBAL_WIRE_25_TO_LUT_X5Y10_I1;1",
+            "unused_bits": "1 4 5",
+            "src": "solution.v:28.15-28.18",
+            "init": "0xx00x0",
+            "hdlname": "sol _20"
+          }
+        },
+        "$abc$2582$auto$alumacc.cc:512:replace_alu$180.CO[4]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 81 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X8Y6_X9Y7_0;LOCAL_X8Y6_X9Y7_0_FROM_X8Y6_F;1;X9Y7_I0;LOCAL_X8Y6_X9Y7_0_TO_X9Y7_I0;1;LOCAL_X8Y6_X8Y8_0;LOCAL_X8Y6_X8Y8_0_FROM_X8Y6_F;1;X8Y8_I0;LOCAL_X8Y6_X8Y8_0_TO_X8Y8_I0;1;X8Y6_F;;1;LOCAL_X7Y8_X8Y6_0;LOCAL_X7Y8_X8Y6_0_FROM_X8Y6_F;1;X7Y8_I2;LOCAL_X7Y8_X8Y6_0_TO_X7Y8_I2;1",
+            "src": "solution.v:64.18-64.27|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25"
+          }
+        },
+        "$auto$ff.cc:792:flip_bits$2377": {
+          "hide_name": 1,
+          "bits": [ 80 ] ,
+          "attributes": {
+            "ROUTING": "X8Y5_I0;LOCAL_X8Y5_X8Y10_0_TO_X8Y5_I0;1;LOCAL_X8Y5_X9Y7_0;LOCAL_X8Y5_X9Y7_0_FROM_X8Y5_Q;1;X9Y7_I1;LOCAL_X8Y5_X9Y7_0_TO_X9Y7_I1;1;LOCAL_X8Y5_X8Y8_1;LOCAL_X8Y5_X8Y8_1_FROM_X8Y5_Q;1;X8Y8_I1;LOCAL_X8Y5_X8Y8_1_TO_X8Y8_I1;1;LOCAL_X7Y8_X8Y5_1;LOCAL_X7Y8_X8Y5_1_FROM_X8Y5_Q;1;X7Y8_I1;LOCAL_X7Y8_X8Y5_1_TO_X7Y8_I1;1;LOCAL_X8Y5_X8Y10_0;LOCAL_X8Y5_X8Y10_0_FROM_X8Y5_Q;1;X8Y10_I0;LOCAL_X8Y5_X8Y10_0_TO_X8Y10_I0;1;X9Y10_I1;GLOBAL_WIRE_57_TO_LUT_X9Y10_I1;1;X8Y5_Q;;1;GLOBAL_WIRE_57;GLOBAL_WIRE_57_FROM_LUT_X8Y5_Q;1;X7Y10_I0;GLOBAL_WIRE_57_TO_LUT_X7Y10_I0;1",
+            "init": "0"
+          }
+        },
+        "sol._20[6]": {
+          "hide_name": 0,
+          "bits": [ 79 ] ,
+          "attributes": {
+            "ROUTING": "X8Y7_I0;LOCAL_X8Y7_X8Y8_3_TO_X8Y7_I0;1;LOCAL_X8Y7_X8Y8_3;LOCAL_X8Y7_X8Y8_3_FROM_X8Y7_Q;1;X8Y8_I2;LOCAL_X8Y7_X8Y8_3_TO_X8Y8_I2;1;LOCAL_X7Y8_X8Y7_1;LOCAL_X7Y8_X8Y7_1_FROM_X8Y7_Q;1;X7Y8_I0;LOCAL_X7Y8_X8Y7_1_TO_X7Y8_I0;1;LOCAL_X8Y7_X8Y10_0;LOCAL_X8Y7_X8Y10_0_FROM_X8Y7_Q;1;X8Y10_I2;LOCAL_X8Y7_X8Y10_0_TO_X8Y10_I2;1;X8Y7_Q;;1;LOCAL_X7Y10_X8Y7_1;LOCAL_X7Y10_X8Y7_1_FROM_X8Y7_Q;1;X7Y10_I2;LOCAL_X7Y10_X8Y7_1_TO_X7Y10_I2;1",
+            "unused_bits": "1 4 5",
+            "src": "solution.v:28.15-28.18",
+            "init": "0xx00x0",
+            "hdlname": "sol _20"
+          }
+        },
+        "sol._21": {
+          "hide_name": 0,
+          "bits": [ 77 ] ,
+          "attributes": {
+            "ROUTING": "X2Y3_I1;LOCAL_X2Y3_X5Y3_2_TO_X2Y3_I1;1;LOCAL_X2Y3_X5Y3_2;LOCAL_X2Y3_X5Y3_2_FROM_X2Y3_Q;1;X5Y3_I1;LOCAL_X2Y3_X5Y3_2_TO_X5Y3_I1;1;X7Y5_I2;GLOBAL_WIRE_33_TO_LUT_X7Y5_I2;1;X7Y7_I1;GLOBAL_WIRE_33_TO_LUT_X7Y7_I1;1;X6Y8_I1;GLOBAL_WIRE_33_TO_LUT_X6Y8_I1;1;X6Y9_I2;GLOBAL_WIRE_33_TO_LUT_X6Y9_I2;1;X9Y6_I0;GLOBAL_WIRE_33_TO_LUT_X9Y6_I0;1;X9Y8_I1;GLOBAL_WIRE_33_TO_LUT_X9Y8_I1;1;X2Y3_Q;;1;GLOBAL_WIRE_33;GLOBAL_WIRE_33_FROM_LUT_X2Y3_Q;1;X6Y10_I2;GLOBAL_WIRE_33_TO_LUT_X6Y10_I2;1",
+            "src": "solution.v:34.9-34.12",
+            "hdlname": "sol _21"
+          }
+        },
+        "$abc$2582$sol._25[4]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 76 ] ,
+          "attributes": {
+            "ROUTING": "X7Y6_F;;1;LOCAL_X7Y5_X7Y6_3;LOCAL_X7Y5_X7Y6_3_FROM_X7Y6_F;1;X7Y5_I1;LOCAL_X7Y5_X7Y6_3_TO_X7Y5_I1;1",
+            "src": "solution.v:23.16-23.19"
+          }
+        },
+        "$abc$2582$auto$simplemap.cc:189:logic_reduce$388_new_inv": {
+          "hide_name": 1,
+          "bits": [ 75 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X6Y8_X7Y8_2;LOCAL_X6Y8_X7Y8_2_FROM_X7Y8_F;1;X6Y8_I0;LOCAL_X6Y8_X7Y8_2_TO_X6Y8_I0;1;X7Y8_F;;1;LOCAL_X7Y5_X7Y8_1;LOCAL_X7Y5_X7Y8_1_FROM_X7Y8_F;1;X7Y5_I0;LOCAL_X7Y5_X7Y8_1_TO_X7Y5_I0;1"
+          }
+        },
+        "$abc$2582$new_n75": {
+          "hide_name": 1,
+          "bits": [ 73 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X7Y4_X8Y4_2;LOCAL_X7Y4_X8Y4_2_FROM_X7Y4_F;1;X8Y4_I2;LOCAL_X7Y4_X8Y4_2_TO_X8Y4_I2;1;X7Y4_F;;1;LOCAL_X7Y3_X7Y4_0;LOCAL_X7Y3_X7Y4_0_FROM_X7Y4_F;1;X7Y3_I1;LOCAL_X7Y3_X7Y4_0_TO_X7Y3_I1;1"
+          }
+        },
+        "$abc$2582$auto$opt_dff.cc:272:make_patterns_logic$117_new": {
+          "hide_name": 1,
+          "bits": [ 72 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X4Y5_X5Y5_3;LOCAL_X4Y5_X5Y5_3_FROM_X4Y5_F;1;X5Y5_I0;LOCAL_X4Y5_X5Y5_3_TO_X5Y5_I0;1;LOCAL_X3Y5_X4Y5_2;LOCAL_X3Y5_X4Y5_2_FROM_X4Y5_F;1;X3Y5_I2;LOCAL_X3Y5_X4Y5_2_TO_X3Y5_I2;1;X6Y5_I2;GLOBAL_WIRE_3_TO_LUT_X6Y5_I2;1;LOCAL_X4Y5_X4Y8_1;LOCAL_X4Y5_X4Y8_1_FROM_X4Y5_F;1;X4Y8_I2;LOCAL_X4Y5_X4Y8_1_TO_X4Y8_I2;1;X8Y5_I2;GLOBAL_WIRE_3_TO_LUT_X8Y5_I2;1;LOCAL_X2Y4_X4Y5_2;LOCAL_X2Y4_X4Y5_2_FROM_X4Y5_F;1;X2Y4_I2;LOCAL_X2Y4_X4Y5_2_TO_X2Y4_I2;1;LOCAL_X4Y5_X5Y2_0;LOCAL_X4Y5_X5Y2_0_FROM_X4Y5_F;1;X5Y2_I2;LOCAL_X4Y5_X5Y2_0_TO_X5Y2_I2;1;X8Y4_I0;GLOBAL_WIRE_3_TO_LUT_X8Y4_I0;1;LOCAL_X1Y6_X4Y5_1;LOCAL_X1Y6_X4Y5_1_FROM_X4Y5_F;1;X1Y6_I1;LOCAL_X1Y6_X4Y5_1_TO_X1Y6_I1;1;LOCAL_X4Y1_X4Y5_0;LOCAL_X4Y1_X4Y5_0_FROM_X4Y5_F;1;X4Y1_I2;LOCAL_X4Y1_X4Y5_0_TO_X4Y1_I2;1;X8Y7_I2;GLOBAL_WIRE_3_TO_LUT_X8Y7_I2;1;LOCAL_X3Y9_X4Y5_0;LOCAL_X3Y9_X4Y5_0_FROM_X4Y5_F;1;X3Y9_I1;LOCAL_X3Y9_X4Y5_0_TO_X3Y9_I1;1;X7Y4_I2;GLOBAL_WIRE_3_TO_LUT_X7Y4_I2;1;LOCAL_X2Y2_X4Y5_1;LOCAL_X2Y2_X4Y5_1_FROM_X4Y5_F;1;X2Y2_I2;LOCAL_X2Y2_X4Y5_1_TO_X2Y2_I2;1;X1Y9_I2;GLOBAL_WIRE_3_TO_LUT_X1Y9_I2;1;X2Y0_I1;GLOBAL_WIRE_3_TO_LUT_X2Y0_I1;1;X4Y5_F;;1;GLOBAL_WIRE_3;GLOBAL_WIRE_3_FROM_LUT_X4Y5_F;1;X1Y0_I1;GLOBAL_WIRE_3_TO_LUT_X1Y0_I1;1"
+          }
+        },
+        "$abc$2582$new_n87": {
+          "hide_name": 1,
+          "bits": [ 71 ] ,
+          "attributes": {
+            "ROUTING": "X7Y7_F;;1;LOCAL_X7Y4_X7Y7_1;LOCAL_X7Y4_X7Y7_1_FROM_X7Y7_F;1;X7Y4_I1;LOCAL_X7Y4_X7Y7_1_TO_X7Y4_I1;1"
+          }
+        },
+        "$abc$2582$new_n76": {
+          "hide_name": 1,
+          "bits": [ 70 ] ,
+          "attributes": {
+            "ROUTING": "X7Y5_F;;1;LOCAL_X7Y4_X7Y5_3;LOCAL_X7Y4_X7Y5_3_FROM_X7Y5_F;1;X7Y4_I0;LOCAL_X7Y4_X7Y5_3_TO_X7Y4_I0;1"
+          }
+        },
+        "$abc$2582$sol._39[5]_new_inv": {
+          "hide_name": 1,
+          "bits": [ 324 ] ,
+          "attributes": {
+            "ROUTING": "X1Y7_F;;1;LOCAL_X1Y6_X1Y7_3;LOCAL_X1Y6_X1Y7_3_FROM_X1Y7_F;1;X1Y6_I0;LOCAL_X1Y6_X1Y7_3_TO_X1Y6_I0;1",
+            "src": "solution.v:44.16-44.19"
+          }
+        },
+        "step_count_7": {
+          "hide_name": 0,
+          "bits": [ 33 ] ,
+          "attributes": {
+            "ROUTING": "IO_X0Y5Z0_O;;1;GLOBAL_WIRE_51;GLOBAL_WIRE_51_FROM_IO_X0Y5Z0;1;X3Y8_I1;GLOBAL_WIRE_51_TO_LUT_X3Y8_I1;1",
+            "BEL": "X0Y5Z0_IO",
+            "src": "top.v:120.13-120.27",
+            "hdlname": "sol step_count"
+          }
+        },
+        "zero_count_0": {
+          "hide_name": 0,
+          "bits": [ 38 ] ,
+          "attributes": {
+            "ROUTING": "X6Y0_I1;LOCAL_X6Y0_X10Y0_1_TO_X6Y0_I1;1;GLOBAL_WIRE_54;GLOBAL_WIRE_54_FROM_LUT_X6Y0_Q;1;IO_X12Y0Z0_I;GLOBAL_WIRE_54_TO_IO_X12Y0Z0;1;LOCAL_X6Y0_X7Y0_3;LOCAL_X6Y0_X7Y0_3_FROM_X6Y0_Q;1;X7Y0_I1;LOCAL_X6Y0_X7Y0_3_TO_X7Y0_I1;1;LOCAL_X6Y0_X8Y0_2;LOCAL_X6Y0_X8Y0_2_FROM_X6Y0_Q;1;X8Y0_I1;LOCAL_X6Y0_X8Y0_2_TO_X8Y0_I1;1;X6Y0_Q;;1;LOCAL_X6Y0_X10Y0_1;LOCAL_X6Y0_X10Y0_1_FROM_X6Y0_Q;1;X10Y0_I0;LOCAL_X6Y0_X10Y0_1_TO_X10Y0_I0;1",
+            "BEL": "X12Y0Z0_IO",
+            "src": "top.v:125.14-125.28",
+            "hdlname": "sol zero_count"
+          }
+        },
+        "$abc$2582$auto$opt_dff.cc:272:make_patterns_logic$128_new": {
+          "hide_name": 1,
+          "bits": [ 55 ] ,
+          "attributes": {
+            "ROUTING": "LOCAL_X6Y3_X8Y3_2;LOCAL_X6Y3_X8Y3_2_FROM_X6Y3_F;1;X8Y3_I0;LOCAL_X6Y3_X8Y3_2_TO_X8Y3_I0;1;LOCAL_X6Y3_X8Y2_1;LOCAL_X6Y3_X8Y2_1_FROM_X6Y3_F;1;X8Y2_I0;LOCAL_X6Y3_X8Y2_1_TO_X8Y2_I0;1;LOCAL_X6Y0_X6Y3_0;LOCAL_X6Y0_X6Y3_0_FROM_X6Y3_F;1;X6Y0_I0;LOCAL_X6Y0_X6Y3_0_TO_X6Y0_I0;1;LOCAL_X6Y3_X10Y3_1;LOCAL_X6Y3_X10Y3_1_FROM_X6Y3_F;1;X10Y3_I0;LOCAL_X6Y3_X10Y3_1_TO_X10Y3_I0;1;LOCAL_X6Y3_X7Y0_0;LOCAL_X6Y3_X7Y0_0_FROM_X6Y3_F;1;X7Y0_I0;LOCAL_X6Y3_X7Y0_0_TO_X7Y0_I0;1;LOCAL_X6Y3_X10Y2_1;LOCAL_X6Y3_X10Y2_1_FROM_X6Y3_F;1;X10Y2_I0;LOCAL_X6Y3_X10Y2_1_TO_X10Y2_I0;1;LOCAL_X6Y3_X8Y0_1;LOCAL_X6Y3_X8Y0_1_FROM_X6Y3_F;1;X8Y0_I0;LOCAL_X6Y3_X8Y0_1_TO_X8Y0_I0;1;X10Y1_I0;GLOBAL_WIRE_16_TO_LUT_X10Y1_I0;1;X6Y3_F;;1;GLOBAL_WIRE_16;GLOBAL_WIRE_16_FROM_LUT_X6Y3_F;1;X9Y0_I0;GLOBAL_WIRE_16_TO_LUT_X9Y0_I0;1"
+          }
+        }
+      }
+    }
+  }
+}
