@@ -406,10 +406,10 @@ def main():
         ("IO_X12Y7Z1_I", "W_IO_O15"),
         # LUT pins
         ("X11Y5_Q", "W_X10_Y5_Q"),
-        ("X2Y2_I1", "W_X1_Y2_I1"),
+        ("X2Y2_I1", "W_X1_Y2_I2"),
         ("X9Y4_F", "W_X8_Y4_F"),
-        ("X1Y0_I0", "W_X0_Y0_I0"),
-        ("X11Y11_I2", "W_X10_Y11_I2"),
+        ("X1Y0_I0", "W_X0_Y0_I1"),
+        ("X11Y11_I2", "W_X10_Y11_I3"),
         # Skip cases (return None)
         ("GLOBAL_WIRE_11", None),
         ("GLOBAL_WIRE_0", None),
@@ -472,13 +472,13 @@ def test_translate_net_errors(element: str):
 def test_parse_routing_simple():
     routing = "IO_X0Y2Z1_O;;1;GLOBAL_WIRE_11;GLOBAL_WIRE_11_FROM_IO_X0Y2Z1;1;X2Y2_I1;GLOBAL_WIRE_11_TO_LUT_X2Y2_I1;1"
     labels = parse_routing(routing)
-    assert labels == ["W_IO_I5", "W_X1_Y2_I1"]
+    assert labels == ["W_IO_I5", "W_X1_Y2_I2"]
 
 
 def test_parse_routing_complex():
     routing = "LOCAL_X11Y5_X11Y8_1;LOCAL_X11Y5_X11Y8_1_FROM_X11Y5_Q;1;X11Y5_I2;LOCAL_X11Y5_X11Y8_1_TO_X11Y5_I2;1;X11Y5_Q;;1;GLOBAL_WIRE_33;GLOBAL_WIRE_33_FROM_LUT_X11Y5_Q;1;IO_X12Y5Z0_I;GLOBAL_WIRE_33_TO_IO_X12Y5Z0;1"
     labels = parse_routing(routing)
-    assert labels == ["W_X10_Y5_I2", "W_X10_Y5_Q", "W_IO_O10"]
+    assert labels == ["W_X10_Y5_I3", "W_X10_Y5_Q", "W_IO_O10"]
 
 
 def test_parse_routing_empty():
