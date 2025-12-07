@@ -4596,6 +4596,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 198.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "e598ada9-1a5f-4b4b-a69f-98fc1864ff38")
 		)
@@ -29004,6 +29013,15 @@
 			)
 		)
 		(property "LCSC" "C152523"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;270"
 			(at 139.7 91.44 0)
 			(effects
 				(font
