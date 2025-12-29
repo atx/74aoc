@@ -112,20 +112,26 @@ module Board = struct
     let high (line : Gpio.line) : unit =
         write line true
 
+    let sleep (board : t) (duration : float) : unit =
+        if Float.is_finite board.speed then
+            Unix.sleepf (duration /. board.speed)
+        else
+            ()
+
     let reset (board : t) : unit =
         low board.pins.clk;  (* Just to be sure *)
 
         low board.pins.nrst;
-        Unix.sleepf (0.1 /. board.speed);
+        sleep board 0.1;
         high board.pins.nrst;
-        Unix.sleepf (0.1 /. board.speed);
+        sleep board 0.1;
         ()
 
     let cycle (board : t) : unit =
         high board.pins.clk;
-        Unix.sleepf (0.01 /. board.speed);
+        sleep board 0.01;
         low board.pins.clk;
-        Unix.sleepf (0.01 /. board.speed);
+        sleep board 0.01;
         ()
 
     let send (board : t) (direction : bool) (value : int) : unit =
@@ -148,7 +154,7 @@ module Board = struct
         high board.pins.valid;
 
         (* Wait until everything stabilizes *)
-        Unix.sleepf (0.001 /. board.speed);
+        sleep board 0.001;
         (* Cycle clock to send data *)
         cycle board;
         (* Clear valid signal (no need to wait since we have already done a rising + falling edge... *)
@@ -178,8 +184,8 @@ let run cfg =
             (if instr.direction then "Right" else "Left")
             instr.count;
         send board instr.direction instr.count;
-        (* Sleep for either 2000 cycles (no-trick mode) or for instr.count + 10 cycles *)
-        let sleep_cycles = if cfg.trick then instr.count + 10 else 2000 in
+        (* Sleep for either 2000 cycles (no-trick mode) or for instr.count cycles *)
+        let sleep_cycles = if cfg.trick then instr.count + 2 else 2000 in
         for _ = 1 to sleep_cycles do
             cycle board
         done;
