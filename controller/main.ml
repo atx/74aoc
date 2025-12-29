@@ -50,7 +50,7 @@ let load_instructions (file_path : string) : instruction Seq.t =
 
 module Board = struct
 
-    open Gpio
+    module PiGpio = Rpi_gpio.Gpio
 
     module P = struct
         let nrst = 17
@@ -60,29 +60,25 @@ module Board = struct
         let valid = 20
 
         let data_bits = [
-            26; 19; 16; 13; 6; 12; 5; 25; 24; 23
+            11; 19; 16; 13; 6; 12; 5; 25; 24; 23
         ]
     end
 
     type pins = {
-        nrst : Gpio.line;
-        clk : Gpio.line;
+        nrst : [ `output ] PiGpio.t;
+        clk : [ `output ] PiGpio.t;
 
-        dir : Gpio.line;
-        valid : Gpio.line;
+        dir : [ `output ] PiGpio.t;
+        valid : [ `output ] PiGpio.t;
 
-        data_bits : Gpio.line list;
-
-        chip : Gpio.chip;
+        data_bits : [ `output ] PiGpio.t list;
     }
 
     let setup_pins () : pins =
         (* Not sure how to ensure cleanup here... *)
-        let chip = Gpio.open_chip () in
-
         let o num = 
-            let line = Gpio.setup_output chip num in
-            write line false;
+            let line = PiGpio.create_output ~channel:num ~mode:`bcm in
+            PiGpio.output line 0;
             line in
 
         {
@@ -93,8 +89,6 @@ module Board = struct
             valid = o P.valid;
 
             data_bits = List.map o P.data_bits;
-
-            chip;
         }
 
     type t = {
@@ -106,17 +100,18 @@ module Board = struct
         let pins = setup_pins () in
         { speed; pins }
 
-    let low (line : Gpio.line) : unit =
-        write line false
+    let low (line : [ `output ] PiGpio.t) : unit =
+        PiGpio.output line 0
 
-    let high (line : Gpio.line) : unit =
-        write line true
+    let high (line : [ `output ] PiGpio.t) : unit =
+        PiGpio.output line 1
 
     let sleep (board : t) (duration : float) : unit =
-        if Float.is_finite board.speed then
-            Unix.sleepf (duration /. board.speed)
-        else
-            ()
+        let busy_wait_steps = duration *. 1_000_000. /. board.speed in
+        for _ = 1 to int_of_float busy_wait_steps do
+            Sys.opaque_identity ()
+        done;
+        ()
 
     let reset (board : t) : unit =
         low board.pins.clk;  (* Just to be sure *)
@@ -128,10 +123,10 @@ module Board = struct
         ()
 
     let cycle (board : t) : unit =
+        sleep board 0.01;
         high board.pins.clk;
         sleep board 0.01;
         low board.pins.clk;
-        sleep board 0.01;
         ()
 
     let send (board : t) (direction : bool) (value : int) : unit =
@@ -153,8 +148,6 @@ module Board = struct
         (* Signal valid *)
         high board.pins.valid;
 
-        (* Wait until everything stabilizes *)
-        sleep board 0.001;
         (* Cycle clock to send data *)
         cycle board;
         (* Clear valid signal (no need to wait since we have already done a rising + falling edge... *)
