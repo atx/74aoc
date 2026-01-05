@@ -47,7 +47,7 @@ let create (i : _ I.t) =
     (* 1 = up, 0 = down *)
     let saved_direction = Always.Variable.reg spec ~enable:vdd ~width:1 in
 
-    (* TODO: This can be exported to a saturating counter subfunction I think *)
+    (* TODO: This can be exported to a wrapping counter subfunction I think *)
     let next_dial_value =
         mux2 saved_direction.value
             (mux2 (dial_value.value ==:. Config.dial_max)

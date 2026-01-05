@@ -14,8 +14,5 @@ nextpnr-generic \
 	--top top \
 	--no-tmdriv
 
-# TODO: Do we need this for anything?
-#yosys -p "read_verilog -lib ./prims.v; read_json pnrtop.json; dump -o top.il; show -format png -prefix top"
-
 # Output placed-and-routed Verilog for inspection
 yosys -p "read_json pnrtop.json; write_verilog -noattr -norename pnrtop.v"

@@ -170,14 +170,3 @@ def make_local_interconnects(x1, y1, x2, y2):
 # Accidentally quartic :)
 for (x1, y1), (x2, y2) in itertools.combinations(lut_cell_coords, 2):
 	make_local_interconnects(x1, y1, x2, y2)
-
-
-def make_io_to_lut_interconnects(x_io, y_io, x_lut, y_lut):
-	distance = abs(x_io - x_lut) + abs(y_io - y_lut)
-	# TODO: Maybe use a different function for IO to LUT interconnect count?
-	count = distance_to_interconnect_count(distance)
-	if count == 0:
-		return
-
-	for i in range(count):
-		pass
