@@ -18,7 +18,8 @@ Quick orientation guide:
  * `pcb/` contains the KiCad files. For reproducibility, those are "cooked" files that include the solution design loaded and routed (revert the appropriate commits for a fresh blank slate)
  * `hdl/` contains the Hardcaml source code and the Yosys+nextpnr orchestration. Some of the intermediate files are also commited for traceability. 
    * `dune exec ./test_solution.exe` runs the Hardcaml test bench
-   * `dune exec ./build_solution.exe` outputs the Verilog source code from the Hardcaml solution
+   * `dune exec ./build_solution.exe` outputs the Verilog source code from the Hardcaml solution (beware that this requires the preview version 0.18 of Hardcaml)
    * `top.v` includes the output of the previous step and wraps it to assign concrete IO pads to the signals
    * `./simulate.sh <preplace|pnr>` runs the Verilog testbench using Verilator, either on pre-placement Verilog or on the placement result from Nextpnr (using the appropriate cell models from nextpnr-generic)
  * The root directory contains several scripts that serve to translate results from `hdl` into `pcb`. Loading new design is done by running `translate_nets_to_kicad.py` and `load_luts_into_kicad.py`.
+ * `controller/` this contains the bit banged driver for the board, to be executed on Raspberry Pi. Executed as `dune exec ./main.exe`, supports `--help`.
